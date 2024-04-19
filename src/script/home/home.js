@@ -2,7 +2,11 @@
 
 
 // poster section
+<<<<<<< HEAD
 const poster = document.querySelector(".poster-home");
+=======
+const poster = document.querySelector("".poster-home);
+>>>>>>> 008e17e (file : add file)
 fetch("../../components/home/poster.html")
 .then((res) => res.text())
 .then((data) => {
