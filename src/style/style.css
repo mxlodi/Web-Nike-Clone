@@ -101,10 +101,13 @@
   
   .toggle-input:checked + .toggle-label:before {
     transform: translateX(26px);
+<<<<<<< HEAD
   } */
 
   @media screen and (max-width: 960px) {
     .banner{
       display:none !important;
     }
+=======
+>>>>>>> eef2d79 (file : move file to new repo)
   }
