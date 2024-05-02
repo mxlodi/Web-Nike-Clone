@@ -2,7 +2,7 @@
 
 
 // poster section
-const poster = document.querySelector("".poster-home);
+const poster = document.querySelector(".poster-home");
 fetch("../../components/home/poster.html")
 .then((res) => res.text())
 .then((data) => {
