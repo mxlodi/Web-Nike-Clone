@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
+		<!-- accordion container -->
+		<div class="max-w-[500px] mx-auto mt-40 flex flex-col gap-4">
+			<div class="">
+				<button
+					id="accordion-btn"
+					class="p-4 border w-full text-start flex items-center justify-between"
+				>
+					USA: YONEX U.S.A
+
+					<svg
+						id="plus-icon"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-6 h-6 block"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M12 4.5v15m7.5-7.5h-15"
+						/>
+					</svg>
+
+					<svg
+						id="close-icon"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-6 h-6 hidden"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+					</svg>
+				</button>
+				<!-- Accordion dropdown -->
+				<div
+					id="accordion-dropdown"
+					class="px-4 border w-full bg-green-400 h-[0px] overflow-hidden duration-500"
+				>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		let accordionBtn = document.querySelectorAll('#accordion-btn');
+		let accordionDropdown = document.querySelectorAll('#accordion-dropdown');
+		let plusIcon = document.querySelectorAll('#plus-icon');
+		let closeIcon = document.querySelectorAll('#close-icon');
+
+		accordionBtn.forEach((btn, i) => {
+			btn.addEventListener('click', () => {
+				accordionDropdown[i].classList.toggle('h-[50px]');
+				plusIcon[i].classList.toggle('hidden');
+				closeIcon[i].classList.toggle('hidden');
+			});
+		});
+	</script>
+</html>

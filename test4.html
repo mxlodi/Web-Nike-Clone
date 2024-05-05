@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="p-5 translate-y-7 min-[600px]:hidden block bg-black text-[13px] text-white/80">
+        <h1 id="help-btn" class="flex justify-between oswald-bold tracking-wider pl-3 mb-12">HELP 
+          <button><img id="open-icon-help" src="../../images/home/footer/icons8-plus (1).svg" class="w-4 h-4 block" alt=""></button> 
+          <button><img id="close-icon-help" src="../../images/home/footer/icons8-minus-24.png" class="w-4 h-4 hidden" alt=""></button>
+        </h1>
+        <div id="help-btn-content" class="hidden">
+            <ul>
+                <li>Get Help</li>
+                <li>Order Status</li>
+                <li>Shipping and Delivery</li>
+                <li>Returns</li>
+                <li>Order Cancellation</li>
+                <li>Payment Options</li>
+                <li>Gift Card Balance</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+
+        <h1 id="company-btn" class="flex justify-between oswald-bold tracking-wider pl-3 mb-12">COMPANY 
+          <button><img id="open-icon-company" src="../../images/home/footer/icons8-plus (1).svg" class="w-4 h-4 block" alt=""></button> 
+          <button><img id="close-icon-company" src="../../images/home/footer/icons8-minus-24.png" class="w-4 h-4 hidden" alt=""></button>
+        </h1>
+        <div id="company-btn-content" class="hidden bg-white">
+            <ul>
+                <li>About Nike</li>
+                <li>News</li>
+                <li>Careers</li>
+                <li>Investors</li>
+                <li>Purpose</li>
+                <li>Sustainability</li>
+            </ul>
+        </div>
+        
+        <h1 id="promotion-btn" class="flex justify-between oswald-bold tracking-wider pl-3 mb-12">PROMOTIONS & DISCOUNTS 
+          <button><img id="open-icon-promotion" src="../../images/home/footer/icons8-plus (1).svg" class="w-4 h-4 block" alt=""></button>
+          <button><img id="close-icon-promotion" src="../../images/home/footer/icons8-minus-24.png" class="w-4 h-4 hidden" alt=""></button> 
+        </h1>
+        <div id="promotion-btn-content" class="hidden">
+            <ul>
+                <li>Student</li>
+                <li>Military</li>
+                <li>Teacher</li>
+                <li>First Responders & Medical Professionals</li>
+                <li>Birthday</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var helpBtn = document.getElementById('help-btn');
+        var companyBtn = document.getElementById('company-btn');
+        var promotionBtn = document.getElementById('promotion-btn');
+
+        helpBtn.addEventListener('click', function() {
+            var content = document.getElementById('help-btn-content');
+            var openIcon = document.getElementById('open-icon-help');
+            var closeIcon = document.getElementById('close-icon-help');
+
+            content.classList.toggle('hidden');
+            helpBtn.classList.toggle('active');
+
+            if (openIcon.classList.contains('hidden')) {
+                openIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            } else {
+                openIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+            }
+        });
+
+        companyBtn.addEventListener('click', function() {
+            var content = document.getElementById('company-btn-content');
+            var openIcon = document.getElementById('open-icon-company');
+            var closeIcon = document.getElementById('close-icon-company');
+
+            content.classList.toggle('hidden');
+            companyBtn.classList.toggle('active');
+
+            if (openIcon.classList.contains('hidden')) {
+                openIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            } else {
+                openIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+            }
+        });
+
+        promotionBtn.addEventListener('click', function() {
+            var content = document.getElementById('promotion-btn-content');
+            var openIcon = document.getElementById('open-icon-promotion');
+            var closeIcon = document.getElementById('close-icon-promotion');
+
+            content.classList.toggle('hidden');
+            promotionBtn.classList.toggle('active');
+
+            if (openIcon.classList.contains('hidden')) {
+                openIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            } else {
+                openIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

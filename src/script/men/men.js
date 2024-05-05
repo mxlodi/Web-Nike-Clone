@@ -35,14 +35,6 @@ fetch("../../components/men/marathon-speed-ahead.html")
 })
 .catch((error) => console.error("Error fetching included file:", error));
 
-// text 
-const text = document.querySelector(".text-men");
-fetch("../../components/men/text.html")
-.then((res) => res.text())
-.then((data) => {
-    text.innerHTML = data;
-})
-.catch((error) => console.error("Error fetching included file:", error));
 
 // classics spotlight
 const classics_spotlight = document.querySelector(".classics-spotlight-men");
