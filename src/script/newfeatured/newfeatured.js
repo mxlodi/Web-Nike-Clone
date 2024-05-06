@@ -17,15 +17,25 @@ fetch("../../components/newfeatured/feature.html")
       },
       {
         imgUrl: "../../images/newfeatured/products/air-vapormax-2023-flyknit-mens-shoes-vSm5p2.jpeg",
+<<<<<<< HEAD
         redText: "Substainable Materials",
         shoesBrand: "Nike Air VaporMax 2023 Flyknit",
         menWomen: "Men's Shoes",
+=======
+        redText: "Just In",
+        shoesBrand: "Nike Air VaporMax 2023 Flyknit",
+        menWomen: "Men'a Shoes",
+>>>>>>> dea830e (file : add new&featured page)
         color: 2,
         price: 210,
       },
       {
         imgUrl: "../../images/newfeatured/products/jordan-spizike-low-mens-shoes-LDT8cp.png",
+<<<<<<< HEAD
         redText: "",
+=======
+        redText: "Just In",
+>>>>>>> dea830e (file : add new&featured page)
         shoesBrand: "Jordan Spizike Low",
         menWomen: "Men's Shoes",
         color: 1,
@@ -33,7 +43,11 @@ fetch("../../components/newfeatured/feature.html")
       },
       {
         imgUrl: "../../images/newfeatured/products/air-jordan-3-retro-womens-shoes-1KkgvW.png",
+<<<<<<< HEAD
         redText: "",
+=======
+        redText: "Just In",
+>>>>>>> dea830e (file : add new&featured page)
         shoesBrand: "Air Jordan 3 Retro",
         menWomen: "Women's Shoes",
         color: 1,
@@ -49,7 +63,11 @@ fetch("../../components/newfeatured/feature.html")
       },
       {
         imgUrl: "../../images/newfeatured/products/waffle-debut-vintage-womens-shoes-rfRkv2.png",
+<<<<<<< HEAD
         redText: "",
+=======
+        redText: "Coming Soon",
+>>>>>>> dea830e (file : add new&featured page)
         shoesBrand: "Nike Waffle Debut Vintage",
         menWomen: "Women's Shoes",
         color: 1,
@@ -57,7 +75,11 @@ fetch("../../components/newfeatured/feature.html")
       },
       {
         imgUrl: "../../images/newfeatured/products/air-jordan-4-retro-mens-shoes-R20n6n.png",
+<<<<<<< HEAD
         redText: "Just In",
+=======
+        redText: "Coming Soon",
+>>>>>>> dea830e (file : add new&featured page)
         shoesBrand: "Air Jordan 4 Retro",
         menWomen: "Men's Shoes",
         color: 1,
@@ -65,7 +87,11 @@ fetch("../../components/newfeatured/feature.html")
       },
       {
         imgUrl: "../../images/newfeatured/products/air-jordan-4-retro-big-kids-shoes-VqdnWF.png",
+<<<<<<< HEAD
         redText: "Just In",
+=======
+        redText: "Coming Soon",
+>>>>>>> dea830e (file : add new&featured page)
         shoesBrand: "Air Jordan 4 retro",
         menWomen: "Big Kids' Shoes",
         color: 1,
@@ -73,7 +99,11 @@ fetch("../../components/newfeatured/feature.html")
       },
       {
         imgUrl: "../../images/newfeatured/products/jordan-4-retro-little-kids-shoes-kDKnwq.png",
+<<<<<<< HEAD
         redText: "Just In",
+=======
+        redText: "Coming Soon",
+>>>>>>> dea830e (file : add new&featured page)
         shoesBrand: "Jordan 4 Retro",
         menWomen: "Little Kids' Shoes",
         color: 1,
@@ -81,7 +111,11 @@ fetch("../../components/newfeatured/feature.html")
       },
       {
         imgUrl: "../../images/newfeatured/products/jordan-4-retro-baby-toddler-shoes-8ndFBg.png",
+<<<<<<< HEAD
         redText: "Just In",
+=======
+        redText: "Coming Soon",
+>>>>>>> dea830e (file : add new&featured page)
         shoesBrand: "Jordan 4 Retro",
         menWomen: "Baby/Toddler Shoes",
         color: 1,
@@ -105,6 +139,7 @@ fetch("../../components/newfeatured/feature.html")
       },
     ];
 
+<<<<<<< HEAD
     // function that will loop over the array card
     const cardComponent = () => {
       return `
@@ -119,6 +154,22 @@ fetch("../../components/newfeatured/feature.html")
                             <p class="text-[#909092] font-light" >${card.menWomen}</p>
                             <p class="text-[#909092] font-light">${card.color} Color</p>
                             <h1 class="font-base my-2">$${card.price}</h1>
+=======
+    // create function to loop over the array card
+    const createCardComponent = () => {
+      return `
+      <div id="right-content" class="z-[3] grid  min-[960px]:grid-cols-3 grid-cols-2  gap-4 lg:px-4 px-0">
+                    ${arrayCard
+                      .map((card) => {
+                        return `
+                        <div class="pb-10">
+                            <img src="${card.imgUrl}" alt="">
+                            <h1 class="text-red-700 font-medium">${card.redText}</h1>
+                            <h1 class="font-medium">${card.shoesBrand}</h1>
+                            <p class="text-gray-300" >${card.menWomen}</p>
+                            <p class="text-gray-300">${card.color} Color</p>
+                            <h1 class="font-medium">$${card.price}</h1>
+>>>>>>> dea830e (file : add new&featured page)
                         </div>
                         `;
                       })
@@ -130,11 +181,16 @@ fetch("../../components/newfeatured/feature.html")
     // create component name to use it
     class CardComponent extends HTMLElement {
       connectedCallback() {
+<<<<<<< HEAD
         this.innerHTML = cardComponent();
+=======
+        this.innerHTML = createCardComponent();
+>>>>>>> dea830e (file : add new&featured page)
       }
     }
     customElements.define("featured-component", CardComponent);
 
+<<<<<<< HEAD
 
     // small letter responsive
     smallLetter("newftMenu", "newftLetter")
@@ -180,6 +236,8 @@ fetch("../../components/newfeatured/feature.html")
 
 
 
+=======
+>>>>>>> dea830e (file : add new&featured page)
 })
 .catch((error) => console.error("Error fetching included file:", error));
 
