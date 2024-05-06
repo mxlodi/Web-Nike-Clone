@@ -1,29 +1,39 @@
 <!-- poster -->
-<div>
-  <div class="max-w-[1850px] mx-auto p-3 mt-10">
-    <div class="lg:flex items-center mb-12">
+
+<div class="w-full bg-white z-20 p-2 mt-5 sticky top-0">
+  <div class="max-w-[1850px] mx-auto p-3 mt-10 overflow-hidden">
+    <div class="lg:flex items-center ">
       <h2 class="text-2xl">Kids</h2>
       <ul
-        class="flex gap-8 justify-center pr-[86px] items-center py-2 lg:mx-auto font-semibold w-[700px]">
+        class="w-full flex gap-8 sm:justify-center justify-start items-center py-2 lg:mx-auto max-w-[700px] font-semibold">
         <li>Shoes</li>
         <li>Clothing</li>
-        <li>New Arrivals</li>
-        <li>Gear & Accessories</li>
-        <li>Mini Me</li>
+        <li class="text-nowrap">New Arrivals</li>
+        <li class="text-nowrap">Gear & Accessories</li>
+        <li class="text-nowrap">Mini Me</li>
         <li>Sale</li>
       </ul>
     </div>
   </div>
+
 </div>
+
+
+
+
 <section>
     <div class="max-w-[1850px] mx-auto p-3 my-5">
-      <div>
-          <img src="../../images/kids/poster/skate1.jpeg" alt="">
+      <div class="">
+          <img class="hidden sm:block" src="../../images/kids/poster/skate1.jpeg" alt="">
       </div>
 
-      <!-- <div class="absolute rotate-7  transform top-[90px] right-[110px]">
-          <video class="w-[500px] h-[500px] rounded-full" autoplay muted src="../../images/kids/poster/skate.mp4"></video>
+      <!-- <div class="flex justify-center items-center relative sm:hidden">
+        <img class="" src="../../images/kids/poster/videobg.jpeg" alt="">
+          <video class="absolute max-w-[350px] rounded-3xl rotate-2" autoplay loop muted src="../../images/kids/poster/skate.mp4"></video>
       </div> -->
+      <div class="flex w-full h-[700px] bg-gradient-to-r from-red-500 via-purple-500 to-pink-500 p-6 justify-center items-center relative sm:hidden">
+          <video class="absolute max-w-[350px] rounded-3xl rotate-2" autoplay loop muted src="../../images/kids/poster/skate.mp4"></video>
+      </div>
 
       <div class="md:text-center text-left">
         <h1 class="mt-7 md:text-[71px] text-5xl  passion-bold tracking-tight">NIKE SB DAY ONE</h1>
@@ -32,6 +42,5 @@
           Shop
         </button>
       </div>
-      
     </div>
 </section>
