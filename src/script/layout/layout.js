@@ -1,3 +1,38 @@
+
+// carousel
+function carousel(carousel_element, nextBtn, backBtn){
+  nextBtn.addEventListener("click", () => {
+    carousel_element.scrollBy({
+      left: 300,
+      behavior: "smooth"
+    })
+  })
+  backBtn.addEventListener("click", () => {
+    carousel_element.scrollBy({
+      left: -300,
+      behavior: "smooth"
+    })
+  })
+}
+
+
+// small letters responsive (nav)
+function smallLetter (menu, letter){
+  const Menu = document.querySelector(`#${menu}`);
+  const Letter = document.querySelector(`#${letter}`);
+  window.addEventListener('scroll', function() {
+    if(Menu.offsetTop - window.scrollY <= 0){
+      Menu.classList.add("py-0");
+      Letter.classList.remove("text-2xl");
+    }
+    if(Menu.offsetTop - window.scrollY > 10){
+      Menu.classList.remove("py-0");
+      Letter.classList.add("text-2xl");
+    }
+  })
+}
+
+
 // Navbar
 const navbar = document.querySelector(".navbar-layout");
 fetch("../../components/layout/navbar.html")
@@ -192,14 +227,22 @@ fetch("../../components/layout/navbar.html")
   dropdownMenu(accessoriesHover, accessoriesDropdown, accessoriesBelow, "h-[340px]")
   dropdownMenu(saleHover, saleDropdown, saleBelow, "h-[330px]")
 
+
   //function dropdown menu
     function dropdownMenu(btn,dropdown,text,h){
       btn.addEventListener("mouseenter", () => {
+
+        // blur background
+        const bgBlur = document.querySelector("#bgBlur");
+        const newftBlur = document.querySelector("#newftBlur");
+
+
         dropdown.classList.add(h)
         navBar.classList.add("sticky")
         text.classList.add("delay-200")
         text.classList.add("opacity-100","hover:text-black")
         text.classList.remove("pointer-events-none")
+        bgBlur.classList.add("blur-sm");
     
         
       });
@@ -207,9 +250,11 @@ fetch("../../components/layout/navbar.html")
         dropdown.classList.add(h)
         text.classList.add("delay-200")
         text.classList.add("opacity-100")
-        
-        //   element.classList.remove("opacity-0")
-        // });
+        navBar.classList.add("sticky")
+        text.classList.remove("pointer-events-none")
+        bgBlur.classList.add("blur-sm");
+
+  
       });
       dropdown.addEventListener("mouseleave", () => {
         text.classList.add("pointer-events-none")
@@ -217,6 +262,8 @@ fetch("../../components/layout/navbar.html")
         navBar.classList.remove("sticky")
         text.classList.remove("delay-200")
         text.classList.remove("opacity-100")
+        bgBlur.classList.remove("blur-sm");
+
         
       });
       btn.addEventListener("mouseleave", () => {
@@ -225,6 +272,8 @@ fetch("../../components/layout/navbar.html")
         navBar.classList.remove("sticky")
         text.classList.remove("delay-200")
         text.classList.remove("opacity-100")
+        bgBlur.classList.remove("blur-sm");
+
   
       });
     }
@@ -267,6 +316,7 @@ fetch("../../components/layout/footer.html")
             var closeIcon = document.getElementById('close-icon-help');
 
             content.classList.toggle('hidden');
+            content.classList.toggle('accordion-content');
             helpBtn.classList.toggle('active');
 
             if (openIcon.classList.contains('hidden')) {
@@ -284,6 +334,7 @@ fetch("../../components/layout/footer.html")
             var closeIcon = document.getElementById('close-icon-company');
 
             content.classList.toggle('hidden');
+            content.classList.toggle('accordion-content');
             companyBtn.classList.toggle('active');
 
             if (openIcon.classList.contains('hidden')) {
@@ -301,6 +352,7 @@ fetch("../../components/layout/footer.html")
             var closeIcon = document.getElementById('close-icon-promotion');
 
             content.classList.toggle('hidden');
+            content.classList.toggle('accordion-content');
             promotionBtn.classList.toggle('active');
 
             if (openIcon.classList.contains('hidden')) {

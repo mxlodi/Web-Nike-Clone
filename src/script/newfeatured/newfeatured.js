@@ -3,28 +3,29 @@ fetch("../../components/newfeatured/feature.html")
 .then((res) => res.text())
 .then((data) => {
   grid.innerHTML = data;
-  
+
+
     // create array object
-    const arrayCard = [
+    const arrayItem = [
       {
         imgUrl: "../../images/newfeatured/products/air-max-plus-drift-mens-shoes-FKwJ7w.png",
         redText: "Just In",
         shoesBrand: "Nike Air Max Plus Drift",
         menWomen: "Men's Shoes",
-        color: 3,
+        color: 2,
         price: 185,
       },
       {
         imgUrl: "../../images/newfeatured/products/air-vapormax-2023-flyknit-mens-shoes-vSm5p2.jpeg",
-        redText: "Just In",
+        redText: "Substainable Materials",
         shoesBrand: "Nike Air VaporMax 2023 Flyknit",
-        menWomen: "Men'a Shoes",
+        menWomen: "Men's Shoes",
         color: 2,
         price: 210,
       },
       {
         imgUrl: "../../images/newfeatured/products/jordan-spizike-low-mens-shoes-LDT8cp.png",
-        redText: "Just In",
+        redText: "",
         shoesBrand: "Jordan Spizike Low",
         menWomen: "Men's Shoes",
         color: 1,
@@ -32,7 +33,7 @@ fetch("../../components/newfeatured/feature.html")
       },
       {
         imgUrl: "../../images/newfeatured/products/air-jordan-3-retro-womens-shoes-1KkgvW.png",
-        redText: "Just In",
+        redText: "",
         shoesBrand: "Air Jordan 3 Retro",
         menWomen: "Women's Shoes",
         color: 1,
@@ -48,7 +49,7 @@ fetch("../../components/newfeatured/feature.html")
       },
       {
         imgUrl: "../../images/newfeatured/products/waffle-debut-vintage-womens-shoes-rfRkv2.png",
-        redText: "Coming Soon",
+        redText: "",
         shoesBrand: "Nike Waffle Debut Vintage",
         menWomen: "Women's Shoes",
         color: 1,
@@ -56,7 +57,7 @@ fetch("../../components/newfeatured/feature.html")
       },
       {
         imgUrl: "../../images/newfeatured/products/air-jordan-4-retro-mens-shoes-R20n6n.png",
-        redText: "Coming Soon",
+        redText: "Just In",
         shoesBrand: "Air Jordan 4 Retro",
         menWomen: "Men's Shoes",
         color: 1,
@@ -64,7 +65,7 @@ fetch("../../components/newfeatured/feature.html")
       },
       {
         imgUrl: "../../images/newfeatured/products/air-jordan-4-retro-big-kids-shoes-VqdnWF.png",
-        redText: "Coming Soon",
+        redText: "Just In",
         shoesBrand: "Air Jordan 4 retro",
         menWomen: "Big Kids' Shoes",
         color: 1,
@@ -72,7 +73,7 @@ fetch("../../components/newfeatured/feature.html")
       },
       {
         imgUrl: "../../images/newfeatured/products/jordan-4-retro-little-kids-shoes-kDKnwq.png",
-        redText: "Coming Soon",
+        redText: "Just In",
         shoesBrand: "Jordan 4 Retro",
         menWomen: "Little Kids' Shoes",
         color: 1,
@@ -80,7 +81,7 @@ fetch("../../components/newfeatured/feature.html")
       },
       {
         imgUrl: "../../images/newfeatured/products/jordan-4-retro-baby-toddler-shoes-8ndFBg.png",
-        redText: "Coming Soon",
+        redText: "Just In",
         shoesBrand: "Jordan 4 Retro",
         menWomen: "Baby/Toddler Shoes",
         color: 1,
@@ -104,20 +105,20 @@ fetch("../../components/newfeatured/feature.html")
       },
     ];
 
-    // create function to loop over the array card
-    const createCardComponent = () => {
+    // function that will loop over the array card
+    const cardComponent = () => {
       return `
       <div id="right-content" class="z-[3] grid  min-[960px]:grid-cols-3 grid-cols-2  gap-4 lg:px-4 px-0">
-                    ${arrayCard
+                    ${arrayItem
                       .map((card) => {
                         return `
                         <div class="pb-10">
-                            <img src="${card.imgUrl}" alt="">
-                            <h1 class="text-red-700 font-medium">${card.redText}</h1>
-                            <h1 class="font-medium">${card.shoesBrand}</h1>
-                            <p class="text-gray-300" >${card.menWomen}</p>
-                            <p class="text-gray-300">${card.color} Color</p>
-                            <h1 class="font-medium">$${card.price}</h1>
+                            <img class="mb-2" src="${card.imgUrl}" alt="">
+                            <h1 class="text-[#9e3702] font-medium my-1">${card.redText}</h1>
+                            <h1 class="font-medium my-1 text-black">${card.shoesBrand}</h1>
+                            <p class="text-[#909092] font-light" >${card.menWomen}</p>
+                            <p class="text-[#909092] font-light">${card.color} Color</p>
+                            <h1 class="font-base my-2">$${card.price}</h1>
                         </div>
                         `;
                       })
@@ -129,11 +130,36 @@ fetch("../../components/newfeatured/feature.html")
     // create component name to use it
     class CardComponent extends HTMLElement {
       connectedCallback() {
-        this.innerHTML = createCardComponent();
+        this.innerHTML = cardComponent();
       }
     }
     customElements.define("featured-component", CardComponent);
 
+
+    // small letter responsive
+    smallLetter("newftMenu", "newftLetter")
+
+
+    // call function to use
+
+    sideDropdown("genderBtn","genderContent","h-[80px]")
+    sideDropdown("kidsBtn", "kidsContent", "h-[65px]")
+    sideDropdown("saleBtn","saleContent", "h-[65px]")
+    sideDropdown("colorBtn", "colorContent", "h-[290px]")
+    sideDropdown("shopBtn", "shopContent", "h-[135px]")
+    sideDropdown("brandBtn", "brandContent", "h-[140px]")
+    sideDropdown("sportsBtn", "sportsContent", "h-[140px]")
+    sideDropdown("bestBtn", "bestContent", "h-[120px]")
+
+    // function for dropdown/accordion
+    function sideDropdown(btn,content,h){
+      const Btn = document.querySelector(`#${btn}`);
+      const Content = document.querySelector(`#${content}`);
+
+      Btn.addEventListener("click",function(){
+        Content.classList.toggle(`${h}`)
+      })
+    }
 })
 .catch((error) => console.error("Error fetching included file:", error));
 

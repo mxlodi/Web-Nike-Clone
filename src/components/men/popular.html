@@ -4,11 +4,11 @@
     <div class="flex items-center justify-between"> 
         <h2 class="text-2xl">Popular Right Now</h2> 
         <div class="flex gap-5"> 
-            <p class="mt-2 font-semibold">Shop All</p>
-            <button class="bg-[#e5e5e5] w-10 h-10 rounded-full  justify-center items-center min-[600px]:flex hidden" > 
+            <p class="mt-2 font-base text-black/90">Shop All</p>
+            <button id="left-men-popular" class="bg-[#e5e5e5] w-10 h-10 rounded-full  justify-center items-center min-[600px]:flex hidden" > 
                 <img src="../../images/home/trending/left-chevron.png" alt="" class="w-[20px]"> 
             </button> 
-            <button class="bg-[#e5e5e5] w-10 h-10 rounded-full  justify-center items-center min-[600px]:flex hidden"> 
+            <button id="right-men-popular" class="bg-[#e5e5e5] w-10 h-10 rounded-full  justify-center items-center min-[600px]:flex hidden"> 
                 <img src="../../images/home/trending/chevron.png"alt="" class="w-[20px]"> 
             </button> 
         </div> 
@@ -18,7 +18,7 @@
 
 <!-- Popular photos --> 
 
-<div class="max-w-[1850px] mx-auto px-3 gap-3 flex overflow-x-scroll">           
+<div id="men-popular" class="max-w-[1850px] mx-auto px-3 gap-3 flex overflow-x-auto no-scrollbar mt-5">           
     <div class="w-full"> 
         <div  class="md:w-[610px] w-[300px]"> 
             <img src="../../images/men/popular/air-max-dn-shoes-27XkSQ.png" alt="" class="w-full"> 

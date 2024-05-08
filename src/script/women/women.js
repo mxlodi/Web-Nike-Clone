@@ -31,6 +31,14 @@ fetch("../../components/women/classics-spotlight.html")
 .then((res) => res.text())
 .then((data) => {
     classics_spotlight.innerHTML = data;
+
+    // carousel
+    const women_classic = document.querySelector("#classic-women");
+    const left_women_classic = document.querySelector("#left-women-classic");
+    const right_women_classic= document.querySelector("#right-women-classic");
+
+    carousel(women_classic,right_women_classic,left_women_classic)
+    
 })
 .catch((error) => console.error("Error fetching included file:", error));
 
@@ -49,6 +57,13 @@ fetch("../../components/women/popular.html")
 .then((res) => res.text())
 .then((data) => {
     popular.innerHTML = data;
+    // carousel
+    const women_popular = document.querySelector("#popular-women");
+    const left_women_popular = document.querySelector("#left-women-popular");
+    const right_women_popular= document.querySelector("#right-women-popular");
+
+    carousel(women_popular,right_women_popular,left_women_popular)
+
 })
 .catch((error) => console.error("Error fetching included file:", error));
 
@@ -58,6 +73,13 @@ fetch("../../components/women/membership.html")
 .then((res) => res.text())
 .then((data) => {
     membership.innerHTML = data;
+
+    // carousel
+    const membership_women = document.querySelector("#membership-women");
+    const left_women_membership = document.querySelector("#left-women-membership");
+    const right_women_membership= document.querySelector("#right-women-membership");
+
+    carousel(membership_women,right_women_membership,left_women_membership)
 })
 .catch((error) => console.error("Error fetching included file:", error));
 
