@@ -226,6 +226,9 @@ fetch("../../components/layout/navbar.html")
 
 =======
 
+
+    
+    
     
     // new & featured dropdown
     const navBar = document.querySelector("#navBar");
@@ -314,7 +317,10 @@ fetch("../../components/layout/navbar.html")
 
         // blur background
         const bgBlur = document.querySelector("#bgBlur");
+<<<<<<< HEAD
         const newftBlur = document.querySelector("#newftBlur");
+=======
+>>>>>>> aea2365 (file : fix responsive in footer)
 
 
         dropdown.classList.add(h)
@@ -323,7 +329,10 @@ fetch("../../components/layout/navbar.html")
         text.classList.add("opacity-100","hover:text-black")
         text.classList.remove("pointer-events-none")
         bgBlur.classList.add("blur-sm");
+<<<<<<< HEAD
     
+=======
+>>>>>>> aea2365 (file : fix responsive in footer)
         
       });
       dropdown.addEventListener("mouseenter", () => {
@@ -333,6 +342,10 @@ fetch("../../components/layout/navbar.html")
         navBar.classList.add("sticky")
         text.classList.remove("pointer-events-none")
         bgBlur.classList.add("blur-sm");
+<<<<<<< HEAD
+=======
+
+>>>>>>> aea2365 (file : fix responsive in footer)
 
   
       });
@@ -343,7 +356,10 @@ fetch("../../components/layout/navbar.html")
         text.classList.remove("delay-200")
         text.classList.remove("opacity-100")
         bgBlur.classList.remove("blur-sm");
+<<<<<<< HEAD
 
+=======
+>>>>>>> aea2365 (file : fix responsive in footer)
         
       });
       btn.addEventListener("mouseleave", () => {
@@ -354,8 +370,11 @@ fetch("../../components/layout/navbar.html")
         text.classList.remove("opacity-100")
         bgBlur.classList.remove("blur-sm");
 
+<<<<<<< HEAD
   
 >>>>>>> df98341 (file : add responsive in new & featured page)
+=======
+>>>>>>> b3402f7 (file : fix responsive in footer)
       });
     }
 
@@ -375,8 +394,11 @@ fetch("../../components/layout/navbar.html")
 >>>>>>> 4574231 (feature : add review board file.)
     })
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 008e17e (file : add file)
 =======
+=======
+>>>>>>> b3402f7 (file : fix responsive in footer)
 
 
     // help dropdown
@@ -402,6 +424,7 @@ fetch("../../components/layout/navbar.html")
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
     
@@ -411,6 +434,11 @@ fetch("../../components/layout/navbar.html")
 =======
     })
 >>>>>>> df98341 (file : add responsive in new & featured page)
+=======
+
+
+    
+>>>>>>> b3402f7 (file : fix responsive in footer)
   })
 .catch((error) => console.error("Error fetching included file:", error))
 

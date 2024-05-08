@@ -279,31 +279,43 @@ fetch("../../components/newfeatured/feature.html")
       })
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cef78de (file : fix responsive in footer)
 
     // pick up button
     const outerBtn = document.querySelector("#outerBtn");
     const innerBtn = document.querySelector("#innerBtn");
+<<<<<<< HEAD
     const outerBtnSmall = document.querySelector("#outerBtnSmall");
     const innerBtnSmall = document.querySelector("#innerBtnSmall");
+=======
+>>>>>>> cef78de (file : fix responsive in footer)
 
     innerBtn.addEventListener("click", () => {
       innerBtn.classList.toggle("left-5")
     })
 
+<<<<<<< HEAD
     innerBtnSmall.addEventListener("click", () => {
       innerBtnSmall.classList.toggle("left-5")
     })
 
 
+=======
+>>>>>>> cef78de (file : fix responsive in footer)
 
     
 
 
 
+<<<<<<< HEAD
 =======
 >>>>>>> dea830e (file : add new&featured page)
 =======
 >>>>>>> 5d0a635 (file : add responsive in new & featured page)
+=======
+>>>>>>> cef78de (file : fix responsive in footer)
 })
 .catch((error) => console.error("Error fetching included file:", error));
 
