@@ -235,44 +235,55 @@ fetch("../../components/layout/navbar.html")
         // blur background
         const bgBlur = document.querySelector("#bgBlur");
         const newftBlur = document.querySelector("#newftBlur");
+        const homeBlur = document.querySelector("#homeBlur");
 
 
-        dropdown.classList.add(h)
-        navBar.classList.add("sticky")
-        text.classList.add("delay-200")
-        text.classList.add("opacity-100","hover:text-black")
-        text.classList.remove("pointer-events-none")
+        dropdown.classList.add(h);
+        navBar.classList.add("sticky");
+        text.classList.add("delay-200");
+        text.classList.add("opacity-100","hover:text-black");
+        text.classList.remove("pointer-events-none");
         bgBlur.classList.add("blur-sm");
+        newftBlur.classList.add("blur-sm");
+        homeBlur.classList.add("blur-sm");
     
         
       });
       dropdown.addEventListener("mouseenter", () => {
-        dropdown.classList.add(h)
-        text.classList.add("delay-200")
-        text.classList.add("opacity-100")
-        navBar.classList.add("sticky")
-        text.classList.remove("pointer-events-none")
+        dropdown.classList.add(h);
+        text.classList.add("delay-200");
+        text.classList.add("opacity-100");
+        navBar.classList.add("sticky");
+        text.classList.remove("pointer-events-none");
         bgBlur.classList.add("blur-sm");
+        newftBlur.classList.add("blur-sm");
+        homeBlur.classList.add("blur-sm");
+
 
   
       });
       dropdown.addEventListener("mouseleave", () => {
-        text.classList.add("pointer-events-none")
-        dropdown.classList.remove(h)
-        navBar.classList.remove("sticky")
-        text.classList.remove("delay-200")
-        text.classList.remove("opacity-100")
+        text.classList.add("pointer-events-none");
+        dropdown.classList.remove(h);
+        navBar.classList.remove("sticky");
+        text.classList.remove("delay-200");
+        text.classList.remove("opacity-100");
         bgBlur.classList.remove("blur-sm");
+        newftBlur.classList.remove("blur-sm");
+        homeBlur.classList.remove("blur-sm");
+
 
         
       });
       btn.addEventListener("mouseleave", () => {
-        text.classList.add("pointer-events-none")
-        dropdown.classList.remove(h)
-        navBar.classList.remove("sticky")
-        text.classList.remove("delay-200")
-        text.classList.remove("opacity-100")
+        text.classList.add("pointer-events-none");
+        dropdown.classList.remove(h);
+        navBar.classList.remove("sticky");
+        text.classList.remove("delay-200");
+        text.classList.remove("opacity-100");
         bgBlur.classList.remove("blur-sm");
+        newftBlur.classList.remove("blur-sm");
+        homeBlur.classList.remove("blur-sm");
 
   
       });
@@ -306,61 +317,61 @@ fetch("../../components/layout/footer.html")
 .then((data) => {
     footer.innerHTML = data;
 
-    var helpBtn = document.getElementById('help-btn');
-        var companyBtn = document.getElementById('company-btn');
-        var promotionBtn = document.getElementById('promotion-btn');
+    var helpBtn = document.getElementById("help-btn");
+        var companyBtn = document.getElementById("company-btn");
+        var promotionBtn = document.getElementById("promotion-btn");
 
-        helpBtn.addEventListener('click', function() {
-            var content = document.getElementById('help-btn-content');
-            var openIcon = document.getElementById('open-icon-help');
-            var closeIcon = document.getElementById('close-icon-help');
+        helpBtn.addEventListener("click", function() {
+            var content = document.getElementById("help-btn-content");
+            var openIcon = document.getElementById("open-icon-help");
+            var closeIcon = document.getElementById("close-icon-help");
 
-            content.classList.toggle('hidden');
-            content.classList.toggle('accordion-content');
-            helpBtn.classList.toggle('active');
+            content.classList.toggle("hidden");
+            content.classList.toggle("accordion-content");
+            helpBtn.classList.toggle("active");
 
-            if (openIcon.classList.contains('hidden')) {
-                openIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
+            if (openIcon.classList.contains("hidden")) {
+                openIcon.classList.remove("hidden");
+                closeIcon.classList.add("hidden");
             } else {
-                openIcon.classList.add('hidden');
-                closeIcon.classList.remove('hidden');
+                openIcon.classList.add("hidden");
+                closeIcon.classList.remove("hidden");
             }
         });
 
-        companyBtn.addEventListener('click', function() {
-            var content = document.getElementById('company-btn-content');
-            var openIcon = document.getElementById('open-icon-company');
-            var closeIcon = document.getElementById('close-icon-company');
+        companyBtn.addEventListener("click", function() {
+            var content = document.getElementById("company-btn-content");
+            var openIcon = document.getElementById("open-icon-company");
+            var closeIcon = document.getElementById("close-icon-company");
 
-            content.classList.toggle('hidden');
-            content.classList.toggle('accordion-content');
-            companyBtn.classList.toggle('active');
+            content.classList.toggle("hidden");
+            content.classList.toggle("accordion-content");
+            companyBtn.classList.toggle("active");
 
-            if (openIcon.classList.contains('hidden')) {
-                openIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
+            if (openIcon.classList.contains("hidden")) {
+                openIcon.classList.remove("hidden");
+                closeIcon.classList.add("hidden");
             } else {
-                openIcon.classList.add('hidden');
-                closeIcon.classList.remove('hidden');
+                openIcon.classList.add("hidden");
+                closeIcon.classList.remove("hidden");
             }
         });
 
-        promotionBtn.addEventListener('click', function() {
-            var content = document.getElementById('promotion-btn-content');
-            var openIcon = document.getElementById('open-icon-promotion');
-            var closeIcon = document.getElementById('close-icon-promotion');
+        promotionBtn.addEventListener("click", function() {
+            var content = document.getElementById("promotion-btn-content");
+            var openIcon = document.getElementById("open-icon-promotion");
+            var closeIcon = document.getElementById("close-icon-promotion");
 
-            content.classList.toggle('hidden');
-            content.classList.toggle('accordion-content');
-            promotionBtn.classList.toggle('active');
+            content.classList.toggle("hidden");
+            content.classList.toggle("accordion-content");
+            promotionBtn.classList.toggle("active");
 
-            if (openIcon.classList.contains('hidden')) {
-                openIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
+            if (openIcon.classList.contains("hidden")) {
+                openIcon.classList.remove("hidden");
+                closeIcon.classList.add("hidden");
             } else {
-                openIcon.classList.add('hidden');
-                closeIcon.classList.remove('hidden');
+                openIcon.classList.add("hidden");
+                closeIcon.classList.remove("hidden");
             }
         });
 
@@ -393,7 +404,7 @@ fetch("../../components/layout/footer.html")
     //   newfeaturedBelow.classList.remove("opacity-100")
     // });
     // newfeaturedHover.addEventListener("mouseleave", () => {
-    //   newfeaturedDropdown.classList.remove('h-[300px]')
+    //   newfeaturedDropdown.classList.remove("h-[300px]")
     //   navBar.classList.remove("sticky")
     //   newfeaturedBelow.classList.remove("delay-200")
     //   newfeaturedBelow.classList.remove("opacity-100")
@@ -457,7 +468,7 @@ fetch("../../components/layout/footer.html")
 
     // });
     // womenHover.addEventListener("mouseleave", () => {
-    //   womenDropdown.classList.remove('h-[440px]')
+    //   womenDropdown.classList.remove("h-[440px]")
     //   womenList.forEach(element => {
     //     element.classList.add("hidden")
     //   });
@@ -490,7 +501,7 @@ fetch("../../components/layout/footer.html")
 
     // });
     // kidsHover.addEventListener("mouseleave", () => {
-    //   kidsDropdown.classList.remove('h-[475px]')
+    //   kidsDropdown.classList.remove("h-[475px]")
     //   kidsList.forEach(element => {
     //     element.classList.add("hidden")
     //   });
@@ -524,7 +535,7 @@ fetch("../../components/layout/footer.html")
 
     // });
     // accessoriesHover.addEventListener("mouseleave", () => {
-    //   accessoriesDropdown.classList.remove('h-[300px]')
+    //   accessoriesDropdown.classList.remove("h-[300px]")
     //   accessoriesList.forEach(element => {
     //     element.classList.add("hidden")
     //   });
@@ -558,7 +569,7 @@ fetch("../../components/layout/footer.html")
 
     // });
     // saleHover.addEventListener("mouseleave", () => {
-    //   saleDropdown.classList.remove('h-[350px]')
+    //   saleDropdown.classList.remove("h-[350px]')
     //   saleList.forEach(element => {
     //     element.classList.add("hidden")
     //   });

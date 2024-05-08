@@ -22,6 +22,7 @@
   font-weight: 400;
   font-style: normal;
 }
+<<<<<<< HEAD
 
 .robotobold {
   font-family: "Roboto", sans-serif;
@@ -29,6 +30,8 @@
   font-style: normal;
 }
 
+=======
+>>>>>>> 97bb208 (file : add hover on navbar)
 .passion-bold {
   font-family: "Passion One", sans-serif;
   font-weight: 700;

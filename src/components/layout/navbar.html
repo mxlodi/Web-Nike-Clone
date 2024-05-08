@@ -288,7 +288,7 @@
 =======
 >>>>>>> d9cbd4a (file : change responsive)
 
-            <div class="divide-x divide-black font-semibold  font-sans text-sm">
+            <div class="divide-x divide-black font-medium font-sans text-[12px]">
                 <a href="#" class="px-2 hover:text-gray-500">Find a Store</a>
                 <a href="#" class="px-2 hover:text-gray-500">Help</a>
                 <a href="#" class="px-2 hover:text-gray-500">Join Us</a>
@@ -303,26 +303,26 @@
 <nav id="navBar" class="bg-white z-[100]  top-0">
     <div class="max-w-[1850px] mx-auto text-black flex items-center justify-between relative">
         <a href="../../pages/home/home.html">
-            <img src="../../images/home/nav-bar/nike2.png" alt="" class="w-[70px]">
+            <img src="../../images/home/nav-bar/nike2.png" alt="" class="w-[70px] hover:opacity-50">
         </a>
 
-        <ul class="md:flex items-center gap-4 hidden ml-[200px] font-semibold tracking-wide">
+        <ul class="md:flex items-center gap-4 hidden ml-[200px] roboto text-[17px] tracking-wide">
             <a href="../../pages/newfeatured/newfeatured.html">
-                <li class="cursor-pointer py-6 min-[955px]:block hidden" id="newfeatured-hover">New & Featured</li>
+                <li class=" py-6 min-[955px]:block hidden hover:text-gray-500" id="newfeatured-hover">New & Featured</li>
             </a>
             <!-- <span class="w-4 h-1 bg-black"></span> -->
             <a href="../../pages/men/men.html">
-                <li class="cursor-pointer py-6 min-[960px]:block hidden" id="men-hover">Men</li>
+                <li class=" py-6 min-[960px]:block hidden hover:text-gray-500" id="men-hover">Men</li>
             </a>
             <a href="../../pages/women/women.html">
-                <li class="cursor-pointer py-6 min-[972px]:block hidden" id="women-hover">Women</li>
+                <li class=" py-6 min-[972px]:block hidden hover:text-gray-500" id="women-hover">Women</li>
             </a>
             
             <a href="../../pages/kids/kids.html">
-                <li class="cursor-pointer py-6 min-[1032px]:block hidden" id="kids-hover">Kids</li>
+                <li class=" py-6 min-[1032px]:block hidden hover:text-gray-500" id="kids-hover">Kids</li>
             </a>
-            <li class="cursor-pointer py-6 min-[1090px]:block hidden" id="accessories-hover">Accessories</li>
-            <li class="cursor-pointer py-6 min-[1155px]:block hidden" id="sale-hover">Sale</li>
+            <li class="cursor-pointer py-6 min-[1090px]:block hidden hover:text-gray-500" id="accessories-hover">Accessories</li>
+            <li class="cursor-pointer py-6 min-[1155px]:block hidden hover:text-gray-500" id="sale-hover">Sale</li>
         </ul>
 
         <div class="relative flex items-center gap-8">
@@ -331,11 +331,17 @@
                 placeholder="Search">
             <img src="../../images/home/nav-bar/glass.png" alt=""
                 class="absolute w-[22px] left-[10px] opacity-90 block max-[960px]:hidden">
-            <img src="../../images/home/nav-bar/glass.png" alt=""
-                class="absolute w-[24px] right-[125px] opacity-90 top-0 hidden max-[960px]:block">
-            <div class="flex gap-5">
-                <img src="../../images/home/nav-bar/heart.png" alt="" class="w-[20px] max-[960px]:hidden">
-                <img src="../../images/home/nav-bar/market.png" alt="" class="w-[21px]">
+            <button>
+                <img src="../../images/home/nav-bar/glass.png" alt=""
+                class="absolute w-[24px] right-[125px] opacity-90 top-0 hidden max-[960px]:block rounded-full hover:bg-gray-200">
+            </button>
+            <div class="flex items-center gap-5">
+                <button class="size-5 w-[20px] max-[960px]:hidden rounded-full hover:bg-gray-200">
+                    <img src="../../images/home/nav-bar/heart.png" alt="" class="w-full">
+                </button>
+                <button class="">
+                    <img src="../../images/home/nav-bar/market.png" alt="" class="w-[21px]">
+                </button>
                 <img src="../../images/home/nav-bar/user.png" alt=""
                     class="w-[20px]  h-[20px] hidden  max-[960px]:block">
                 <img src="../../images/home/nav-bar/hamburger (1).png" alt=""
