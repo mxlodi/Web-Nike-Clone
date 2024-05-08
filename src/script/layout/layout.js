@@ -40,6 +40,9 @@ fetch("../../components/layout/navbar.html")
 .then((data) => {
     navbar.innerHTML = data;
 
+
+    
+    
     
     // new & featured dropdown
     const navBar = document.querySelector("#navBar");
@@ -86,7 +89,10 @@ fetch("../../components/layout/navbar.html")
 
         // blur background
         const bgBlur = document.querySelector("#bgBlur");
+<<<<<<< HEAD
         const newftBlur = document.querySelector("#newftBlur");
+=======
+>>>>>>> aea2365 (file : fix responsive in footer)
 
 
         dropdown.classList.add(h)
@@ -95,7 +101,10 @@ fetch("../../components/layout/navbar.html")
         text.classList.add("opacity-100","hover:text-black")
         text.classList.remove("pointer-events-none")
         bgBlur.classList.add("blur-sm");
+<<<<<<< HEAD
     
+=======
+>>>>>>> aea2365 (file : fix responsive in footer)
         
       });
       dropdown.addEventListener("mouseenter", () => {
@@ -105,6 +114,10 @@ fetch("../../components/layout/navbar.html")
         navBar.classList.add("sticky")
         text.classList.remove("pointer-events-none")
         bgBlur.classList.add("blur-sm");
+<<<<<<< HEAD
+=======
+
+>>>>>>> aea2365 (file : fix responsive in footer)
 
   
       });
@@ -115,7 +128,10 @@ fetch("../../components/layout/navbar.html")
         text.classList.remove("delay-200")
         text.classList.remove("opacity-100")
         bgBlur.classList.remove("blur-sm");
+<<<<<<< HEAD
 
+=======
+>>>>>>> aea2365 (file : fix responsive in footer)
         
       });
       btn.addEventListener("mouseleave", () => {
@@ -126,7 +142,6 @@ fetch("../../components/layout/navbar.html")
         text.classList.remove("opacity-100")
         bgBlur.classList.remove("blur-sm");
 
-  
       });
     }
 
@@ -143,6 +158,33 @@ fetch("../../components/layout/navbar.html")
       hamburgerContent.classList.add("hidden");
     
     })
+
+
+    // help dropdown
+    const helpBtn = document.querySelector("#helpBtn");
+    const helpDropdown = document.querySelector("#helpDropdown");
+
+    helpBtn.addEventListener("mouseover", () => {
+      helpDropdown.classList.remove("hidden");
+    })
+
+    helpDropdown.addEventListener("mouseover", () => {
+      helpDropdown.classList.remove("hidden");
+    })
+
+    helpBtn.addEventListener("mouseout", () => {
+      helpDropdown.classList.add("hidden");
+    })
+
+    helpBtn.addEventListener("mouseout", () => {
+      helpDropdown.classList.add("hidden");
+    })
+
+
+
+
+
+    
   })
 .catch((error) => console.error("Error fetching included file:", error))
 
