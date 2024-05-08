@@ -42,6 +42,14 @@ fetch("../../components/men/classics-spotlight.html")
 .then((res) => res.text())
 .then((data) => {
     classics_spotlight.innerHTML = data;
+    // carousel
+    const classic_men = document.querySelector("#classic-men");
+    const left_men_classic = document.querySelector("#left-men-classic");
+    const right_men_classic= document.querySelector("#right-men-classic");
+
+    carousel(classic_men,right_men_classic,left_men_classic)
+
+
 })
 .catch((error) => console.error("Error fetching included file:", error));
 
@@ -60,6 +68,13 @@ fetch("../../components/men/popular.html")
 .then((res) => res.text())
 .then((data) => {
     popular.innerHTML = data;
+    // carousel
+    const popular_men = document.querySelector("#men-popular");
+    const left_men_popular = document.querySelector("#left-men-popular");
+    const right_men_popular= document.querySelector("#right-men-popular");
+    
+    carousel(popular_men,right_men_popular,left_men_popular)
+
 })
 .catch((error) => console.error("Error fetching included file:", error));
 
@@ -69,6 +84,13 @@ fetch("../../components/men/member-benefits.html")
 .then((res) => res.text())
 .then((data) => {
     member_benefits.innerHTML = data;
+
+    // carousel
+    const membership_men = document.querySelector("#membership-men");
+    const left_men_membership = document.querySelector("#left-men-membership");
+    const right_men_membership= document.querySelector("#right-men-membership");
+
+    carousel(membership_men,right_men_membership,left_men_membership)
 })
 .catch((error) => console.error("Error fetching included file:", error));
 

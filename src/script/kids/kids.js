@@ -4,6 +4,9 @@ fetch("../../components/kids/poster.html")
 .then((res) => res.text())
 .then((data) => {
     poster.innerHTML = data;
+
+    smallLetter("kidMenu", "letterKid")
+
 })
 .catch((error) => console.error("Error fetching included file:", error));
 
@@ -22,6 +25,13 @@ fetch("../../components/kids/popular.html")
 .then((res) => res.text())
 .then((data) => {
     popular.innerHTML = data;
+  // carousel
+  const kid_popular = document.querySelector("#kid-popular");
+  const left_kid_popular = document.querySelector("#left-kid-popular");
+  const right_kid_popular= document.querySelector("#right-kid-popular");
+
+  carousel(kid_popular,right_kid_popular,left_kid_popular)
+
 })
 .catch((error) => console.error("Error fetching included file:", error));
 
@@ -52,6 +62,13 @@ fetch("../../components/kids/classics-spotlight.html")
 .then((res) => res.text())
 .then((data) => {
     classics_spotlight.innerHTML = data;
+  // carousel
+  const classic_kids = document.querySelector("#classic-kids");
+  const left_kids_classic = document.querySelector("#left-kids-classic");
+  const right_kids_classic = document.querySelector("#right-kids-classic");
+
+  carousel(classic_kids,right_kids_classic, left_kids_classic)
+
 })
 .catch((error) => console.error("Error fetching included file:", error));
 
