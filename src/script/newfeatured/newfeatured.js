@@ -18,6 +18,7 @@ fetch("../../components/newfeatured/feature.html")
       {
         imgUrl: "../../images/newfeatured/products/air-vapormax-2023-flyknit-mens-shoes-vSm5p2.jpeg",
 <<<<<<< HEAD
+<<<<<<< HEAD
         redText: "Substainable Materials",
         shoesBrand: "Nike Air VaporMax 2023 Flyknit",
         menWomen: "Men's Shoes",
@@ -26,16 +27,25 @@ fetch("../../components/newfeatured/feature.html")
         shoesBrand: "Nike Air VaporMax 2023 Flyknit",
         menWomen: "Men'a Shoes",
 >>>>>>> dea830e (file : add new&featured page)
+=======
+        redText: "Substainable Materials",
+        shoesBrand: "Nike Air VaporMax 2023 Flyknit",
+        menWomen: "Men's Shoes",
+>>>>>>> 5d0a635 (file : add responsive in new & featured page)
         color: 2,
         price: 210,
       },
       {
         imgUrl: "../../images/newfeatured/products/jordan-spizike-low-mens-shoes-LDT8cp.png",
 <<<<<<< HEAD
+<<<<<<< HEAD
         redText: "",
 =======
         redText: "Just In",
 >>>>>>> dea830e (file : add new&featured page)
+=======
+        redText: "",
+>>>>>>> 5d0a635 (file : add responsive in new & featured page)
         shoesBrand: "Jordan Spizike Low",
         menWomen: "Men's Shoes",
         color: 1,
@@ -44,10 +54,14 @@ fetch("../../components/newfeatured/feature.html")
       {
         imgUrl: "../../images/newfeatured/products/air-jordan-3-retro-womens-shoes-1KkgvW.png",
 <<<<<<< HEAD
+<<<<<<< HEAD
         redText: "",
 =======
         redText: "Just In",
 >>>>>>> dea830e (file : add new&featured page)
+=======
+        redText: "",
+>>>>>>> 5d0a635 (file : add responsive in new & featured page)
         shoesBrand: "Air Jordan 3 Retro",
         menWomen: "Women's Shoes",
         color: 1,
@@ -64,10 +78,14 @@ fetch("../../components/newfeatured/feature.html")
       {
         imgUrl: "../../images/newfeatured/products/waffle-debut-vintage-womens-shoes-rfRkv2.png",
 <<<<<<< HEAD
+<<<<<<< HEAD
         redText: "",
 =======
         redText: "Coming Soon",
 >>>>>>> dea830e (file : add new&featured page)
+=======
+        redText: "",
+>>>>>>> 5d0a635 (file : add responsive in new & featured page)
         shoesBrand: "Nike Waffle Debut Vintage",
         menWomen: "Women's Shoes",
         color: 1,
@@ -76,10 +94,14 @@ fetch("../../components/newfeatured/feature.html")
       {
         imgUrl: "../../images/newfeatured/products/air-jordan-4-retro-mens-shoes-R20n6n.png",
 <<<<<<< HEAD
+<<<<<<< HEAD
         redText: "Just In",
 =======
         redText: "Coming Soon",
 >>>>>>> dea830e (file : add new&featured page)
+=======
+        redText: "Just In",
+>>>>>>> 5d0a635 (file : add responsive in new & featured page)
         shoesBrand: "Air Jordan 4 Retro",
         menWomen: "Men's Shoes",
         color: 1,
@@ -88,10 +110,14 @@ fetch("../../components/newfeatured/feature.html")
       {
         imgUrl: "../../images/newfeatured/products/air-jordan-4-retro-big-kids-shoes-VqdnWF.png",
 <<<<<<< HEAD
+<<<<<<< HEAD
         redText: "Just In",
 =======
         redText: "Coming Soon",
 >>>>>>> dea830e (file : add new&featured page)
+=======
+        redText: "Just In",
+>>>>>>> 5d0a635 (file : add responsive in new & featured page)
         shoesBrand: "Air Jordan 4 retro",
         menWomen: "Big Kids' Shoes",
         color: 1,
@@ -100,10 +126,14 @@ fetch("../../components/newfeatured/feature.html")
       {
         imgUrl: "../../images/newfeatured/products/jordan-4-retro-little-kids-shoes-kDKnwq.png",
 <<<<<<< HEAD
+<<<<<<< HEAD
         redText: "Just In",
 =======
         redText: "Coming Soon",
 >>>>>>> dea830e (file : add new&featured page)
+=======
+        redText: "Just In",
+>>>>>>> 5d0a635 (file : add responsive in new & featured page)
         shoesBrand: "Jordan 4 Retro",
         menWomen: "Little Kids' Shoes",
         color: 1,
@@ -112,10 +142,14 @@ fetch("../../components/newfeatured/feature.html")
       {
         imgUrl: "../../images/newfeatured/products/jordan-4-retro-baby-toddler-shoes-8ndFBg.png",
 <<<<<<< HEAD
+<<<<<<< HEAD
         redText: "Just In",
 =======
         redText: "Coming Soon",
 >>>>>>> dea830e (file : add new&featured page)
+=======
+        redText: "Just In",
+>>>>>>> 5d0a635 (file : add responsive in new & featured page)
         shoesBrand: "Jordan 4 Retro",
         menWomen: "Baby/Toddler Shoes",
         color: 1,
@@ -140,6 +174,7 @@ fetch("../../components/newfeatured/feature.html")
     ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     // function that will loop over the array card
     const cardComponent = () => {
       return `
@@ -157,12 +192,17 @@ fetch("../../components/newfeatured/feature.html")
 =======
     // create function to loop over the array card
     const createCardComponent = () => {
+=======
+    // function that will loop over the array card
+    const cardComponent = () => {
+>>>>>>> 5d0a635 (file : add responsive in new & featured page)
       return `
       <div id="right-content" class="z-[3] grid  min-[960px]:grid-cols-3 grid-cols-2  gap-4 lg:px-4 px-0">
-                    ${arrayCard
+                    ${arrayItem
                       .map((card) => {
                         return `
                         <div class="pb-10">
+<<<<<<< HEAD
                             <img src="${card.imgUrl}" alt="">
                             <h1 class="text-red-700 font-medium">${card.redText}</h1>
                             <h1 class="font-medium">${card.shoesBrand}</h1>
@@ -170,6 +210,14 @@ fetch("../../components/newfeatured/feature.html")
                             <p class="text-gray-300">${card.color} Color</p>
                             <h1 class="font-medium">$${card.price}</h1>
 >>>>>>> dea830e (file : add new&featured page)
+=======
+                            <img class="mb-2" src="${card.imgUrl}" alt="">
+                            <h1 class="text-[#9e3702] font-medium my-1">${card.redText}</h1>
+                            <h1 class="font-medium my-1 text-black">${card.shoesBrand}</h1>
+                            <p class="text-[#909092] font-light" >${card.menWomen}</p>
+                            <p class="text-[#909092] font-light">${card.color} Color</p>
+                            <h1 class="font-base my-2">$${card.price}</h1>
+>>>>>>> 5d0a635 (file : add responsive in new & featured page)
                         </div>
                         `;
                       })
@@ -182,15 +230,22 @@ fetch("../../components/newfeatured/feature.html")
     class CardComponent extends HTMLElement {
       connectedCallback() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         this.innerHTML = cardComponent();
 =======
         this.innerHTML = createCardComponent();
 >>>>>>> dea830e (file : add new&featured page)
+=======
+        this.innerHTML = cardComponent();
+>>>>>>> 5d0a635 (file : add responsive in new & featured page)
       }
     }
     customElements.define("featured-component", CardComponent);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5d0a635 (file : add responsive in new & featured page)
 
     // small letter responsive
     smallLetter("newftMenu", "newftLetter")
@@ -207,14 +262,23 @@ fetch("../../components/newfeatured/feature.html")
     sideDropdown("sportsBtn", "sportsContent", "h-[140px]")
     sideDropdown("bestBtn", "bestContent", "h-[120px]")
 
+<<<<<<< HEAD
     function sideDropdown(btn,content,h){
       const Btn = document.querySelector(`#${btn}`);
       const Content = document.querySelector(`#${content}`);
     
+=======
+    // function for dropdown/accordion
+    function sideDropdown(btn,content,h){
+      const Btn = document.querySelector(`#${btn}`);
+      const Content = document.querySelector(`#${content}`);
+
+>>>>>>> 5d0a635 (file : add responsive in new & featured page)
       Btn.addEventListener("click",function(){
         Content.classList.toggle(`${h}`)
       })
     }
+<<<<<<< HEAD
 
     // pick up button
     const outerBtn = document.querySelector("#outerBtn");
@@ -238,6 +302,8 @@ fetch("../../components/newfeatured/feature.html")
 
 =======
 >>>>>>> dea830e (file : add new&featured page)
+=======
+>>>>>>> 5d0a635 (file : add responsive in new & featured page)
 })
 .catch((error) => console.error("Error fetching included file:", error));
 

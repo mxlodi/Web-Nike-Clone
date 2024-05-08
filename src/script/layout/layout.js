@@ -3,19 +3,36 @@
 function carousel(carousel_element, nextBtn, backBtn){
   nextBtn.addEventListener("click", () => {
     carousel_element.scrollBy({
+<<<<<<< HEAD
       left: 300,
+=======
+<<<<<<< HEAD
+      left: 625,
+=======
+      left: 300,
+>>>>>>> df98341 (file : add responsive in new & featured page)
+>>>>>>> 5d0a635 (file : add responsive in new & featured page)
       behavior: "smooth"
     })
   })
   backBtn.addEventListener("click", () => {
     carousel_element.scrollBy({
+<<<<<<< HEAD
       left: -300,
+=======
+<<<<<<< HEAD
+      left: -625,
+=======
+      left: -300,
+>>>>>>> df98341 (file : add responsive in new & featured page)
+>>>>>>> 5d0a635 (file : add responsive in new & featured page)
       behavior: "smooth"
     })
   })
 }
 
 
+<<<<<<< HEAD
 // function for dropdown
 function sideDropdown(btn,content,h){
   const Btn = document.querySelector(`#${btn}`);
@@ -29,6 +46,8 @@ function sideDropdown(btn,content,h){
 
 
 
+=======
+>>>>>>> df98341 (file : add responsive in new & featured page)
 // small letters responsive (nav)
 function smallLetter (menu, letter){
   const Menu = document.querySelector(`#${menu}`);
@@ -52,6 +71,7 @@ fetch("../../components/layout/navbar.html")
 .then((res) => res.text())
 .then((data) => {
     navbar.innerHTML = data;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -204,6 +224,14 @@ fetch("../../components/layout/navbar.html")
     // new & featured dropdown
     const navBar = document.querySelector("#navBar");
 
+=======
+
+    
+    // new & featured dropdown
+    const navBar = document.querySelector("#navBar");
+
+
+>>>>>>> df98341 (file : add responsive in new & featured page)
     const newfeaturedHover = document.getElementById("newfeatured-hover");
     const newfeaturedDropdown = document.getElementById("newfeatured-dropdown");
     const newfeaturedBelow = document.querySelector("#newfeatured-below");
@@ -242,6 +270,7 @@ fetch("../../components/layout/navbar.html")
   //function dropdown menu
     function dropdownMenu(btn,dropdown,text,h){
       btn.addEventListener("mouseenter", () => {
+<<<<<<< HEAD
         // blur background
         const bgBlur = document.querySelector("#bgBlur");
 
@@ -281,6 +310,52 @@ fetch("../../components/layout/navbar.html")
         text.classList.remove("opacity-100");
         bgBlur.classList.remove("blur-sm");
 
+=======
+
+        // blur background
+        const bgBlur = document.querySelector("#bgBlur");
+        const newftBlur = document.querySelector("#newftBlur");
+
+
+        dropdown.classList.add(h)
+        navBar.classList.add("sticky")
+        text.classList.add("delay-200")
+        text.classList.add("opacity-100","hover:text-black")
+        text.classList.remove("pointer-events-none")
+        bgBlur.classList.add("blur-sm");
+    
+        
+      });
+      dropdown.addEventListener("mouseenter", () => {
+        dropdown.classList.add(h)
+        text.classList.add("delay-200")
+        text.classList.add("opacity-100")
+        navBar.classList.add("sticky")
+        text.classList.remove("pointer-events-none")
+        bgBlur.classList.add("blur-sm");
+
+  
+      });
+      dropdown.addEventListener("mouseleave", () => {
+        text.classList.add("pointer-events-none")
+        dropdown.classList.remove(h)
+        navBar.classList.remove("sticky")
+        text.classList.remove("delay-200")
+        text.classList.remove("opacity-100")
+        bgBlur.classList.remove("blur-sm");
+
+        
+      });
+      btn.addEventListener("mouseleave", () => {
+        text.classList.add("pointer-events-none")
+        dropdown.classList.remove(h)
+        navBar.classList.remove("sticky")
+        text.classList.remove("delay-200")
+        text.classList.remove("opacity-100")
+        bgBlur.classList.remove("blur-sm");
+
+  
+>>>>>>> df98341 (file : add responsive in new & featured page)
       });
     }
 
@@ -296,6 +371,7 @@ fetch("../../components/layout/navbar.html")
     crossBtn.addEventListener("click", () => {
       hamburgerContent.classList.add("hidden");
     
+<<<<<<< HEAD
 >>>>>>> 4574231 (feature : add review board file.)
     })
 <<<<<<< HEAD
@@ -332,6 +408,9 @@ fetch("../../components/layout/navbar.html")
 >>>>>>> 91e3899 (file : fix responsive in footer)
 =======
 >>>>>>> 0cb56c9 (file : add responsive in navbar and fix footer)
+=======
+    })
+>>>>>>> df98341 (file : add responsive in new & featured page)
   })
 .catch((error) => console.error("Error fetching included file:", error))
 
@@ -345,6 +424,7 @@ fetch("../../components/layout/footer.html")
 .then((data) => {
     footer.innerHTML = data;
 
+<<<<<<< HEAD
         const helpBtn = document.getElementById("help-btn");
         const companyBtn = document.getElementById("company-btn");
         const promotionBtn = document.getElementById("promotion-btn");
@@ -400,6 +480,63 @@ fetch("../../components/layout/footer.html")
             } else {
                 openIcon.classList.add("hidden");
                 closeIcon.classList.remove("hidden");
+=======
+    var helpBtn = document.getElementById('help-btn');
+        var companyBtn = document.getElementById('company-btn');
+        var promotionBtn = document.getElementById('promotion-btn');
+
+        helpBtn.addEventListener('click', function() {
+            var content = document.getElementById('help-btn-content');
+            var openIcon = document.getElementById('open-icon-help');
+            var closeIcon = document.getElementById('close-icon-help');
+
+            content.classList.toggle('hidden');
+            content.classList.toggle('accordion-content');
+            helpBtn.classList.toggle('active');
+
+            if (openIcon.classList.contains('hidden')) {
+                openIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            } else {
+                openIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+            }
+        });
+
+        companyBtn.addEventListener('click', function() {
+            var content = document.getElementById('company-btn-content');
+            var openIcon = document.getElementById('open-icon-company');
+            var closeIcon = document.getElementById('close-icon-company');
+
+            content.classList.toggle('hidden');
+            content.classList.toggle('accordion-content');
+            companyBtn.classList.toggle('active');
+
+            if (openIcon.classList.contains('hidden')) {
+                openIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            } else {
+                openIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+            }
+        });
+
+        promotionBtn.addEventListener('click', function() {
+            var content = document.getElementById('promotion-btn-content');
+            var openIcon = document.getElementById('open-icon-promotion');
+            var closeIcon = document.getElementById('close-icon-promotion');
+
+            content.classList.toggle('hidden');
+            content.classList.toggle('accordion-content');
+            promotionBtn.classList.toggle('active');
+
+            if (openIcon.classList.contains('hidden')) {
+                openIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            } else {
+                openIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+>>>>>>> df98341 (file : add responsive in new & featured page)
             }
         });
 
@@ -432,7 +569,11 @@ fetch("../../components/layout/footer.html")
     //   newfeaturedBelow.classList.remove("opacity-100")
     // });
     // newfeaturedHover.addEventListener("mouseleave", () => {
+<<<<<<< HEAD
     //   newfeaturedDropdown.classList.remove("h-[300px]")
+=======
+    //   newfeaturedDropdown.classList.remove('h-[300px]')
+>>>>>>> df98341 (file : add responsive in new & featured page)
     //   navBar.classList.remove("sticky")
     //   newfeaturedBelow.classList.remove("delay-200")
     //   newfeaturedBelow.classList.remove("opacity-100")
@@ -496,7 +637,11 @@ fetch("../../components/layout/footer.html")
 
     // });
     // womenHover.addEventListener("mouseleave", () => {
+<<<<<<< HEAD
     //   womenDropdown.classList.remove("h-[440px]")
+=======
+    //   womenDropdown.classList.remove('h-[440px]')
+>>>>>>> df98341 (file : add responsive in new & featured page)
     //   womenList.forEach(element => {
     //     element.classList.add("hidden")
     //   });
@@ -529,7 +674,11 @@ fetch("../../components/layout/footer.html")
 
     // });
     // kidsHover.addEventListener("mouseleave", () => {
+<<<<<<< HEAD
     //   kidsDropdown.classList.remove("h-[475px]")
+=======
+    //   kidsDropdown.classList.remove('h-[475px]')
+>>>>>>> df98341 (file : add responsive in new & featured page)
     //   kidsList.forEach(element => {
     //     element.classList.add("hidden")
     //   });
@@ -563,7 +712,11 @@ fetch("../../components/layout/footer.html")
 
     // });
     // accessoriesHover.addEventListener("mouseleave", () => {
+<<<<<<< HEAD
     //   accessoriesDropdown.classList.remove("h-[300px]")
+=======
+    //   accessoriesDropdown.classList.remove('h-[300px]')
+>>>>>>> df98341 (file : add responsive in new & featured page)
     //   accessoriesList.forEach(element => {
     //     element.classList.add("hidden")
     //   });
@@ -597,7 +750,11 @@ fetch("../../components/layout/footer.html")
 
     // });
     // saleHover.addEventListener("mouseleave", () => {
+<<<<<<< HEAD
     //   saleDropdown.classList.remove("h-[350px]')
+=======
+    //   saleDropdown.classList.remove('h-[350px]')
+>>>>>>> df98341 (file : add responsive in new & featured page)
     //   saleList.forEach(element => {
     //     element.classList.add("hidden")
     //   });

@@ -4,6 +4,7 @@
 // poster section
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const poster = document.querySelector(".poster-home");
 =======
 const poster = document.querySelector("".poster-home);
@@ -11,6 +12,9 @@ const poster = document.querySelector("".poster-home);
 =======
 const poster = document.querySelector(".poster-home");
 >>>>>>> 4574231 (feature : add review board file.)
+=======
+const poster = document.querySelector(".poster-home");
+>>>>>>> df98341 (file : add responsive in new & featured page)
 fetch("../../components/home/poster.html")
 .then((res) => res.text())
 .then((data) => {
@@ -126,6 +130,7 @@ fetch("../../components/home/categories.html")
 .then((res) => res.text())
 .then((data) => {
   categories.innerHTML = data;
+<<<<<<< HEAD
 
   sideDropdown("featuredBtn", "featuredContent", "h-[220px]")
   sideDropdown("shoesBtn", "shoesContent", "h-[340px]")
@@ -135,6 +140,8 @@ fetch("../../components/home/categories.html")
 
 
 
+=======
+>>>>>>> df98341 (file : add responsive in new & featured page)
 })
 .catch((error) => console.error("Error fetching included file:", error));
 
