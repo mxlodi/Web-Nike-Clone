@@ -160,6 +160,20 @@ fetch("../../components/newfeatured/feature.html")
         Content.classList.toggle(`${h}`)
       })
     }
+
+    // pick up button
+    const outerBtn = document.querySelector("#outerBtn");
+    const innerBtn = document.querySelector("#innerBtn");
+
+    innerBtn.addEventListener("click", () => {
+      innerBtn.classList.toggle("left-5")
+    })
+
+
+    
+
+
+
 })
 .catch((error) => console.error("Error fetching included file:", error));
 
