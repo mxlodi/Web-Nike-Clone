@@ -126,6 +126,15 @@ fetch("../../components/home/categories.html")
 .then((res) => res.text())
 .then((data) => {
   categories.innerHTML = data;
+
+  sideDropdown("featuredBtn", "featuredContent", "h-[220px]")
+  sideDropdown("shoesBtn", "shoesContent", "h-[340px]")
+  sideDropdown("clothingBtn", "clothingContent", "h-[490px]")
+  sideDropdown("kidsBtn", "kidsContent", "h-[360px]")
+
+
+
+
 })
 .catch((error) => console.error("Error fetching included file:", error));
 
