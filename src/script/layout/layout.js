@@ -33,7 +33,11 @@ function carousel(carousel_element, nextBtn, backBtn){
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // function for dropdown
+=======
+// function for dropdown/accordion
+>>>>>>> 9572777 (file : add responsive in navbar and fix footer)
 function sideDropdown(btn,content,h){
   const Btn = document.querySelector(`#${btn}`);
   const Content = document.querySelector(`#${content}`);
@@ -46,8 +50,11 @@ function sideDropdown(btn,content,h){
 
 
 
+<<<<<<< HEAD
 =======
 >>>>>>> df98341 (file : add responsive in new & featured page)
+=======
+>>>>>>> 9572777 (file : add responsive in navbar and fix footer)
 // small letters responsive (nav)
 function smallLetter (menu, letter){
   const Menu = document.querySelector(`#${menu}`);
@@ -317,10 +324,7 @@ fetch("../../components/layout/navbar.html")
 
         // blur background
         const bgBlur = document.querySelector("#bgBlur");
-<<<<<<< HEAD
         const newftBlur = document.querySelector("#newftBlur");
-=======
->>>>>>> aea2365 (file : fix responsive in footer)
 
 
         dropdown.classList.add(h)
@@ -329,10 +333,7 @@ fetch("../../components/layout/navbar.html")
         text.classList.add("opacity-100","hover:text-black")
         text.classList.remove("pointer-events-none")
         bgBlur.classList.add("blur-sm");
-<<<<<<< HEAD
     
-=======
->>>>>>> aea2365 (file : fix responsive in footer)
         
       });
       dropdown.addEventListener("mouseenter", () => {
@@ -342,10 +343,6 @@ fetch("../../components/layout/navbar.html")
         navBar.classList.add("sticky")
         text.classList.remove("pointer-events-none")
         bgBlur.classList.add("blur-sm");
-<<<<<<< HEAD
-=======
-
->>>>>>> aea2365 (file : fix responsive in footer)
 
   
       });
@@ -356,10 +353,6 @@ fetch("../../components/layout/navbar.html")
         text.classList.remove("delay-200")
         text.classList.remove("opacity-100")
         bgBlur.classList.remove("blur-sm");
-<<<<<<< HEAD
-
-=======
->>>>>>> aea2365 (file : fix responsive in footer)
         
       });
       btn.addEventListener("mouseleave", () => {
@@ -425,6 +418,7 @@ fetch("../../components/layout/navbar.html")
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
     
@@ -439,6 +433,8 @@ fetch("../../components/layout/navbar.html")
 
     
 >>>>>>> b3402f7 (file : fix responsive in footer)
+=======
+>>>>>>> 9572777 (file : add responsive in navbar and fix footer)
   })
 .catch((error) => console.error("Error fetching included file:", error))
 

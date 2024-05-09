@@ -263,6 +263,7 @@ fetch("../../components/newfeatured/feature.html")
     sideDropdown("bestBtn", "bestContent", "h-[120px]")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     function sideDropdown(btn,content,h){
       const Btn = document.querySelector(`#${btn}`);
       const Content = document.querySelector(`#${content}`);
@@ -274,6 +275,12 @@ fetch("../../components/newfeatured/feature.html")
       const Content = document.querySelector(`#${content}`);
 
 >>>>>>> 5d0a635 (file : add responsive in new & featured page)
+=======
+    function sideDropdown(btn,content,h){
+      const Btn = document.querySelector(`#${btn}`);
+      const Content = document.querySelector(`#${content}`);
+    
+>>>>>>> f131795 (file : add responsive in navbar and fix footer)
       Btn.addEventListener("click",function(){
         Content.classList.toggle(`${h}`)
       })
@@ -287,23 +294,34 @@ fetch("../../components/newfeatured/feature.html")
     const outerBtn = document.querySelector("#outerBtn");
     const innerBtn = document.querySelector("#innerBtn");
 <<<<<<< HEAD
+<<<<<<< HEAD
     const outerBtnSmall = document.querySelector("#outerBtnSmall");
     const innerBtnSmall = document.querySelector("#innerBtnSmall");
 =======
 >>>>>>> cef78de (file : fix responsive in footer)
+=======
+    const outerBtnSmall = document.querySelector("#outerBtnSmall");
+    const innerBtnSmall = document.querySelector("#innerBtnSmall");
+>>>>>>> f131795 (file : add responsive in navbar and fix footer)
 
     innerBtn.addEventListener("click", () => {
       innerBtn.classList.toggle("left-5")
     })
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f131795 (file : add responsive in navbar and fix footer)
     innerBtnSmall.addEventListener("click", () => {
       innerBtnSmall.classList.toggle("left-5")
     })
 
 
+<<<<<<< HEAD
 =======
 >>>>>>> cef78de (file : fix responsive in footer)
+=======
+>>>>>>> f131795 (file : add responsive in navbar and fix footer)
 
     
 

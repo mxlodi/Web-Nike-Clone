@@ -131,6 +131,9 @@ fetch("../../components/home/categories.html")
 .then((data) => {
   categories.innerHTML = data;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9572777 (file : add responsive in navbar and fix footer)
 
   sideDropdown("featuredBtn", "featuredContent", "h-[220px]")
   sideDropdown("shoesBtn", "shoesContent", "h-[340px]")
@@ -140,8 +143,11 @@ fetch("../../components/home/categories.html")
 
 
 
+<<<<<<< HEAD
 =======
 >>>>>>> df98341 (file : add responsive in new & featured page)
+=======
+>>>>>>> 9572777 (file : add responsive in navbar and fix footer)
 })
 .catch((error) => console.error("Error fetching included file:", error));
 

@@ -80,6 +80,9 @@ fetch("../../components/kids/categories.html")
 .then((data) => {
     categories.innerHTML = data;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f131795 (file : add responsive in navbar and fix footer)
 
   // accordion
   sideDropdown("kidsShoesBtn", "kidsShoesContent", "h-[420px]")
@@ -89,7 +92,10 @@ fetch("../../components/kids/categories.html")
 
 
     
+<<<<<<< HEAD
 =======
 >>>>>>> 5d0a635 (file : add responsive in new & featured page)
+=======
+>>>>>>> f131795 (file : add responsive in navbar and fix footer)
 })
 .catch((error) => console.error("Error fetching included file:", error));
