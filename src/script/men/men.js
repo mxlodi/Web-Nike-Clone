@@ -5,6 +5,9 @@ fetch("../../components/men/poster.html")
 .then((res) => res.text())
 .then((data) => {
     poster.innerHTML = data;
+
+    // small letter
+    smallLetter("menMenu", "letterMen")
 })
 .catch((error) => console.error("Error fetching included file:", error));
 
@@ -100,5 +103,13 @@ fetch("../../components/men/categories.html")
 .then((res) => res.text())
 .then((data) => {
     categories.innerHTML = data;
+
+    // accordion
+
+    sideDropdown("menShoesBtn", "menShoesContent", "h-[380px]")
+    sideDropdown("menClothingBtn", "menClothingContent", "h-[380px]")
+    sideDropdown("menGearBtn", "menGearContent", "h-[380px]")
+    sideDropdown("menFeaturedBtn", "menFeaturedContent", "h-[250px]")
+
 })
 .catch((error) => console.error("Error fetching included file:", error));

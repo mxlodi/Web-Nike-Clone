@@ -16,6 +16,19 @@ function carousel(carousel_element, nextBtn, backBtn){
 }
 
 
+// function for dropdown/accordion
+function sideDropdown(btn,content,h){
+  const Btn = document.querySelector(`#${btn}`);
+  const Content = document.querySelector(`#${content}`);
+
+  Btn.addEventListener("click",function(){
+    Content.classList.toggle(`${h}`)
+  })
+}
+
+
+
+
 // small letters responsive (nav)
 function smallLetter (menu, letter){
   const Menu = document.querySelector(`#${menu}`);
@@ -89,7 +102,6 @@ fetch("../../components/layout/navbar.html")
 
         // blur background
         const bgBlur = document.querySelector("#bgBlur");
-
 
         dropdown.classList.add(h);
         navBar.classList.add("sticky");
@@ -167,9 +179,6 @@ fetch("../../components/layout/navbar.html")
 
 
 
-
-
-    
   })
 .catch((error) => console.error("Error fetching included file:", error))
 
