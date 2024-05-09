@@ -151,11 +151,10 @@ fetch("../../components/newfeatured/feature.html")
     sideDropdown("sportsBtn", "sportsContent", "h-[140px]")
     sideDropdown("bestBtn", "bestContent", "h-[120px]")
 
-    // function for dropdown/accordion
     function sideDropdown(btn,content,h){
       const Btn = document.querySelector(`#${btn}`);
       const Content = document.querySelector(`#${content}`);
-
+    
       Btn.addEventListener("click",function(){
         Content.classList.toggle(`${h}`)
       })
@@ -164,10 +163,17 @@ fetch("../../components/newfeatured/feature.html")
     // pick up button
     const outerBtn = document.querySelector("#outerBtn");
     const innerBtn = document.querySelector("#innerBtn");
+    const outerBtnSmall = document.querySelector("#outerBtnSmall");
+    const innerBtnSmall = document.querySelector("#innerBtnSmall");
 
     innerBtn.addEventListener("click", () => {
       innerBtn.classList.toggle("left-5")
     })
+
+    innerBtnSmall.addEventListener("click", () => {
+      innerBtnSmall.classList.toggle("left-5")
+    })
+
 
 
     

@@ -79,5 +79,14 @@ fetch("../../components/kids/categories.html")
 .then((res) => res.text())
 .then((data) => {
     categories.innerHTML = data;
+
+  // accordion
+  sideDropdown("kidsShoesBtn", "kidsShoesContent", "h-[420px]")
+  sideDropdown("kidsClothingBtn", "kidsClothingContent", "h-[310px]")
+  sideDropdown("kidsGearBtn", "kidsGearContent", "h-[240px]")
+  sideDropdown("kidsFeaturedBtn", "kidsFeaturedContent", "h-[380px]")
+
+
+    
 })
 .catch((error) => console.error("Error fetching included file:", error));
