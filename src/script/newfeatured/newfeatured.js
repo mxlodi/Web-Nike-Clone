@@ -174,12 +174,6 @@ fetch("../../components/newfeatured/feature.html")
       innerBtnSmall.classList.toggle("left-5")
     })
 
-
-
-    
-
-
-
 })
 .catch((error) => console.error("Error fetching included file:", error));
 
