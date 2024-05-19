@@ -17,10 +17,60 @@
 <navbar-layout class="navbar-layout"></navbar-layout>
 
 <div class="duration-300" id="bgBlur">
-    <poster class="poster-men"></poster>
-    <shoptheessentials class="shop-the-essentials-men"></shoptheessentials>
+
+    <!-- header -->
+    <header-component
+        marquee="Members : Free Shipping on Orders $50+"
+        title="Men"
+        data='{
+            "small_menu_1": "Shop",
+            "small_menu_2": "Clothing",
+            "small_menu_3": "Sale",
+            "small_menu_4": "Accessories",
+            "small_menu_5": "",
+            "small_menu_6": ""
+           
+        }'
+    ></header-component>
+
+    <!-- poster -->
+    <hero-section-men></hero-section-men>
+
+    <!-- shop the essential section -->
+    <shoptheessential-component
+        title = "Shop the Essentials"
+        arrayItem='
+        [
+            {
+                "imgURL" : "../../images/men/shop-the-essentials/men-s-shoes-clothing-accessories.jpg",
+                "bigletter" : "Clothing",
+                "smallletter" : "The season&#x27s latest must-haves."
+            },
+            {
+                "imgURL" : "../../images/men/shop-the-essentials/men-s-shoes-clothing-accessories(1).jpg",
+                "bigletter" : "Shoes",
+                "smallletter" : "All our lates & greatest footwear."
+            },
+            {
+                "imgURL" : "../../images/men/shop-the-essentials/men-s-shoes-clothing-accessories(2).jpg",
+                "bigletter" : "Accessories",
+                "smallletter" : "From hats to sports equipment & beyond."
+            }
+        ]'
+    >
+    </shoptheessential-component>
+
     <marathon-speed-ahead class="marathon-speed-ahead-men"></marathon-speed-ahead>
-    <classics-spotlight class="classics-spotlight-men"></classics-spotlight>
+    <!-- classics spotlight section -->
+    <classics-spotlight-component
+    data = '{
+      "imgURL_1" : "../../images/men/classics-spotlight/men-s-shoes-clothing-accessories(4).jpg",
+      "imgURL_2" : "../../images/men/classics-spotlight/men-s-shoes-clothing-accessories(5).jpg",
+      "imgURL_3" : "../../images/men/classics-spotlight/men-s-shoes-clothing-accessories(6).jpg",
+      "imgURL_4" : "../../images/men/classics-spotlight/men-s-shoes-clothing-accessories(7).jpg",
+      "imgURL_5" : "../../images/men/classics-spotlight/men-s-shoes-clothing-accessories(8).jpg"
+    }'
+    ></classics-spotlight-component>
     <brooks class="brooks-men"></brooks>
     <popular class="popular-men"></popular>
     <member-benefits class="member-benefits-men"></member-benefits>
@@ -34,6 +84,11 @@
 
 <script src="../../script/layout/layout.js"></script>
 <script src="../../script/men/men.js" ></script>
+<script src="../../script/men/heroSection.js"></script>
+<script src="../../script/components/header.js"></script>
+<script src="../../script/components/shoptheessential.js"></script>
+<script src="../../script/components/classics-spotlight.js"></script>
+
 
 
 
