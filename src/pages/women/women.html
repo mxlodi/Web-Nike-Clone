@@ -1,41 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Women</title>
-    <link rel="stylesheet" href="../../style/style.css">
-    <link rel="icon" href="https://www.nike.com/favicon.ico?v=1">
+    <link rel="stylesheet" href="../../style/style.css" />
+    <link rel="icon" href="https://www.nike.com/favicon.ico?v=1" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Fjalla+One&family=Jersey+25&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-<!-- nav-bar -->
-<navbar-layout class="navbar-layout" ></navbar-layout>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Fjalla+One&family=Jersey+25&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav-bar -->
+    <navbar-layout class="navbar-layout"></navbar-layout>
 
-<div class="duration-300" id="bgBlur">
-    <poster class="poster-women"></poster>
-    <shoptheessentials class="shop-the-essentials-women"></shoptheessentials>
-    <trending class="trending-women"></trending>
-    <classics-spotlight class="classics-spotlight-women"></classics-spotlight>
-    <explore class="explore-women"></explore>
-    <popular class="popular-women"></popular>
-    <membership class="membership-women"></membership>
-    <categories class="categories-women"></categories>
-    <!-- footer -->
-    <footer-layout class="footer-layout"></footer-layout>
-</div>
-</body>
-<script src="../../script/layout/layout.js"></script>
-<script src="../../script/women/women.js" ></script>
+    <div class="duration-300" id="bgBlur">
+
+      <!-- header section -->
+      <header-component
+      marquee="Shop All New Arrivals"
+      title="Women"
+      data='{
+          "small_menu_1": "Shop",
+          "small_menu_2": "Clothing",
+          "small_menu_3": "Sale",
+          "small_menu_4": "Find Your Sports Bra",
+          "small_menu_5": "Leggings",
+          "small_menu_6": "Shoes $100 & Under"
+      }'
+      ></header-component>
+
+    
+      <!-- hero section -->
+      <hero-section-component
+        imgURL_1="../../images/women/poster/orange-hair.png"
+        imgURL_2="../../images/women/poster/small-orange.png"
+        name="Step into the Unreal"
+        title="AIR MAX DN"
+        description="The Dynamic Style of Sha'Carri Richardson"
+        customButton="Shop"
+      ></hero-section-component>
+
+
+      <!-- shop the essential section -->
+      <shoptheessential-component
+          title = "Shop the Essentials"
+          arrayItem='
+          [
+              {
+                  "imgURL" : "../../images/women/shop-the-essentials/women-s-shoes-clothing-accessories.jpg",
+                  "bigletter" : "Clothing",
+                  "smallletter" : "The season&#x27s latest must-haves."
+              },
+              {
+                  "imgURL" : "../../images/women/shop-the-essentials/women-s-shoes-clothing-accessories (1).jpg",
+                  "bigletter" : "Shoes",
+                  "smallletter" : "All our lates & greatest footwear."
+              },
+              {
+                  "imgURL" : "../../images/women/shop-the-essentials/women-s-shoes-clothing-accessories (2).jpg",
+                  "bigletter" : "Accessories",
+                  "smallletter" : "From hats to sports equipment & beyond."
+              },
+              {
+                "imgURL" : "../../images/women/shop-the-essentials/women-s-shoes-clothing-accessories (3).jpg",
+                "bigletter" : "Accessories",
+                "smallletter" : "From hats to sports equipment & beyond."
+            }
+          ]'
+      ></shoptheessential-component>
+
+      <shoptheessentials class="shop-the-essentials-women"></shoptheessentials>
+      <trending class="trending-women"></trending>
+      
+      
+      <!-- classics spotlight section -->
+      <classics-spotlight-component></classics-spotlight-component>
 
 
 
+      <explore class="explore-women"></explore>
+      <popular class="popular-women"></popular>
+      <membership class="membership-women"></membership>
+      <categories class="categories-women"></categories>
+      <!-- footer -->
+      <footer-layout class="footer-layout"></footer-layout>
+    </div>
+  </body>
+  <script src="../../script/layout/layout.js"></script>
+  <script src="../../script/women/women.js"></script>
+  <script src="../../script/components/heroSection.js"></script>
+  <script src="../../script/components/header.js"></script>
+  <script src="../../script/components/shoptheessential.js"></script>
+  <script src="../../script/women/classics-spotlight.js"></script>
 </html>
