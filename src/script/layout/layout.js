@@ -3,13 +3,13 @@
 function carousel(carousel_element, nextBtn, backBtn){
   nextBtn.addEventListener("click", () => {
     carousel_element.scrollBy({
-      left: 300,
+      left: 625,
       behavior: "smooth"
     })
   })
   backBtn.addEventListener("click", () => {
     carousel_element.scrollBy({
-      left: -300,
+      left: -625,
       behavior: "smooth"
     })
   })
