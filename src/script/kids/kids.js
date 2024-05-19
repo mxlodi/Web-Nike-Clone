@@ -57,20 +57,20 @@ fetch("../../components/kids/explore.html")
 
 
 // classics spotlight
-const classics_spotlight = document.querySelector(".classics-spotlight-kids");
-fetch("../../components/kids/classics-spotlight.html")
-.then((res) => res.text())
-.then((data) => {
-    classics_spotlight.innerHTML = data;
-  // carousel
-  const classic_kids = document.querySelector("#classic-kids");
-  const left_kids_classic = document.querySelector("#left-kids-classic");
-  const right_kids_classic = document.querySelector("#right-kids-classic");
+// const classics_spotlight = document.querySelector(".classics-spotlight-kids");
+// fetch("../../components/kids/classics-spotlight.html")
+// .then((res) => res.text())
+// .then((data) => {
+//     classics_spotlight.innerHTML = data;
+//   // carousel
+//   const classic_kids = document.querySelector("#classic-kids");
+//   const left_kids_classic = document.querySelector("#left-kids-classic");
+//   const right_kids_classic = document.querySelector("#right-kids-classic");
 
-  carousel(classic_kids,right_kids_classic, left_kids_classic)
+//   carousel(classic_kids,right_kids_classic, left_kids_classic)
 
-})
-.catch((error) => console.error("Error fetching included file:", error));
+// })
+// .catch((error) => console.error("Error fetching included file:", error));
 
 
 // categories
