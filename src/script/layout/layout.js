@@ -16,7 +16,7 @@ function carousel(carousel_element, nextBtn, backBtn){
 }
 
 
-// function for dropdown/accordion
+// function for dropdown
 function sideDropdown(btn,content,h){
   const Btn = document.querySelector(`#${btn}`);
   const Content = document.querySelector(`#${content}`);
@@ -201,13 +201,8 @@ fetch("../../components/layout/navbar.html")
 =======
 >>>>>>> d9cbd4a (file : change responsive)
 
-
-    
-    
-    
     // new & featured dropdown
     const navBar = document.querySelector("#navBar");
-
 
     const newfeaturedHover = document.getElementById("newfeatured-hover");
     const newfeaturedDropdown = document.getElementById("newfeatured-dropdown");
@@ -247,7 +242,6 @@ fetch("../../components/layout/navbar.html")
   //function dropdown menu
     function dropdownMenu(btn,dropdown,text,h){
       btn.addEventListener("mouseenter", () => {
-
         // blur background
         const bgBlur = document.querySelector("#bgBlur");
 
@@ -351,14 +345,14 @@ fetch("../../components/layout/footer.html")
 .then((data) => {
     footer.innerHTML = data;
 
-    var helpBtn = document.getElementById("help-btn");
-        var companyBtn = document.getElementById("company-btn");
-        var promotionBtn = document.getElementById("promotion-btn");
+        const helpBtn = document.getElementById("help-btn");
+        const companyBtn = document.getElementById("company-btn");
+        const promotionBtn = document.getElementById("promotion-btn");
 
         helpBtn.addEventListener("click", function() {
-            var content = document.getElementById("help-btn-content");
-            var openIcon = document.getElementById("open-icon-help");
-            var closeIcon = document.getElementById("close-icon-help");
+            const content = document.getElementById("help-btn-content");
+            const openIcon = document.getElementById("open-icon-help");
+            const closeIcon = document.getElementById("close-icon-help");
 
             content.classList.toggle("hidden");
             content.classList.toggle("accordion-content");
@@ -374,9 +368,9 @@ fetch("../../components/layout/footer.html")
         });
 
         companyBtn.addEventListener("click", function() {
-            var content = document.getElementById("company-btn-content");
-            var openIcon = document.getElementById("open-icon-company");
-            var closeIcon = document.getElementById("close-icon-company");
+            const content = document.getElementById("company-btn-content");
+            const openIcon = document.getElementById("open-icon-company");
+            const closeIcon = document.getElementById("close-icon-company");
 
             content.classList.toggle("hidden");
             content.classList.toggle("accordion-content");
@@ -392,9 +386,9 @@ fetch("../../components/layout/footer.html")
         });
 
         promotionBtn.addEventListener("click", function() {
-            var content = document.getElementById("promotion-btn-content");
-            var openIcon = document.getElementById("open-icon-promotion");
-            var closeIcon = document.getElementById("close-icon-promotion");
+            const content = document.getElementById("promotion-btn-content");
+            const openIcon = document.getElementById("open-icon-promotion");
+            const closeIcon = document.getElementById("close-icon-promotion");
 
             content.classList.toggle("hidden");
             content.classList.toggle("accordion-content");
