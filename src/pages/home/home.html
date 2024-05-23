@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nike</title>
@@ -11,110 +11,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Acme&family=Fjalla+One&family=Jersey+25&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!--call navbar from component layout by class-->
-    <navbar-layout class="navbar-layout"></navbar-layout>
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Fjalla+One&family=Jersey+25&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+</head>
 
+<body>
+    <!--call navbar from component layout by class-->
+    <navbar-component></navbar-component>
     <!-- body -->
     <div class="duration-300" id="bgBlur">
-        <hero-section-component
-            imgURL_1="../../images/home/poster/nike-just-do-it.jpg"
-            imgURL_2="../../images/home/poster/nike-just-do-it (2)-small.jpeg"
-            name="Brooks's Looks"
-            title="GEAR-UP FOR <br> THE MAJORS"
-            description="How the golf sensation is gearing up for this season's Majors and beyond."
-            customButton="Shop the Collection"
-        ></hero-section-component>
-      
+        <!-- hero section -->
+        <hero-content></hero-content>
         <!-- trending section -->
-        <shoptheessential-component
-            title = "Trending"
-            arrayItem='
-            [
-                {
-                    "imgURL" : "../../images/home/trending/nike-just-do-it(1).jpg",
-                    "bigletter" : "Rep Your Team In March And Beyond",
-                    "smallletter" : "Gear up with tournament-ready styles."
-                },
-                {
-                    "imgURL" : "../../images/home/trending/nike-just-do-it(2).jpg",
-                    "bigletter" : "Air Max Dn",
-                    "smallletter" : "The next generation of Air technology is here."
-                },
-                {
-                    "imgURL" : "../../images/home/trending/nike-just-do-it(3).jpg",
-                    "bigletter" : "Fast Forward.Rewind.",
-                    "smallletter" : "The shoes taking retro into the future."
-                },
-                {
-                    "imgURL" : "../../images/home/trending/nike-just-do-it(4).jpg",
-                    "bigletter" : "Nike Motiva: For All Walks",
-                    "smallletter" : "Nike Motiva: For All Walks"
-                },
-                {
-                    "imgURL" : "../../images/home/trending/nike-just-do-it.png",
-                    "bigletter" : "Expression in Motion",
-                    "smallletter" : "Score some style points with the Refreshing Adventure Collection."
-                }
-            ]'
-        >
-        </shoptheessential-component>
-
+        <trending-content></trending-content>
         <!-- featured section-->
-        <featured-component
-        listItems='
-        [
-            {
-                "imgURL_1" : "../../images/home/trending/nike-just-do-it(1).jpg",
-                "imgURL_2" : "../../images/home/trending/nike-just-do-it(1).jpg",
-                "title_1" : "Rep Your Team In March And Beyond",
-                "title_2" : "Rep Your Team In March And Beyond",
-                "button" : "Gear up with tournament-ready styles."
-            },
-            {
-                "imgURL_1" : "../../images/home/trending/nike-just-do-it(1).jpg",
-                "imgURL_2" : "../../images/home/trending/nike-just-do-it(1).jpg",
-                "title_1" : "Rep Your Team In March And Beyond",
-                "title_2" : "Rep Your Team In March And Beyond",
-                "button" : "Gear up with tournament-ready styles."
-            }
-        ]'
-       ></featured-component>
-
-      <!-- classics spotlight section -->
-      <classics-spotlight-component
-      data = '{
-        "imgURL_1" : "../../images/home/classics/nike-just-do-it(5).jpg",
-        "imgURL_2" : "../../images/home/classics/nike-just-do-it(6).jpg",
-        "imgURL_3" : "../../images/home/classics/nike-just-do-it(7).jpg",
-        "imgURL_4" : "../../images/home/classics/nike-just-do-it(8).png",
-        "imgURL_5" : "../../images/home/classics/nike-just-do-it(9).jpg"
-      }'
-      ></classics-spotlight-component>
-
-      
-      <shop-by-sport class="shop-by-sport-home"></shop-by-sport>
-      <popular class="popular-home"></popular>
-      <membership class="membership-home"></membership>
-      <categories class="categories-home"></categories>
+        <feature-content></feature-content>
+        <!-- classics spotlight section -->
+        <classics-spotlight-content ></classics-spotlight-content>
+        <!-- shop by sport section -->
+        <shop-by-sport-content></shop-by-sport-content>
+        <!-- popular right now section -->
+        <popular-content></popular-content>
+        <!-- membership benefits section -->
+        <membership-content></membership-content>
+        <!-- sub footer section -->
+        <sub-footer-content></sub-footer-content>
     </div>
 
     <!-- call footer from component layout by class-->
     <footer-layout class="footer-layout"></footer-layout>
-  </body>
+</body>
 
-  <!-- script link component layout-->
-  <script src="../../script/layout/layout.js"></script>
+<!-- script link component layout-->
+<!-- <script src="../../script/layout/layout.js"></script> -->
 
-  <!-- script link component home page -->
-  <script src="../../script/home/home.js"></script>
+<!-- script link component home page -->
+<script type="module" src="./home.js"></script>
+<script type="module" src="../../script/components/classicsSpotlight.js"></script>
+<script type="module" src="../../script/components/membership.js"></script>
 
-  <script src="../../script/components/heroSection.js"></script>
-  <script src="../../script/components/shoptheessential.js" ></script>
-  <script src="../../script/components/featured.js"></script>
-  <script src="../../script/components/classics-spotlight.js"></script>
 </html>
