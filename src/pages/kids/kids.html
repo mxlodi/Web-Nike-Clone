@@ -16,9 +16,9 @@
       rel="stylesheet"
     />
   </head>
-  <body class="">
-    <!-- nav-bar -->
-    <navbar-layout class="navbar-layout"></navbar-layout>
+  <body>
+    <!--call navbar from component layout by class-->
+    <navbar-component></navbar-component>
 
     <div class="duration-300" id="bgBlur">
       <header-component
@@ -33,179 +33,24 @@
             "small_menu_6": "Sale"
         }'
         ></header-component>
-
-      <hero-component></hero-component>
-      <sizes-for-all class="sizes-for-all-kids"></sizes-for-all>
-      
-      <!-- <popular-component
-      Items = '[
-      {
-        "imgURL" : "../../images/kids/popular/nike max air dn.jpeg",
-        "title" : "Nike Air Max Dn",
-        "description" : "Big Kids Shoes",
-        "price" : "$130"
-
-      },
-      {
-        "imgURL" : "../../images/kids/popular/nike dunk low.png",
-        "title" : "Nike Dunk Low",
-        "description" : "Baby/Toddler Shoes",
-        "price" : "$55"
-
-      },
-      {
-        "imgURL" : "../../images/kids/popular/jordan 4 retro.png",
-        "title" : "Nike Jordan 4 Retro",
-        "description" : "Big Kids Shoes",
-        "price" : "$160"
-
-      },
-      {
-        "imgURL" : "../../images/kids/popular/air jordan 4 retro.png",
-        "title" : "Jordan 4 Retro",
-        "description" : "Little Kids Shoes",
-        "price" : "$100"
-
-      }, 
-      {
-        "imgURL" : "../../images/kids/popular/air jordan retro high og.png",
-        "title" : "Jordan 1 Retro High OG",
-        "description" : "Little Kids Shoes",
-        "price" : "$85"
-
-      },
-      {
-        "imgURL" : "../../images/kids/popular/jordan retro high og baby.png",
-        "title" : "Jordan 1 Retro High OG",
-        "description" : "Baby/Toddler Shoes",
-        "price" : "$70"
-
-      },
-      {
-        "imgURL" : "../../images/kids/popular/ja 1 day.png",
-        "title" : "Ja 1 "Day"",
-        "description" : "Big Kids Basketball Shoes",
-        "price" : "$92"
-
-      },
-      {
-        "imgURL" : "../../images/kids/popular/lebron.png",
-        "title" : "LeBron XXI "Optimism"",
-        "description" : "LeBron XXI "Optimism"",
-        "price" : "$55"
-
-      }
-      
-      ]'
-
-      ></popular-component> -->
-      <popular-component
-      Items = '[
-      {
-        "imgURL" : "../../images/kids/popular/nike max air dn.jpeg",
-        "title" : "Nike Air Max Dn",
-        "description" : "Big Kids Shoes",
-        "price" : "$130"
-
-      },
-      {
-        "imgURL" : "../../images/kids/popular/nike dunk low.png",
-        "title" : "Nike Dunk Low",
-        "description" : "Baby/Toddler Shoes",
-        "price" : "$55"
-
-      },
-      {
-        "imgURL" : "../../images/kids/popular/jordan 4 retro.png",
-        "title" : "Nike Jordan 4 Retro",
-        "description" : "Big Kids Shoes",
-        "price" : "$160"
-
-      },
-      {
-        "imgURL" : "../../images/kids/popular/jordan 4 retro.png",
-        "title" : "Jordan 4 Retro",
-        "description" : "Little Kids Shoes",
-        "price" : "$100"
-
-      },
-      {
-        "imgURL" : "../../images/kids/popular/jordan 4 retro.png",
-        "title" : "Jordan 4 Retro",
-        "description" : "Baby/Toddler Shoes",
-        "price" : "$85"
-
-      },
-      {
-        "imgURL" : "../../images/kids/popular/air jordan 1 og.png",
-        "title" : "Air Jordan 1 High OG",
-        "description" : "Big Kids Shoes",
-        "price" : "$140"
-
-      },
-
-      {
-        "imgURL" : "../../images/kids/popular/air jordan retro high og.png",
-        "title" : "Jordan 1 Retro High OG",
-        "description" : "Little Kids Shoes",
-        "price" : "$85"
-
-      },
-      {
-        "imgURL" : "../../images/kids/popular/jordan retro high og baby.png",
-        "title" : "Jordan 1 Retro High OG",
-        "description" : "Baby/Toddler Shoes",
-        "price" : "$70"
-
-      },
-      {
-        "imgURL" : "../../images/kids/popular/ja 1 day.png",
-        "title" : "Ja 1 Day",
-        "description" : "Big Kids Basketball Shoes",
-        "price" : "$92"
-
-      },
-      {
-        "imgURL" : "../../images/kids/popular/lebron.png",
-        "title" : "LeBron XXI Optimism",
-        "description" : "LeBron XXI Optimism",
-        "price" : "$55"
-
-      }
-
-      ]'
-
-      ></popular-component>
-
-
-      <trending class="trending-kids"></trending>
-      <explore class="explore-kids"></explore>
-
-
-
-      <classics-spotlight-component
-      data = '{
-        "imgURL_1" : "../../images/kids/classics-spotlight/nike-kids-shoes-clothing-and-accessories-nike-com (2).jpg",
-        "imgURL_2" : "../../images/kids/classics-spotlight/nike-kids-shoes-clothing-and-accessories-nike-com (3).jpg",
-        "imgURL_3" : "../../images/home/classics/nike-just-do-it(7).jpg",
-        "imgURL_4" : "../../images/home/classics/nike-just-do-it(8).png",
-        "imgURL_5" : "../../images/home/classics/nike-just-do-it(9).jpg"
-      }'
-      ></classics-spotlight-component>
-
-
-
-      <categories class="categories-kids"></categories>
+      <!-- hero section -->
+      <hero-content></hero-content>
+      <!-- size for all scetion -->
+      <size-for-all-content></size-for-all-content>
+      <!-- popular right now section -->
+      <popularkids-content></popularkids-content>
+      <!-- trending section -->
+      <trending-content></trending-content>
+      <!-- explore section -->
+      <explore-content></explore-content>
+      <!-- classics spotlight section -->
+      <classics-spotlight-content></classics-spotlight-content>
+      <!-- sub footer section -->
+      <sub-footer-content></sub-footer-content>
     </div>
-
     <!-- footer -->
-    <footer-layout class="footer-layout"></footer-layout>
+   <footer-component></footer-component>
   </body>
 
-  <script src="../../script/layout/layout.js"></script>
-  <script src="../../script/kids/kids.js"></script>
-  <script src="../../script/kids/header.js"></script>
-  <script src="../../script/components/header.js"></script>
-  <script src="../../script/components/classics-spotlight.js"></script>
-  <script src="../../script/components/popular.js"></script>
+  <script type="module" src="./kids.js"></script>
 </html>
