@@ -23,11 +23,10 @@ const header = (marquee, data, title) => {
 }
 
 class Header extends HTMLElement {
+    constructor(){
+        super();
+    }
     connectedCallback() {
-        const data = JSON.parse(this.getAttribute('data')) || {};
-        const marquee = this.getAttribute("marquee");
-        const title = this.getAttribute("title");
-
         this.innerHTML = header(marquee, data, title);
     } 
 }
