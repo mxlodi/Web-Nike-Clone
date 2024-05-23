@@ -176,12 +176,3 @@ fetch("../../components/newfeatured/feature.html")
 
 })
 .catch((error) => console.error("Error fetching included file:", error));
-
-
-// const header = document.querySelector(".header-newfeatured");
-// fetch("../../components/newfeatured/header.html")
-// .then((res) => res.text())
-// .then((data) => {
-//   header.innerHTML = data;
-// })
-// .catch((error) => console.error("Error fetching included file:", error));
