@@ -26,8 +26,8 @@ const shopTheEssentail = (data, title) => {
                 <div class="w-full">
                     <div class="min-[600px]:w-[605px] min-[600px]:h-full w-[410px] h-[520px]">
                         <img src="${card.imgURL}" alt="" class="w-full">
-                        <h1 class="min-[600px]:mt-3 mt-1 min-[600px]:mb-8 mb-0 font-sans min-[600px]:text-xl text-base min-[600px]:text-black text-black/70 tracking-tight">${card.bigletter}</h1>
-                        <h2 class="mt-1 mb-8 text-lg font-sans min-[600px]:hidden block">${card.smallletter}</h2>
+                        <h1 class="min-[600px]:mt-3 mt-1 min-[600px]:mb-8 mb-0 font-sans min-[600px]:text-xl text-base min-[600px]:text-black text-black/70 tracking-tight">${card.title}</h1>
+                        <h2 class="mt-1 mb-8 text-lg font-sans min-[600px]:hidden block">${card.text}</h2>
                     </div>
                 </div>
                 `;
@@ -37,20 +37,26 @@ const shopTheEssentail = (data, title) => {
     `;
 };
 
-// render the card of function to class
-class ShopTheEssentail extends HTMLElement {
-    connectedCallback() {
-        const arrayItem = JSON.parse(this.getAttribute('arrayItem'));
-        const title = this.getAttribute("title");
-        this.innerHTML = shopTheEssentail(arrayItem, title);
-
-        // call id to use for carousel
-        const leftButton = document.querySelector("#left-button");
-        const rightButton = document.querySelector("#right-button");
-        const shopTheEssentailSlider = document.querySelector("#shop-the-essential");
-
+export function createCarouselEssential(arrayItem, title, componentName){
+    class ShopTheEssentail extends HTMLElement {
+        constructor(){
+            super();
+        }
+        connectedCallback() {
+            this.innerHTML = shopTheEssentail(arrayItem, title);
+            this.setUpEventListener();
+        }
+        setUpEventListener (){
+            // call id to use for carousel
+            const leftButton = this.querySelector("#left-button");
+            const rightButton = this.querySelector("#right-button");
+            const shopTheEssentailSlider = this.querySelector("#shop-the-essential");
+              // call the carousel function to use by inputing the name
+            carousel(shopTheEssentailSlider,rightButton ,leftButton);
+    
+        }
         // carousel function
-        function carousel(carousel_element, nextBtn, backBtn){
+        carousel(carousel_element, nextBtn, backBtn){
             nextBtn.addEventListener("click", () => {
               carousel_element.scrollBy({
                 left: 625,
@@ -64,10 +70,7 @@ class ShopTheEssentail extends HTMLElement {
               })
             })
         }
-        // call the carousel function to use by inputing the name
-        carousel(shopTheEssentailSlider,rightButton ,leftButton);
     }
+    customElements.define(componentName, ShopTheEssentail);
 }
 
-// define a name to use in html 
-customElements.define("shoptheessential-component", ShopTheEssentail);
