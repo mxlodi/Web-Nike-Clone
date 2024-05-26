@@ -42,7 +42,7 @@ const trendingArr=
 
 // shop by sport section
 const shopBySportArr = 
-[
+[ 
     {
         imgURL : "../../images/home/shop-by-sport/sport 1.jpeg",
         title : "Basketball",
@@ -155,19 +155,69 @@ const popularArr = [
       price : "$160"
     }
 ]
-  
+
+const membershipHomeArr = 
+[
+    {
+        img : "../../images/home/membership/nike-just-do-it(19).jpg",
+        text1 : "Member Interests",
+        text2 : "Shop Your Way",
+        button : "Sign Up"
+    },
+    {
+        img : "../../images/home/membership/nike-just-do-it(20).jpg",
+        text1 : "Member Product",
+        text2 : "Your Exclusive Access",
+        button : "Shop"
+    },
+    {
+        img : "../../images/home/membership/nike-just-do-it(21).jpg",
+        text1 : "Member Rewards",
+        text2 : "How We Say Thank You",
+        button : "Celebrate"
+    },
+    {
+        img : "../../images/home/membership/nike-just-do-it(22).jpg",
+        text1 : "Sports & Wellness Apps",
+        text2 : "Movement Where You're At",
+        button : "Move"
+    },
+    {
+        img : "../../images/home/membership/nike-just-do-it(23).jpg",
+        text1 : "Nike By You",
+        text2 : "Your Customization Service",
+        button : "Customize"
+    },
+    {
+        img : "../../images/home/membership/nike-just-do-it(24).jpg",
+        text1 : "SNKRS",
+        text2 : `Your Ultimate <br> Sneaker Community`,
+        button : "Explore"
+    },
+    {
+        img : "../../images/home/membership/nike-just-do-it(25).jpg",
+        text1 : "Member Interests",
+        text2 : "Shop Your Way",
+        button : "Add Interests"
+    }
+]
 
 // import function from components folder
 import { createCarouselEssential } from "../../script/components/shoptheessential.js";
 import { createFeaturedContent } from "../../script/components/featured.js";
 import { createHeroSection } from "../../script/components/heroSection.js";
 import { createPopular } from "../../script/components/popular.js";
-import "../../script/components/subFooterHome.js";
-import "../../script/components/navbar.js"
+import { createMembership } from "./memberHome.js";
+import "./subFooterHome.js";
+import "../../script/components/navbar.js";
+import "../../script/components/footer.js";
+import "../../script/components/classicsSpotlight.js";
+
 
 
 createHeroSection(heroArr,"hero-content");
 createCarouselEssential(trendingArr, "Trending", "trending-content");
 createCarouselEssential(shopBySportArr, "Shop by Sport", "shop-by-sport-content");
-createFeaturedContent(featuredArr,"Featured" ,"feature-content")
+createFeaturedContent(featuredArr,"Featured" ,"feature-content");
 createPopular(popularArr, "popular-content");
+createMembership(membershipHomeArr, "membership-content");
