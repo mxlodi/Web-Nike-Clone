@@ -37,13 +37,13 @@ const shopTheEssentail = (data, title) => {
     `;
 };
 
-export function createCarouselEssential(arrayItem, title, componentName){
+export function createCarouselEssential(data, title, componentName){
     class ShopTheEssentail extends HTMLElement {
         constructor(){
             super();
         }
         connectedCallback() {
-            this.innerHTML = shopTheEssentail(arrayItem, title);
+            this.innerHTML = shopTheEssentail(data,title);
             this.setUpEventListener();
         }
         setUpEventListener (){
@@ -52,7 +52,7 @@ export function createCarouselEssential(arrayItem, title, componentName){
             const rightButton = this.querySelector("#right-button");
             const shopTheEssentailSlider = this.querySelector("#shop-the-essential");
               // call the carousel function to use by inputing the name
-            carousel(shopTheEssentailSlider,rightButton ,leftButton);
+            this.carousel(shopTheEssentailSlider,rightButton ,leftButton);
     
         }
         // carousel function
