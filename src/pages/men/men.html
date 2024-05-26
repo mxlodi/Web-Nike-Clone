@@ -13,81 +13,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Fjalla+One&family=Jersey+25&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- nav-bar -->
-<navbar-component></navbar-component>
-
-<div class="duration-300" id="bgBlur">
-
-    <!-- header -->
-    <header-component
-        marquee="Members : Free Shipping on Orders $50+"
-        title="Men"
-        data='{
-            "small_menu_1": "Shop",
-            "small_menu_2": "Clothing",
-            "small_menu_3": "Sale",
-            "small_menu_4": "Accessories",
-            "small_menu_5": "",
-            "small_menu_6": ""
-           
-        }'
-    ></header-component>
-
-    <!-- poster -->
-    <hero-section-men></hero-section-men>
-
-    <!-- shop the essential section -->
-    <shoptheessential-component
-        title = "Shop the Essentials"
-        arrayItem='
-        [
-            {
-                "imgURL" : "../../images/men/shop-the-essentials/men-s-shoes-clothing-accessories.jpg",
-                "bigletter" : "Clothing",
-                "smallletter" : "The season&#x27s latest must-haves."
-            },
-            {
-                "imgURL" : "../../images/men/shop-the-essentials/men-s-shoes-clothing-accessories(1).jpg",
-                "bigletter" : "Shoes",
-                "smallletter" : "All our lates & greatest footwear."
-            },
-            {
-                "imgURL" : "../../images/men/shop-the-essentials/men-s-shoes-clothing-accessories(2).jpg",
-                "bigletter" : "Accessories",
-                "smallletter" : "From hats to sports equipment & beyond."
-            }
-        ]'
-    >
-    </shoptheessential-component>
-
-    <marathon-speed-ahead class="marathon-speed-ahead-men"></marathon-speed-ahead>
-    <!-- classics spotlight section -->
-    <classics-spotlight-component
-    data = '{
-      "imgURL_1" : "../../images/men/classics-spotlight/men-s-shoes-clothing-accessories(4).jpg",
-      "imgURL_2" : "../../images/men/classics-spotlight/men-s-shoes-clothing-accessories(5).jpg",
-      "imgURL_3" : "../../images/men/classics-spotlight/men-s-shoes-clothing-accessories(6).jpg",
-      "imgURL_4" : "../../images/men/classics-spotlight/men-s-shoes-clothing-accessories(7).jpg",
-      "imgURL_5" : "../../images/men/classics-spotlight/men-s-shoes-clothing-accessories(8).jpg"
-    }'
-    ></classics-spotlight-component>
-    <brooks class="brooks-men"></brooks>
-    <popular class="popular-men"></popular>
-    <member-benefits class="member-benefits-men"></member-benefits>
-    <categories class="categories-men"></categories>
-</div>
+    <!-- nav-bar -->
+    <navbar-component></navbar-component>
+    <!-- body -->
+    <div class="duration-300" id="bgBlur">
+        <!-- header section -->
+        <header-content></header-content>
+        <!-- hero section -->
+        <hero-section-men></hero-section-men>
+        <!-- shop the essential section -->
+        <shoptheessential-content></shoptheessential-content>
+        <!-- marathon speed ahead pic -->
+        <marathon-speed-ahead-content></marathon-speed-ahead-content>
+        <!-- marathon speed ahead text -->
+        <marathon-text-content></marathon-text-content>
+        <!-- classics spotlight section -->
+        <classics-spotlight-men-content></classics-spotlight-men-content>
+        <!-- brooks koepka's favs section -->
+        <brooks-koepka-content></brooks-koepka-content>
+        <!-- popular right now section -->
+        <popular-men-content></popular-men-content>
+        <!-- member benefits section -->
+        <membership-benefits-content></membership-benefits-content>
+        <categories class="categories-men"></categories>
+    </div>
 
 
-<!-- footer -->
-<footer-layout class="footer-layout"></footer-layout>
+    <!-- footer -->
+    <footer-component></footer-component>
+
 </body>
 
-<script src="../../script/components/navbar.js"></script>
+<!-- scripts to link components -->
+<script type="module" src="./men.js"></script>
+<script type="module" src="../../script/components/navbar.js"></script>
+<script type="module" src="../../script/components/footer.js"></script>
+
+<!-- <script src="../../script/components/navbar.js"></script>
 <script src="../../script/men/men.js" ></script>
 <script src="../../script/men/heroSection.js"></script>
 <script src="../../script/components/header.js"></script>
 <script src="../../script/components/shoptheessential.js"></script>
-<script src="../../script/components/classics-spotlight.js"></script>
+<script src="../../script/components/classics-spotlight.js"></script> -->
 
 
 
