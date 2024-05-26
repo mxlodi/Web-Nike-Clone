@@ -23,8 +23,6 @@ const membership = (arr) => {
     ${arr.map((item) => {
 
         return `
-        
-
             <!-- CARD 1 --> 
             <div class="w-full mb-8"> 
                 <div class="min-[600px]:w-[610px] min-[600px]:h-[748px] w-[412px] h-[515px] relative"> 
@@ -36,7 +34,6 @@ const membership = (arr) => {
                     </div> 
                 </div> 
             </div>
-        
         `
     }).join("")}
     </div>
@@ -110,6 +107,6 @@ export function createMembership (arr, componentName){
         }
     }
 
-    customElements.define(componentName ? componentName : "membership-content" ,Membership);
+    customElements.define(componentName ? componentName : "membership-benefits-content" ,Membership);
 }
 createMembership(membershipArr);
