@@ -95,29 +95,36 @@ const trendingArr = [
 // classics spotlight section
 const classicSpotlightkidsArr = [
     {
-        img : "../../images/kids/classics-spotlight/nike-kids-shoes-clothing-and-accessories-nike-com (2).jpg",
-        img : "../../images/kids/classics-spotlight/nike-kids-shoes-clothing-and-accessories-nike-com (3).jpg",
-        img : "../../images/home/classics/nike-just-do-it(7).jpg",
-        img : "../../images/home/classics/nike-just-do-it(8).png",
-        img : "../../images/home/classics/nike-just-do-it(9).jpg"
-      }
+      img : "../../images/kids/classics-spotlight/nike-kids-shoes-clothing-and-accessories-nike-com (2).jpg"
+    },
+    {
+      img : "../../images/kids/classics-spotlight/nike-kids-shoes-clothing-and-accessories-nike-com (3).jpg"
+    },
+    {
+      img : "../../images/kids/classics-spotlight/nike-kids-shoes-clothing-and-accessories-nike-com (4).jpg"
+    },
+    {
+      img : "../../images/kids/classics-spotlight/nike-kids-shoes-clothing-and-accessories-nike-com (6).jpg"
+    },
+    {
+      img : "../../images/kids/classics-spotlight/nike-kids-shoes-clothing-and-accessories-nike-com (7).jpg"
+    }
 ]
 
 // import function from components folder
 import { createClassicSpotlight } from "../../script/components/classicsSpotlight.js";
-import { createCarouselEssential } from "../../script/components/shoptheessential.js";
 import { createFeaturedContent } from "../../script/components/featured.js";
-import "../../script/components/kidsHeroSection.js"
 import { createPopular } from "../../script/components/popular.js";
+import "./kidsHeroSection.js"
 import "../../script/components/sizeForAll.js"
 import "../../script/components/explore..js"
-import "../../script/components/subFooterKids.js"
+import "./subFooterKids.js"
 import "../../script/components/navbar.js"
 import "../../script/components/footer.js"
 
 createFeaturedContent(trendingArr, "trending", "trending-content")
 createPopular(popularKidsArr, "popularkids-content");
-createClassicSpotlight(classicSpotlightkidsArr, "classics-spotlight-content")
+createClassicSpotlight(classicSpotlightkidsArr, "classics-spotlight-kids-content")
 
 
 
