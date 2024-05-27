@@ -1,3 +1,16 @@
+// header section
+const headerArr =[
+  {
+    title: "Women",
+    text_1: "Shop",
+    text_2: "Clothing",
+    text_3: "Sale",
+    text_4: "Find Your Sports Bras",
+    text_5: "Leggings",
+    text_6: "Shoes $100 & Under"
+  }
+]
+
 // popular right now section
 const popularKidsArr = 
 [
@@ -112,19 +125,20 @@ const classicSpotlightkidsArr = [
 ]
 
 // import function from components folder
+import { createHeader } from "../../script/components/header.js"
 import { createClassicSpotlight } from "../../script/components/classicsSpotlight.js";
 import { createFeaturedContent } from "../../script/components/featured.js";
 import { createPopular } from "../../script/components/popular.js";
 import "./kidsHeroSection.js"
-import "../../script/components/sizeForAll.js"
-import "../../script/components/explore..js"
 import "./subFooterKids.js"
-import "../../script/components/navbar.js"
-import "../../script/components/footer.js"
+import "./sizeForAll.js"
+import "../../script/components/explore..js"
 
+createHeader(headerArr, "Members: Free Shipping on Orders $50+", "header-kids-content")
 createFeaturedContent(trendingArr, "trending", "trending-content")
 createPopular(popularKidsArr, "popularkids-content");
 createClassicSpotlight(classicSpotlightkidsArr, "classics-spotlight-kids-content")
+
 
 
 

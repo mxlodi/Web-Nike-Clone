@@ -73,7 +73,6 @@ const subFooter = () => {
                         </ul>
                     </div>
                 </div>
-
                 <div>
                     <button id="kidsClothingBtn" class="text-black/95 mb-5">Kid's Clothing</button>
                     <div id="kidsClothingContent" class="h-0 overflow-hidden duration-500">
@@ -89,7 +88,6 @@ const subFooter = () => {
                         </ul>
                     </div>
                 </div>
-
                 <div>
                     <button id="kidsGearBtn" class="text-black/95 mb-5">Kid's Gear</button>
                     <div id="kidsGearContent" class="h-0 overflow-hidden duration-500">
@@ -103,7 +101,6 @@ const subFooter = () => {
                         </ul>
                     </div>
                 </div>
-
                 <div>
                     <button id="kidsFeaturedBtn" class="text-black/95 mb-5">Featured</button>
                     <div id="kidsFeaturedContent" class="h-0 overflow-hidden duration-500">
