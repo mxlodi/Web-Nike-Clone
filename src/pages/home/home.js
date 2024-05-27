@@ -209,8 +209,6 @@ import { createHeroSection } from "../../script/components/heroSection.js";
 import { createPopular } from "../../script/components/popular.js";
 import { createMembership } from "./memberHome.js";
 import "./subFooterHome.js";
-import "../../script/components/navbar.js";
-import "../../script/components/footer.js";
 import "../../script/components/classicsSpotlight.js";
 
 
