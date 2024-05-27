@@ -20,7 +20,7 @@ const explore = (arr) => {
     }).join("")}
     </div>
     `
-}
+};
 const exploreArr = [
 {
     img : "../../images/kids/explore/pink-nike.jpeg",
@@ -43,6 +43,6 @@ class Explore extends HTMLElement{
     connectedCallback(){
         this.innerHTML = explore (exploreArr);
     }
-}
+};
 
 customElements.define("explore-content", Explore);

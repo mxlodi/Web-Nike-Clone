@@ -187,7 +187,7 @@ const footer = () => {
         </div>
         </footer>
     `
-}
+};
 
 class Footer extends HTMLElement{
     connectedCallback(){
@@ -251,5 +251,5 @@ class Footer extends HTMLElement{
             }
         });
     }
-}
+};
 customElements.define("footer-component", Footer);

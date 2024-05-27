@@ -31,5 +31,5 @@ export function createFeaturedContent(arr,title, componentName){
         }
     }
     customElements.define(componentName, Featured);
-}
+};
 

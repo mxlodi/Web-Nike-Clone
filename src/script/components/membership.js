@@ -3,7 +3,7 @@ const membership = (arr) => {
     <!-- Nike Membership --> 
     <div class="max-w-[1850px] mx-auto p-3 mt-10"> 
         <div class="flex items-center justify-between"> 
-            <h2 class="text-2xl">Member benefits</h2> 
+            <h2 class="text-2xl">Member Benefits</h2> 
             <div class="flex items-center gap-4">
                 <button class="hover:text-gray-500">
                     Sign Up
@@ -77,7 +77,7 @@ const membershipArr = [
     text2 : "Shop Your Way",
     button : "Add Interests"
 },
-]
+];
 
 export function createMembership (arr, componentName){
 
@@ -108,5 +108,5 @@ export function createMembership (arr, componentName){
     }
 
     customElements.define(componentName ? componentName : "membership-benefits-content" ,Membership);
-}
+};
 createMembership(membershipArr);

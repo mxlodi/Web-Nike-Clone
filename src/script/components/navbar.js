@@ -1,23 +1,20 @@
 const createNavbar = ()=>{
     return `
     
-    <!-- header -->
+<!-- header -->
 <div class="bg-[#f5f5f5] max-[960px]:hidden">
     <div class="max-w-[1850px] mx-auto p-3">
         <div class="flex justify-between">
             <div class="flex items-center">
-
                 <a href="#">
                     <img src="../../images/home/header/jordan.png" alt="Jordan's Logo"
                         class="w-[30px] hover:opacity-50">
                 </a>
-
                 <a href="#">
                     <img src="../../images/home/header/converse.png" alt="Converse's Logo"
                         class="w-[30px]  hover:opacity-50">
                 </a>
             </div>
-
             <div class="divide-x relative z-40 font-medium flex items-center font-sans text-[12px]">
                 <div class="divide-x divide-black">
                     <button class="px-2 hover:text-gray-500">Find a Store</button>
@@ -25,7 +22,6 @@ const createNavbar = ()=>{
                     <button class="px-2 hover:text-gray-500">Join Us</button>
                     <button class="px-2 hover:text-gray-500">Sign In</button>
                 </div>
-
                 <!-- help dropdown -->
                 <div id="helpDropdown" class="absolute items-start hidden top-8 right-36 bg-white border w-[240px] h-[386px] p-6 py-2 rounded-lg shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]">
                     <h1 class="my-4 text-[17px]">Help</h1>
@@ -109,6 +105,7 @@ const createNavbar = ()=>{
 
     <!-- DROP DOWN -->
     <div class="absolute w-full ">
+        <!-- newfeatured dropdown -->
         <div id="newfeatured-dropdown" class="hidden md:flex  bg-white cursor-pointer left-0 text-black duration-300 z-50  
             h-0 w-full opacity-100 ">
             <div id="newfeatured-below" class="flex opacity-0 delay-200 pointer-events-none justify-center max-w-full mx-auto">
@@ -129,7 +126,6 @@ const createNavbar = ()=>{
                         <li class="mb-2.5 font-sans tracking-tight text-[#7d7d7d] text-[15px] hover:text-black">
                             Basketball</li>
                     </ul>
-
                     <ul>
                         <li class="font-semibold mb-2.5 text-base">New & Featured</li>
                         <li class="mb-2.5 font-sans tracking-tight text-[#7d7d7d] text-[15px] hover:text-black">New
@@ -149,7 +145,6 @@ const createNavbar = ()=>{
                         <li class="mb-2.5 font-sans tracking-tight text-[#7d7d7d] text-[15px] hover:text-black">Sales:
                             Up tp 50% off</li>
                     </ul>
-
                     <ul>
                         <li class="font-semibold mb-2.5 text-base">Shop Classics</li>
                         <li class="mb-2.5 font-sans tracking-tight text-[#7d7d7d] text-[15px] hover:text-black">Air
@@ -161,7 +156,6 @@ const createNavbar = ()=>{
                         <li class="mb-2.5 font-sans tracking-tight text-[#7d7d7d] text-[15px] hover:text-black">Blazer
                         </li>
                     </ul>
-
                     <ul>
                         <li class="font-semibold mb-2.5 text-base">New For Men</li>
                         <li class="mb-2.5 font-sans tracking-tight text-[#7d7d7d] text-[15px] hover:text-black">Shoes
@@ -284,11 +278,10 @@ const createNavbar = ()=>{
                         <li class="mb-2.5 font-sans tracking-tight text-[#7d7d7d] text-[15px] hover:text-black">
                             Pickleball</li>
                     </ul>
-
                 </div>
             </div>
         </div>
-
+        <!-- women dropdown -->
         <div id="women-dropdown" class="hidden md:flex bg-white cursor-pointer left-0 text-black duration-300 z-50  
         h-[0px] w-full opacity-100 ">
             <div id="women-below" class="flex opacity-0 delay-200 pointer-events-none justify-center max-w-full mx-auto">
@@ -393,10 +386,9 @@ const createNavbar = ()=>{
                             Pickleball</li>
                     </ul>
                 </div>
-
             </div>
         </div>
-
+        <!-- kids dropdown -->
         <div id="kids-dropdown"  class="hidden md:flex bg-white cursor-pointer left-0 text-black duration-300 z-50  
         h-[0px] w-full opacity-100 ">
             <div id="kids-below" class="flex opacity-0 delay-200 pointer-events-none justify-center max-w-full mx-auto">
@@ -498,11 +490,10 @@ const createNavbar = ()=>{
                         <li class="mb-2.5 font-sans tracking-tight text-[#7d7d7d] text-[15px] hover:text-black">
                             Skateboarding</li>
                     </ul>
-
                 </div>
             </div>
         </div>
-
+        <!-- accessories dropdown -->
         <div id="accessories-dropdown"  class="hidden md:flex bg-white cursor-pointer left-0 text-black duration-300 z-50  
         h-[0px] w-full opacity-100 ">
             <div id="accessories-below" class="flex opacity-0 delay-200 pointer-events-none justify-center max-w-full mx-auto">
@@ -555,7 +546,7 @@ const createNavbar = ()=>{
                 </div>
             </div>
         </div>
-
+        <!-- sale dropdown -->
         <div id="sale-dropdown" class="hidden md:flex bg-white cursor-pointer left-0 text-black duration-300 z-50  
         h-[0px] w-full opacity-100 ">
             <div id="sale-below" class="flex opacity-0 delay-200 pointer-events-none justify-center max-w-full mx-auto">
@@ -606,94 +597,87 @@ const createNavbar = ()=>{
     </div>
 </nav>
 
-    <!-- hamburger -->
+<!-- hamburger -->
 <div id="hamburger-content" class="hidden fixed z-[100] top-0 right-0 w-full bg-black/20 backdrop-blur-sm h-screen">
-    <div 
-    class=" max-w-[320px] w-full  fixed h-screen bg-white  right-0 z-[300] top-0 p-8">
-        <div class="flex justify-end pr-2 mb-5 " id="cross-btn">
-            <button class="size-10 flex items-center justify-center rounded-full hover:bg-gray-200">
-                <img class="w-4" src="../../images/home/nav-bar/close.png" alt="">
-            </button>
-        </div>
-
-    <div class="pl-3">
-        <div class="flex justify-between mb-5 cursor-pointer">
-            <a href="../../pages/newfeatured/newfeatured.html" class="roboto text-[22px] ">New & Featured</a>
-            <a href="../../pages/newfeatured/newfeatured.html">
-                <img class="w-8" src="../../images/home/nav-bar/chevron (1).png" alt="" >
-            </a>
-        </div>
-        <div class="flex justify-between mb-5 cursor-pointer">
-            <a href="../../pages/men/men.html" class="roboto text-[22px]">Men</a>
-            <a href="../../pages/men/men.html">
+    <div class=" max-w-[320px] w-full  fixed h-screen bg-white  right-0 z-[300] top-0 p-8">
+            <div class="flex justify-end pr-2 mb-5 " id="cross-btn">
+                <button class="size-10 flex items-center justify-center rounded-full hover:bg-gray-200">
+                    <img class="w-4" src="../../images/home/nav-bar/close.png" alt="">
+                </button>
+            </div>
+        <div class="pl-3">
+            <div class="flex justify-between mb-5 cursor-pointer">
+                <a href="../../pages/newfeatured/newfeatured.html" class="roboto text-[22px] ">New & Featured</a>
+                <a href="../../pages/newfeatured/newfeatured.html">
+                    <img class="w-8" src="../../images/home/nav-bar/chevron (1).png" alt="" >
+                </a>
+            </div>
+            <div class="flex justify-between mb-5 cursor-pointer">
+                <a href="../../pages/men/men.html" class="roboto text-[22px]">Men</a>
+                <a href="../../pages/men/men.html">
+                    <img class="w-8" src="../../images/home/nav-bar/chevron (1).png" alt="">
+                </a>
+            </div>
+            <div class="flex justify-between mb-5 cursor-pointer">
+                <a href="../../pages/women/women.html" class="roboto text-[22px]">Women</a>
+                <a href="../../pages/women/women.html">
+                    <img class="w-8" src="../../images/home/nav-bar/chevron (1).png" alt="">
+                </a>
+            </div>
+            <div class="flex justify-between mb-5 cursor-pointer">
+                <a href="../../pages/kids/kids.html" class="roboto text-[22px]">Kids</a>
+                <a href="../../pages/kids/kids.html">
+                    <img class="w-8" src="../../images/home/nav-bar/chevron (1).png" alt="">
+                </a>
+            </div>
+            <div class="flex justify-between mb-5 cursor-pointer">
+                <h1 class="roboto text-[22px]">Accessories</h1>
                 <img class="w-8" src="../../images/home/nav-bar/chevron (1).png" alt="">
-            </a>
-        </div>
-        <div class="flex justify-between mb-5 cursor-pointer">
-            <a href="../../pages/women/women.html" class="roboto text-[22px]">Women</a>
-            <a href="../../pages/women/women.html">
+            </div>
+            <div class="flex justify-between mb-5 cursor-pointer">
+                <h1 class="roboto text-[22px]">Sale</h1>
                 <img class="w-8" src="../../images/home/nav-bar/chevron (1).png" alt="">
-            </a>
+            </div>
         </div>
-        <div class="flex justify-between mb-5 cursor-pointer">
-            <a href="../../pages/kids/kids.html" class="roboto text-[22px]">Kids</a>
-            <a href="../../pages/kids/kids.html">
-                <img class="w-8" src="../../images/home/nav-bar/chevron (1).png" alt="">
-            </a>
+        <div class="p-3 cursor-pointer">
+            <div class="flex mb-5 justify-between w-[90px]">
+                <img class="w-8" src="../../images/home/header/jordan.png" alt="">
+                <h1 class="text-black/95">Jordan</h1>
+            </div>
+            <div class="flex justify-between w-[110px]">
+                <img class="w-8" src="../../images/home/header/converse.png" alt="">
+                <h1 class="text-black/95">Converse</h1>
+            </div>
         </div>
-        <div class="flex justify-between mb-5 cursor-pointer">
-            <h1 class="roboto text-[22px]">Accessories</h1>
-            <img class="w-8" src="../../images/home/nav-bar/chevron (1).png" alt="">
+        <div class="mt-20">
+            <p class="roboto text-[#7d7d7d] text-medium text-xl">Become a Nike Member for the best products, inspiration and stories in
+                sport. <span class="text-black/80 robotobold cursor-pointer">Learn more</span></p>
+            <div class="mt-7">
+                <button class="rounded-full mr-3 bg-black text-white border px-4 py-[7px] hover:bg-black/80 border-black roboto">Join
+                    Us</button>
+                <button class="rounded-full text-black border px-4 py-[7px] border-slate-400 hover:border-black/95 roboto">Sign In</button>
+            </div>
         </div>
-        <div class="flex justify-between mb-5 cursor-pointer">
-            <h1 class="roboto text-[22px]">Sale</h1>
-            <img class="w-8" src="../../images/home/nav-bar/chevron (1).png" alt="">
-        </div>
-    </div>
-
-
-    <div class="p-3 cursor-pointer">
-        <div class="flex mb-5 justify-between w-[90px]">
-            <img class="w-8" src="../../images/home/header/jordan.png" alt="">
-            <h1 class="text-black/95">Jordan</h1>
-        </div>
-        <div class="flex justify-between w-[110px]">
-            <img class="w-8" src="../../images/home/header/converse.png" alt="">
-            <h1 class="text-black/95">Converse</h1>
-        </div>
-    </div>
-
-    <div class="mt-20">
-        <p class="roboto text-[#7d7d7d] text-medium text-xl">Become a Nike Member for the best products, inspiration and stories in
-            sport. <span class="text-black/80 robotobold cursor-pointer">Learn more</span></p>
-        <div class="mt-7">
-            <button class="rounded-full mr-3 bg-black text-white border px-4 py-[7px] hover:bg-black/80 border-black roboto">Join
-                Us</button>
-            <button class="rounded-full text-black border px-4 py-[7px] border-slate-400 hover:border-black/95 roboto">Sign In</button>
-        </div>
-    </div>
-
-    <div class="mt-16 p-3">
-        <div class="flex w-[75px] cursor-pointer justify-between mb-5">
-            <img class="w-6" src="../../images/home/nav-bar/market.png" alt="">
-            <h1>Bag</h1>
-        </div> 
-        <div class="flex w-[95px] cursor-pointer justify-between mb-5">
-            <img class="w-6" src="../../images/home/nav-bar/delivery-box.png" alt="">
-            <h1>Orders</h1>
-        </div>
-        <div class="flex w-[130px] cursor-pointer justify-between mb-5">
-            <img class="w-6" src="../../images/home/nav-bar/shop.png" alt="">
-            <h1>Find a Store</h1>
-        </div>
-        <div class="flex w-[75px] cursor-pointer justify-between mb-5">
-            <img class="w-6" src="../../images/home/nav-bar/question-mark-outline-in-a-circle-hand-drawn-button.png"
-                alt="">
-            <h1>Help</h1>
+        <div class="mt-16 p-3">
+            <div class="flex w-[75px] cursor-pointer justify-between mb-5">
+                <img class="w-6" src="../../images/home/nav-bar/market.png" alt="">
+                <h1>Bag</h1>
+            </div> 
+            <div class="flex w-[95px] cursor-pointer justify-between mb-5">
+                <img class="w-6" src="../../images/home/nav-bar/delivery-box.png" alt="">
+                <h1>Orders</h1>
+            </div>
+            <div class="flex w-[130px] cursor-pointer justify-between mb-5">
+                <img class="w-6" src="../../images/home/nav-bar/shop.png" alt="">
+                <h1>Find a Store</h1>
+            </div>
+            <div class="flex w-[75px] cursor-pointer justify-between mb-5">
+                <img class="w-6" src="../../images/home/nav-bar/question-mark-outline-in-a-circle-hand-drawn-button.png"
+                    alt="">
+                <h1>Help</h1>
+            </div>
         </div>
     </div>
-
-</div>
 </div>
 
 
