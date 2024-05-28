@@ -1,13 +1,13 @@
 // header section
 const headerArr =[
   {
-    title: "Women",
-    text_1: "Shop",
+    title: "Kids",
+    text_1: "Shoes",
     text_2: "Clothing",
-    text_3: "Sale",
-    text_4: "Find Your Sports Bras",
-    text_5: "Leggings",
-    text_6: "Shoes $100 & Under"
+    text_3: "New Arrivals",
+    text_4: "Gear & Accessories",
+    text_5: "Mini Me",
+    text_6: "Sale"
   }
 ]
 
