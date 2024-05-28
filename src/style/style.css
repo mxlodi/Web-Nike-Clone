@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* hide scrollbar */
 @layer utilities {
       .no-scrollbar::-webkit-scrollbar {
           display: none;
@@ -13,17 +14,6 @@
     }
   }
 
-/* footer */
-/* .hidden {
-    display: none;
-}
-
-.accordion-content {
-    transition: max-height 0.3s ease;
-    max-height: 0;
-    overflow: hidden;
-}
- */
 
 /* font */
 
@@ -95,55 +85,3 @@
   font-style: normal;
 }
 
-
-
-
-/* .toggle-switch {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 34px;
-  }
-  
-  .toggle-input {
-    display: none;
-  }
-  
-  .toggle-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 34px;
-    border-radius: 17px;
-    background-color: #ccc;
-    cursor: pointer;
-    transition: background-color 0.4s ease;
-  }
-  
-  .toggle-label:before {
-    content: '';
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.4s ease;
-  }
-  
-  .toggle-input:checked + .toggle-label {
-    background-color: #86d993;
-  }
-  
-  .toggle-input:checked + .toggle-label:before {
-    transform: translateX(26px);
-  } */
-
-  @media screen and (max-width: 960px) {
-    .banner{
-      display:none !important;
-    }
-  }
