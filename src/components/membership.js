@@ -84,11 +84,11 @@ export function createMembership (arr, componentName){
     class Membership extends HTMLElement {
         connectedCallback(){
             this.innerHTML = membership(arr);
-
+            // call id to use
             const leftMembershipButton = this.querySelector("#left-membership");
             const rightMembershipButton = this.querySelector("#right-membership");
             const membershipSlider = this.querySelector("#membership");
-
+            // carousel function
             function  carousel(carousel_element, nextBtn, backBtn){
                 nextBtn.addEventListener("click", () => {
                   carousel_element.scrollBy({
@@ -103,6 +103,7 @@ export function createMembership (arr, componentName){
                   })
                 })
             }
+            // call the function to use
             carousel(membershipSlider,rightMembershipButton ,leftMembershipButton);
         }
     }
