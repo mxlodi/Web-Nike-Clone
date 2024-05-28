@@ -125,14 +125,14 @@ const classicSpotlightkidsArr = [
 ]
 
 // import function from components folder
-import { createHeader } from "../../script/components/header.js"
-import { createClassicSpotlight } from "../../script/components/classicsSpotlight.js";
-import { createFeaturedContent } from "../../script/components/featured.js";
-import { createPopular } from "../../script/components/popular.js";
+import { createHeader } from "../../components/header.js"
+import { createClassicSpotlight } from "../../components/classicsSpotlight.js";
+import { createFeaturedContent } from "../../components/featured.js";
+import { createPopular } from "../../components/popular.js";
 import "./kidsHeroSection.js"
 import "./subFooterKids.js"
 import "./sizeForAll.js"
-import "../../script/components/explore..js"
+import "../../components/explore..js"
 
 createHeader(headerArr, "Members: Free Shipping on Orders $50+", "header-kids-content")
 createFeaturedContent(trendingArr, "trending", "trending-content")

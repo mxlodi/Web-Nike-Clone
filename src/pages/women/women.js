@@ -1,11 +1,11 @@
 // import function from components folder
-import { createHeroSection } from "../../script/components/heroSection.js";
-import { createHeader } from "../../script/components/header.js";
-import { createCarouselEssential } from "../../script/components/shoptheessential.js";
-import { createFeaturedContent } from "../../script/components/featured.js";
-import { createPopular } from "../../script/components/popular.js";
-import { createClassicSpotlight } from "../../script/components/classicsSpotlight.js";
-import "../../script/components/membership.js"
+import { createHeroSection } from "../../components/heroSection.js";
+import { createHeader } from "../../components/header.js";
+import { createCarouselEssential } from "../../components/shopTheEssential.js";
+import { createFeaturedContent } from "../../components/featured.js";
+import { createPopular } from "../../components/popular.js";
+import { createClassicSpotlight } from "../../components/classicsSpotlight.js";
+import "../../components/membership.js"
 import "./explore.js"
 import "./subFooterWomen.js"
 
