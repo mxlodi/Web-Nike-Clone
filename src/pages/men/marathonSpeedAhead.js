@@ -1,3 +1,4 @@
+// Function to generate HTML for marathon speed section
 const marathonSpeed = () => {
     return `
     <div> 
@@ -13,14 +14,15 @@ const marathonSpeed = () => {
   
       `;  
   };
-  // 
+// Custom element class definition
   class MarathonSpeed extends HTMLElement {
       constructor(){
-          super()
+          super();
       }
+      // Callback function when the element is connected to the DOM
       connectedCallback(){
-          
           this.innerHTML = marathonSpeed();
       }
-  }
-  customElements.define("marathon-speed-ahead-content", MarathonSpeed);
+  };
+// Define the custom element with the specified name
+customElements.define("marathon-speed-ahead-content", MarathonSpeed);

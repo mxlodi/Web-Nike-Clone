@@ -2,7 +2,7 @@
 
 const newFeaturedCategories = () => {
     return `
-    <!-- marquee -->
+    <!-- Marquee -->
     <div class="bg-[#f5f5f5] h-[60px] flex justify-center items-center">
         <a class="roboto underline hover:no-underline" href="">Members : Free Shipping on Orders $50+</a>
     </div>
@@ -28,7 +28,7 @@ const newFeaturedCategories = () => {
                 <li>Socks</li>
                 <li>Accessories & Equipment</li>
             </ul>
-            <!-- small screen button-->
+            <!-- Small screen button-->
             <div  class="flex items-center my-7 justify-between gap-4 mb-4">
                 <h1>Pick Up Today</h1>
                 <div class="bg-gray-300 rounded-full w-11 h-6 relative flex items-center pl-1">
@@ -60,7 +60,7 @@ const newFeaturedCategories = () => {
                     </ul>
                     <hr class="mt-7 ">
                 </button>
-                <!-- accordion -->
+                <!-- Accordion -->
                 <div class="divide-y-2 divide-gray-200 ">
                     <div class="py-2">
                         <button class="w-full" id="genderBtn">
@@ -310,7 +310,7 @@ const newFeaturedCategories = () => {
                     </div>
                 </div>
             </div>
-            <!-- shoes content -->
+            <!-- New featured card content -->
             <div class="w-full h-auto">
                 <card-content></card-content>
             </div>
@@ -318,13 +318,15 @@ const newFeaturedCategories = () => {
     </div>
     `
 };
+// Custom element class
 class NewFeaturedCategories extends HTMLElement{
     constructor(){
-        super()
+        super();
     }
+    // Callback function when the element is connected to the DOM
     connectedCallback(){
         this.innerHTML = newFeaturedCategories();
-        // call function to use
+        // Call function to use
         sideDropdown("genderBtn","genderContent","h-[80px]")
         sideDropdown("kidsBtn", "kidsContent", "h-[65px]")
         sideDropdown("saleBtn","saleContent", "h-[65px]")
@@ -333,7 +335,7 @@ class NewFeaturedCategories extends HTMLElement{
         sideDropdown("brandBtn", "brandContent", "h-[140px]")
         sideDropdown("sportsBtn", "sportsContent", "h-[140px]")
         sideDropdown("bestBtn", "bestContent", "h-[120px]")
-
+        // Function to implement dropdown functionality
         function sideDropdown(btn,content,h){
         const Btn = document.querySelector(`#${btn}`);
         const Content = document.querySelector(`#${content}`);
@@ -343,7 +345,7 @@ class NewFeaturedCategories extends HTMLElement{
         })
         }
 
-        // pick up button
+        // Pick up button
         const innerBtn = document.querySelector("#innerBtn");
         const innerBtnSmall = document.querySelector("#innerBtnSmall");
 
@@ -357,5 +359,5 @@ class NewFeaturedCategories extends HTMLElement{
 
     }
 };
-
+// Define the custom element with the specified name
 customElements.define("newfeatured-categories-content", NewFeaturedCategories);

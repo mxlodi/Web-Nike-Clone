@@ -1,3 +1,4 @@
+// Function to generate HTML for subfooter section
 const subFooter = () => {
     return `
     <div class="max-w-[900px] mx-auto md:block hidden p-3 mt-20 transition-all ease-in-out duration-300 flex-row h-[185px] overflow-y-hidden hover:h-full">
@@ -128,12 +129,13 @@ const subFooter = () => {
         </div> 
     </div>
     `
-}
-
+};
+// Custom element class definition
     class SubFooter extends HTMLElement {
         constructor(){
             super()
         }
+        // Callback function when the element is connected to the DOM
         connectedCallback(){
             this.innerHTML = subFooter();
             this.setUpEventListener();
@@ -154,5 +156,5 @@ const subFooter = () => {
         })
         }
     }
-    
+    // Define the custom element with the specified name
     customElements.define("sub-footer-content", SubFooter);

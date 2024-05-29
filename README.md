@@ -8,6 +8,10 @@ This project includes the following pages cloned from Nike website:
 4. Kids page
 5. New & Featured page
 
+# **`Figma`**
+
+https://www.figma.com/design/CLG36K2bObZuORiR4SwPk6/NIKE?node-id=18-570&t=x7Jg0gawCYxNHLP1-1
+
 # `Project Goals`
 
 1. Develop a simplified version of [Nike.com](http://nike.com/) featuring 5 key pages, focusing on essential elements such as the header, navigation menu, body, and footer.
@@ -74,7 +78,7 @@ Keep styles in external CSS files to ensure maintainability and separation of co
 
 e.g. 
 
-**`<!-- Header Section -->`**
+**`<!-- header section -->`**
 
 **`// Carousel function`**
 
@@ -126,6 +130,8 @@ Customize :
 
 # **`Folder Structure`**
 
+![Screenshot 2024-05-29 at 1.29.23 PM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/482e8449-dafe-4ceb-af37-5660df5657d1/07e1d83c-11e2-445a-8e04-aa9cc4cf2752/Screenshot_2024-05-29_at_1.29.23_PM.png)
+
 1. **Src (folder)**:
     - Main container directory for organizing all project resources.
 - **Images folder** : contain images folder of each pages (remain the same)
@@ -152,6 +158,20 @@ Customize :
         - Configuration file for Tailwind CSS, allowing customization of the CSS framework to fit specific project requirements and design preferences.
 
 # **`Git Workflow`**
+
+## **Git-Flow Branching Strategy**
+
+1. **Overview**
+    - The team works using Git/Github, with team members creating local repositories and team leaders creating remote repositories. Team leaders assign tasks for completion by team members.
+    - **Main Branch**: The primary container for production code. It is the initial branch checked out locally when someone clones the repository, serving as the base for the production release.
+    - **Develop Branch**: Branches off from the Main Branch and serves as a backup. It contains the latest work in progress and represents stable code ready for production.
+    - **Feature Branches**: Created off the Develop Branch for specific features. Developers work here until the feature is ready to be merged back into Develop. This keeps the main codebase unaffected by ongoing work.
+    - **Release Branch**: Created after development work is completed to prepare for a new production release. This branch is for final testing and bug fixes before merging into the Main Branch.
+    - **Bug-fix Branch**: Created from the Release Branch to ensure the upcoming release is stable and free from critical issues.
+    - **Hot-fix Branch**: Used to solve critical issues or bugs in the live production version.
+    
+
+## **Git-Flow Processes and Commands**
 
 1. Git/GitHub:
     

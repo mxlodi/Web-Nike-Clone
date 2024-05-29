@@ -1,3 +1,4 @@
+// Function to generate the HTML for the popular right now section
 const popularRightNow = (data) => {
     return `
       <div class="max-w-[1850px] mx-auto p-3 mt-10"> 
@@ -32,18 +33,20 @@ const popularRightNow = (data) => {
 
 
 export function createPopular(arr, componentName){
+  // Custom element class definition
   class PopularRightNow extends HTMLElement {
     constructor(){
       super();
     }
+    // Callback function when the element is connected to the DOM
     connectedCallback() {
     
       this.innerHTML = popularRightNow(arr);
-      // carousel
+      // Function to implement carousel
         const popular= document.querySelector("#popular");
         const leftPopular = document.querySelector("#left-popular");
         const rightPopular = document.querySelector("#right-popular");
-
+        // Add event listener click to make the buttons scroll left/right 
           rightPopular.addEventListener("click", () => {
             popular.scrollBy({
               left: 625,
@@ -58,5 +61,6 @@ export function createPopular(arr, componentName){
           })
     }
   }
+  // Define the custom element with the specified name
   customElements.define(componentName, PopularRightNow);
-}
+};

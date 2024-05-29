@@ -1,7 +1,7 @@
-// create function that input the code
+// Function to generate the HTML for the shop the essential section
 const shopTheEssentail = (data, title) => {
     return `
-    <!--shop the essentials section -->
+    <!--Shop the essentials section -->
     <div>
         <div class="max-w-[1850px] mx-auto p-3 mt-10">
             <div class="flex items-center justify-between">
@@ -18,7 +18,7 @@ const shopTheEssentail = (data, title) => {
         </div>
     </div>
 
-    <!-- shop the essentials photos -->
+    <!-- Shop the essentials photos -->
     <div>
         <div id="shop-the-essential" class="max-w-[1850px] cursor-pointer mx-auto px-3 gap-3 flex overflow-x-auto">
             ${data.map((card) => {
@@ -38,24 +38,26 @@ const shopTheEssentail = (data, title) => {
 };
 
 export function createCarouselEssential(data, title, componentName){
+    // Custom element class definition
     class ShopTheEssentail extends HTMLElement {
         constructor(){
             super();
         }
+        // Callback function when the element is connected to the DOM
         connectedCallback() {
             this.innerHTML = shopTheEssentail(data,title);
             this.setUpEventListener();
         }
         setUpEventListener (){
-            // call id to use for carousel
+            // Call id to use for carousel
             const leftButton = this.querySelector("#left-button");
             const rightButton = this.querySelector("#right-button");
             const shopTheEssentailSlider = this.querySelector("#shop-the-essential");
-              // call the carousel function to use by inputing the name
+              // Call the carousel function to use by inputing the name
             this.carousel(shopTheEssentailSlider,rightButton ,leftButton);
     
         }
-        // carousel function
+        // Carousel functionality
         carousel(carousel_element, nextBtn, backBtn){
             nextBtn.addEventListener("click", () => {
               carousel_element.scrollBy({
@@ -71,6 +73,7 @@ export function createCarouselEssential(data, title, componentName){
             })
         }
     }
+    // Define the custom element with the specified name
     customElements.define(componentName, ShopTheEssentail);
-}
+};
 

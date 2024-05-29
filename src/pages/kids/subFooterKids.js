@@ -1,3 +1,4 @@
+// Functiion to generate HTML for subfooter section
 const subFooter = () => {
     return `
     <div class="max-w-[900px] mx-auto md:block hidden p-3 mt-20 transition-all ease-in-out duration-300 flex-row h-[185px] overflow-y-hidden hover:h-full">
@@ -51,7 +52,7 @@ const subFooter = () => {
             </ul>
         </div>
     </div>
-    <!-- small screen -->
+    <!-- Small screen -->
     <div class="max-w-[900px] md:hidden block mx-auto p-3 mt-14 mb-4 pl-4"> 
         <div class="flex flex-col gap-20 text-gray-500"> 
             <div>
@@ -124,11 +125,12 @@ const subFooter = () => {
 
     `
 }
-
+// Custom element class definition
 class SubFooter extends HTMLElement {
     constructor() {
-        super()
+        super();
     }
+    // Callback function when the element is connected to the DOM
     connectedCallback() {
         this.innerHTML = subFooter();
         this.setUpEventListener();
@@ -139,7 +141,7 @@ class SubFooter extends HTMLElement {
     this.sideDropdown("kidsGearBtn", "kidsGearContent", "h-[240px]")
     this.sideDropdown("kidsFeaturedBtn", "kidsFeaturedContent", "h-[380px]")
     }
-    // function for dropdown
+    // Function for dropdown
     sideDropdown(btn, content, h) {
         const Btn = this.querySelector(`#${btn}`);
         const Content = this.querySelector(`#${content}`);
@@ -149,5 +151,5 @@ class SubFooter extends HTMLElement {
         })
     }
 }
-
+// Define the custom element with the specified name
 customElements.define("sub-footer-content", SubFooter);

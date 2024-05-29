@@ -1,6 +1,7 @@
+// Function to generate the HTML for the hero section
 const heroSection = (imgURL_1, imgURL_2, nameA, title, description, button) => {
   return `
-    <!-- big image -->
+    <!-- Big image -->
     <div class="max-w-[1850px] mx-auto p-3 mt-4">
         <div class="w-full">
             <img src="${imgURL_1}" alt="" class="w-full lg:block hidden">
@@ -9,7 +10,7 @@ const heroSection = (imgURL_1, imgURL_2, nameA, title, description, button) => {
     </div>
 
 
-    <!-- big content -->
+    <!-- Big content -->
 
     <div>
         <div class="max-w-[1850px] p-3 mt-10 cursor-pointer mx-auto text-start sm:text-center">
@@ -23,16 +24,19 @@ const heroSection = (imgURL_1, imgURL_2, nameA, title, description, button) => {
     `;
 };
 export function createHeroSection(arr, componentName){
+    // Custom element class definition
 
     class HeroSection extends HTMLElement {
         constructor(){
             super();
         }
+        // Callback function when the element is connected to the DOM
         connectedCallback(){
             arr.map((item)=>{
                 this.innerHTML = heroSection(item.imgURL_1, item.imgURL_2, item.nameA, item.title, item.description, item.button);
             })
         }
     }
+    // Define the custom element with the specified name
     customElements.define(componentName, HeroSection);
 };

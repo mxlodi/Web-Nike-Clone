@@ -1,3 +1,4 @@
+// Function to generate HTML for explore section
 const explore = (arr) => {
     return `
     <div class="max-w-[1850px] mx-auto p-3 mt-10">
@@ -21,6 +22,7 @@ const explore = (arr) => {
     </div>
     `
 };
+// Array containing data 
 const exploreArr = [
 {
     img : "../../images/kids/explore/pink-nike.jpeg",
@@ -38,11 +40,15 @@ const exploreArr = [
     button : "Shop"
 }
 ]
-
+// Custom element class definition
 class Explore extends HTMLElement{
+    constructor(){
+        super();
+    }
+    // Callback function when the element is connected to the DOM
     connectedCallback(){
         this.innerHTML = explore (exploreArr);
     }
 };
-
+// Define the custom element with the specified name
 customElements.define("explore-content", Explore);

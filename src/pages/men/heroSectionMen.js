@@ -1,3 +1,4 @@
+// function to generate HTML for hero section
 const heroSectionMen = () => {
   return `
     <div class="max-w-[1850px] mx-auto p-3 mt-10">
@@ -15,14 +16,15 @@ const heroSectionMen = () => {
 
     `;  
 };
-// 
+// Custom element class definition
 class HeroSectionMen extends HTMLElement {
     constructor(){
-        super()
+        super();
     }
+    // Callback function when the element is connected to the DOM
     connectedCallback(){
-        
         this.innerHTML = heroSectionMen();
     }
-}
+};
+// Define the custom element with the specified name
 customElements.define("hero-section-men", HeroSectionMen);

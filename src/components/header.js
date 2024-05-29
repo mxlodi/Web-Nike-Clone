@@ -1,3 +1,4 @@
+// Function to generate the HTML for the header section
 const header = (data, marquee) => {
     return `
     <div class="bg-[#f5f5f5] h-[60px] flex justify-center gap-8 items-center">
@@ -24,16 +25,18 @@ const header = (data, marquee) => {
     </div>
     `;
 };
-
+// Function to create and define a custom element
 export function createHeader(data, marquee, componentName) {
-    class Header extends HTMLElement {
+    // Custom element class definition
+        class Header extends HTMLElement {
         constructor() {
             super();
         }
+        // Callback function when the element is connected to the DOM
         connectedCallback() {
             this.innerHTML = header(data, marquee);
         }
     }
-
+    // Define the custom element with the specified name
     customElements.define(componentName, Header);
 };

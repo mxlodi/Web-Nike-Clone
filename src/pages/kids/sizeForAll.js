@@ -1,3 +1,4 @@
+// Function to generate HTML for size for all section
 const sizeForAll = () => {
     return `
     <div class="max-w-[1850px] mx-auto mt-10">
@@ -150,11 +151,15 @@ const sizeForAll = () => {
 
     `
 }
-
+// Custom element class definition
 class SizeForAll extends HTMLElement{
+    constructor(){
+        super();
+    }
+    // Callback function when the element is connected to the DOM
     connectedCallback(){
         this.innerHTML = sizeForAll();
     }
 }
-
+// Define the custom element with the specified name
 customElements.define("size-for-all-content", SizeForAll);

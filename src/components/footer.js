@@ -1,3 +1,4 @@
+// Function to generate the footer HTML 
 const footer = () => {
     return `
     <footer class="bg-black md:mt-20 mt-0  text-[#ccc]">
@@ -153,7 +154,7 @@ const footer = () => {
                 </button>
                 </div>
             </div>
-            <!-- u.s.'s icons -->
+            <!-- U.S.'s icons -->
             <div class="max-w-[1400px] w-full gap-10 mx-auto p-8 flex md:flex-row flex-col justify-between md:items-end">
                 <div class="flex md:flex-row flex-col md:items-end gap-6">
                 <a class="flex gap-1 font-sans text-[13.5px]" href="">
@@ -188,15 +189,17 @@ const footer = () => {
         </footer>
     `
 };
-
+// Custom element class definition
 class Footer extends HTMLElement{
+    // Method called when the element is added to the DOM
     connectedCallback(){
+        // Set the inner HTML of the custom element to the footer HTML
         this.innerHTML = footer ();
-        
+        // Get references to the buttons for the accordion sections
         const helpBtn = document.getElementById("help-btn");
         const companyBtn = document.getElementById("company-btn");
         const promotionBtn = document.getElementById("promotion-btn");
-
+        // Add event listeners to the accordion buttons to toggle their respective sections
         helpBtn.addEventListener("click", function() {
             const content = document.getElementById("help-btn-content");
             const openIcon = document.getElementById("open-icon-help");
@@ -205,7 +208,7 @@ class Footer extends HTMLElement{
             content.classList.toggle("hidden");
             content.classList.toggle("accordion-content");
             helpBtn.classList.toggle("active");
-
+            // Toggle visibility of the open/close icons
             if (openIcon.classList.contains("hidden")) {
                 openIcon.classList.remove("hidden");
                 closeIcon.classList.add("hidden");
@@ -223,7 +226,7 @@ class Footer extends HTMLElement{
             content.classList.toggle("hidden");
             content.classList.toggle("accordion-content");
             companyBtn.classList.toggle("active");
-
+            // Toggle visibility of the open/close icons
             if (openIcon.classList.contains("hidden")) {
                 openIcon.classList.remove("hidden");
                 closeIcon.classList.add("hidden");
@@ -241,7 +244,7 @@ class Footer extends HTMLElement{
             content.classList.toggle("hidden");
             content.classList.toggle("accordion-content");
             promotionBtn.classList.toggle("active");
-
+            // Toggle visibility of the open/close icons
             if (openIcon.classList.contains("hidden")) {
                 openIcon.classList.remove("hidden");
                 closeIcon.classList.add("hidden");
@@ -252,4 +255,5 @@ class Footer extends HTMLElement{
         });
     }
 };
+// Define the custom element 
 customElements.define("footer-component", Footer);

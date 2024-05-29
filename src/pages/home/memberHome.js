@@ -1,3 +1,4 @@
+//Function to generate HTML for membership section
 const membership = (arr) => {
     return `
     <!-- Nike Membership --> 
@@ -23,9 +24,7 @@ const membership = (arr) => {
     ${arr.map((item) => {
 
         return `
-        
-
-            <!-- CARD 1 --> 
+            <!-- Card 1 --> 
             <div class="w-full mb-8"> 
                 <div class="min-[600px]:w-[610px] min-[600px]:h-[748px] w-[412px] h-[515px] relative"> 
                     <img src="${item.img}" alt="Member Interests" class="w-full h-full  object-cover"> 
@@ -42,7 +41,7 @@ const membership = (arr) => {
     </div>
     `
 }
-
+// Array containing data 
 const membershipArr = [
 {
     img : "../../images/home/membership/nike-just-do-it(19).jpg",
@@ -86,11 +85,15 @@ const membershipArr = [
     text2 : "Shop Your Way",
     button : "Add Interests"
 },
-]
-
+];
+// Function to create and define a custom element for classics spotlight section
 export function createMembership (arr, componentName){
-
+    // Custom element class definition
     class Membership extends HTMLElement {
+        constructor(){
+            super();
+        }
+        // Callback function when the element is connected to the DOM
         connectedCallback(){
             this.innerHTML = membership(arr);
 
@@ -115,7 +118,8 @@ export function createMembership (arr, componentName){
             carousel(membershipSlider,rightMembershipButton ,leftMembershipButton);
         }
     }
-
+    // Define the custom element with the specified name
     customElements.define(componentName ? componentName : "membership-content" ,Membership);
-}
+};
+// input class name to function
 createMembership(membershipArr);

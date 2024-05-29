@@ -1,4 +1,4 @@
-// hero section
+// Hero section
 const heroArr = [
     {
         imgURL_1:"../../images/home/poster/nike-just-do-it.jpg",
@@ -10,7 +10,7 @@ const heroArr = [
 }
 ]
 
-// trending section
+// Trending section
 const trendingArr=
 [
     {
@@ -40,7 +40,7 @@ const trendingArr=
     }
 ];
 
-// shop by sport section
+// Shop by sport section
 const shopBySportArr = 
 [ 
     {
@@ -90,7 +90,7 @@ const shopBySportArr =
     }
 ]
 
-// featured section
+// Featured section
 const featuredArr = 
 [
     {
@@ -109,7 +109,7 @@ const featuredArr =
     }
 ];
 
-// popular right now section
+// Popular right now section
 const popularArr = [
     {
       imgURL : "../../images/home/popular/air-jordan-4-retro-womens-shoes-s1LPnh.png",
@@ -155,7 +155,7 @@ const popularArr = [
       price : "$160"
     }
 ]
-
+// Memership section
 const membershipHomeArr = 
 [
     {

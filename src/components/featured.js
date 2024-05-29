@@ -1,3 +1,4 @@
+// Function to generate the featured content HTML
 const featured = (data,title) => {
     return `
     <div class="max-w-[1850px] mx-auto p-3 mt-10"> 
@@ -6,7 +7,7 @@ const featured = (data,title) => {
 
         ${data.map((card) => {
             return`
-                <!-- CARD --> 
+                <!-- Card --> 
                 <div class="w-full relative "> 
                     <img class="w-full h-full object-cover block md:hidden" src="${card.imgURL_1}" alt=""> 
                     <img class="w-full h-full object-cover md:block hidden"  src="${card.imgURL_2}" alt="">
@@ -23,13 +24,22 @@ const featured = (data,title) => {
     </div>   
     `;
 };
+
+// Function to create and define a custom element for the featured content
 export function createFeaturedContent(arr,title, componentName){
+
+    // Custom element class definition
     class Featured extends HTMLElement {
+        constructor(){
+            super();
+        }
+         // Callback function when the element is connected to the DOM
         connectedCallback(){
             this.innerHTML = featured(arr, title);
      
         }
     }
+    // Define the custom element with the specified name
     customElements.define(componentName, Featured);
 };
 

@@ -1,2 +1,3 @@
-import './footer.js'
+// import navbar and footer 
+import './footer.js' 
 import './navbar.js'

@@ -1,7 +1,8 @@
+// Function to generate the HTML for the navbar section
 const createNavbar = ()=>{
     return `
     
-<!-- header -->
+<!-- Header -->
 <div class="bg-[#f5f5f5] max-[960px]:hidden">
     <div class="max-w-[1850px] mx-auto p-3">
         <div class="flex justify-between">
@@ -43,24 +44,24 @@ const createNavbar = ()=>{
     </div>
 </div>
 
-<!-- NAVBAR -->
+<!-- Navbar -->
 <nav id="navBar" class="bg-white z-[100] top-0">
     <div class="max-w-[1850px] mx-auto text-black h-full flex items-center justify-between relative">
         <a class="pl-2" href="../../pages/home/home.html">
             <img src="../../images/home/nav-bar/nike2.png" alt="" class="w-[70px] hover:opacity-50">
         </a>
         <ul class="md:flex h-[70px] items-center  text-center gap-4 hidden ml-[200px] robotobold text-black/85 text-[17px] tracking-wide">
-                <li class="min-[955px]:flex items-center justify-center hidden hover:text-gray-500  h-full" id="newfeatured-hover"><a href="../../pages/newfeatured/newfeatured.html">New & Featured</a></li>
-                <li class="min-[960px]:flex items-center justify-center hidden  hover:text-gray-500 h-full " id="men-hover">
+                <li class="min-[955px]:flex items-center justify-center hidden hover:text-gray-500  h-full" id="newfeaturedHover"><a href="../../pages/newfeatured/newfeatured.html">New & Featured</a></li>
+                <li class="min-[960px]:flex items-center justify-center hidden  hover:text-gray-500 h-full " id="menHover">
                 <a href="../../pages/men/men.html">Men</a></li>
-                <li class="min-[972px]:flex items-center justify-center hidden hover:text-gray-500  h-full" id="women-hover">
+                <li class="min-[972px]:flex items-center justify-center hidden hover:text-gray-500  h-full" id="womenHover">
                 <a href="../../pages/women/women.html">Women
                 </a></li>
-                <li class="min-[1032px]:flex items-center justify-center hidden hover:text-gray-500  h-full" id="kids-hover">
+                <li class="min-[1032px]:flex items-center justify-center hidden hover:text-gray-500  h-full" id="kidsHover">
                 <a href="../../pages/kids/kids.html">Kids
                 </a></li>
-            <li class="cursor-pointer min-[1090px]:flex items-center justify-center hidden hover:text-gray-500  h-full" id="accessories-hover">Accessories</li>
-            <li class="cursor-pointer min-[1155px]:flex items-center justify-center hidden hover:text-gray-500  h-full" id="sale-hover">Sale</li>
+            <li class="cursor-pointer min-[1090px]:flex items-center justify-center hidden hover:text-gray-500  h-full" id="accessoriesHover">Accessories</li>
+            <li class="cursor-pointer min-[1155px]:flex items-center justify-center hidden hover:text-gray-500  h-full" id="saleHover">Sale</li>
         </ul>
         <div class="relative flex items-center pr-3">
             <input type="text"
@@ -91,12 +92,12 @@ const createNavbar = ()=>{
         </div>
     </div>
 
-    <!-- DROP DOWN -->
+    <!-- Drop down -->
     <div class="absolute w-full ">
         <!-- newfeatured dropdown -->
-        <div id="newfeatured-dropdown" class="hidden md:flex  bg-white cursor-pointer left-0 text-black duration-300 z-50  
+        <div id="newfeaturedDropdown" class="hidden md:flex  bg-white cursor-pointer left-0 text-black duration-300 z-50  
             h-0 w-full opacity-100 ">
-            <div id="newfeatured-below" class="flex opacity-0 delay-200 pointer-events-none justify-center max-w-full mx-auto">
+            <div id="newfeaturedBelow" class="flex opacity-0 delay-200 pointer-events-none justify-center max-w-full mx-auto">
                 <div class="flex gap-20">
                     <ul>
                         <li class="font-semibold mb-2.5 text-base  ">Jordan Family Days</li>
@@ -164,10 +165,10 @@ const createNavbar = ()=>{
                 </div>
             </div>
         </div>
-        <!-- men dropdown -->
-        <div id="men-dropdown" class="hidden md:flex bg-white cursor-pointer left-0 text-black duration-300 z-50  
+        <!-- Men dropdown -->
+        <div id="menDropdown" class="hidden md:flex bg-white cursor-pointer left-0 text-black duration-300 z-50  
         h-[0px] w-full opacity-100 ">
-            <div id="men-below" class="flex opacity-0 delay-200 pointer-events-none justify-center max-w-full mx-auto">
+            <div id="menBelow" class="flex opacity-0 delay-200 pointer-events-none justify-center max-w-full mx-auto">
                 <div class="flex gap-20">
                     <ul>
                         <li class="font-semibold mb-2.5 text-base ">Jordan Family Days</li>
@@ -269,10 +270,10 @@ const createNavbar = ()=>{
                 </div>
             </div>
         </div>
-        <!-- women dropdown -->
-        <div id="women-dropdown" class="hidden md:flex bg-white cursor-pointer left-0 text-black duration-300 z-50  
+        <!-- Women dropdown -->
+        <div id="womenDropdown" class="hidden md:flex bg-white cursor-pointer left-0 text-black duration-300 z-50  
         h-[0px] w-full opacity-100 ">
-            <div id="women-below" class="flex opacity-0 delay-200 pointer-events-none justify-center max-w-full mx-auto">
+            <div id="womenBelow" class="flex opacity-0 delay-200 pointer-events-none justify-center max-w-full mx-auto">
                 <div class="flex gap-20">
                     <ul>
                         <li class="font-semibold mb-2.5 text-base ">Jordan Family Days</li>
@@ -376,10 +377,10 @@ const createNavbar = ()=>{
                 </div>
             </div>
         </div>
-        <!-- kids dropdown -->
-        <div id="kids-dropdown"  class="hidden md:flex bg-white cursor-pointer left-0 text-black duration-300 z-50  
+        <!-- Kids dropdown -->
+        <div id="kidsDropdown"  class="hidden md:flex bg-white cursor-pointer left-0 text-black duration-300 z-50  
         h-[0px] w-full opacity-100 ">
-            <div id="kids-below" class="flex opacity-0 delay-200 pointer-events-none justify-center max-w-full mx-auto">
+            <div id="kidsBelow" class="flex opacity-0 delay-200 pointer-events-none justify-center max-w-full mx-auto">
                 <div class="flex gap-20">
                     <ul>
                         <li class="font-semibold mb-2.5 text-base ">Jordan Family Days</li>
@@ -481,10 +482,10 @@ const createNavbar = ()=>{
                 </div>
             </div>
         </div>
-        <!-- accessories dropdown -->
-        <div id="accessories-dropdown"  class="hidden md:flex bg-white cursor-pointer left-0 text-black duration-300 z-50  
+        <!-- Accessories dropdown -->
+        <div id="accessoriesDropdown"  class="hidden md:flex bg-white cursor-pointer left-0 text-black duration-300 z-50  
         h-[0px] w-full opacity-100 ">
-            <div id="accessories-below" class="flex opacity-0 delay-200 pointer-events-none justify-center max-w-full mx-auto">
+            <div id="accessoriesBelow" class="flex opacity-0 delay-200 pointer-events-none justify-center max-w-full mx-auto">
                 <div class="flex gap-20">
                     <ul>
                         <li class="font-semibold mb-2.5 text-base ">Featured</li>
@@ -534,10 +535,10 @@ const createNavbar = ()=>{
                 </div>
             </div>
         </div>
-        <!-- sale dropdown -->
-        <div id="sale-dropdown" class="hidden md:flex bg-white cursor-pointer left-0 text-black duration-300 z-50  
+        <!-- Sale dropdown -->
+        <div id="saleDropdown" class="hidden md:flex bg-white cursor-pointer left-0 text-black duration-300 z-50  
         h-[0px] w-full opacity-100 ">
-            <div id="sale-below" class="flex opacity-0 delay-200 pointer-events-none justify-center max-w-full mx-auto">
+            <div id="saleBelow" class="flex opacity-0 delay-200 pointer-events-none justify-center max-w-full mx-auto">
                 <div class="flex gap-20">
                     <ul>
                         <li class="font-semibold mb-2.5 text-base ">Sale: Up to 50% Off</li>
@@ -585,7 +586,7 @@ const createNavbar = ()=>{
     </div>
 </nav>
 
-<!-- hamburger -->
+<!-- Hamburger -->
 <div id="hamburger-content" class="hidden fixed z-[100] top-0 right-0 w-full bg-black/20 backdrop-blur-sm h-screen">
     <div class=" max-w-[320px] w-full  fixed h-screen bg-white  right-0 z-[300] top-0 p-8">
             <div class="flex justify-end pr-2 mb-5 " id="cross-btn">
@@ -671,42 +672,44 @@ const createNavbar = ()=>{
 
 
     `
-}
-
+};
+// Custom element class definition
 class Navbar extends HTMLElement{
+
     constructor(){
-        super()
+        super();
     }
+    // Callback function when the element is connected to the DOM
     connectedCallback(){
-        this.innerHTML = createNavbar()
-         // new & featured dropdown
+        this.innerHTML = createNavbar();
+         // New & featured dropdown
     const navBar = document.querySelector("#navBar");
 
-    const newfeaturedHover = document.getElementById("newfeatured-hover");
-    const newfeaturedDropdown = document.getElementById("newfeatured-dropdown");
-    const newfeaturedBelow = document.querySelector("#newfeatured-below");
+    const newfeaturedHover = document.getElementById("newfeaturedHover");
+    const newfeaturedDropdown = document.getElementById("newfeaturedDropdown");
+    const newfeaturedBelow = document.querySelector("#newfeaturedBelow");
 
-    const menHover = document.querySelector("#men-hover");
-    const menDropdown = document.querySelector("#men-dropdown");
-    const menBelow = document.querySelector("#men-below");
+    const menHover = document.querySelector("#menHover");
+    const menDropdown = document.querySelector("#menDropdown");
+    const menBelow = document.querySelector("#menBelow");
 
-    const womenHover = document.querySelector("#women-hover");
-    const womenDropdown = document.querySelector("#women-dropdown");
-    const womenBelow = document.querySelector("#women-below");
-
-
-    const kidsHover = document.querySelector("#kids-hover");
-    const kidsDropdown = document.querySelector("#kids-dropdown");
-    const kidsBelow = document.querySelector("#kids-below");
+    const womenHover = document.querySelector("#womenHover");
+    const womenDropdown = document.querySelector("#womenDropdown");
+    const womenBelow = document.querySelector("#womenBelow");
 
 
-    const accessoriesHover = document.querySelector("#accessories-hover");
-    const accessoriesDropdown = document.querySelector("#accessories-dropdown");
-    const accessoriesBelow = document.querySelector("#accessories-below");
+    const kidsHover = document.querySelector("#kidsHover");
+    const kidsDropdown = document.querySelector("#kidsDropdown");
+    const kidsBelow = document.querySelector("#kidsBelow");
 
-    const saleHover = document.querySelector("#sale-hover");
-    const saleDropdown = document.querySelector("#sale-dropdown");
-    const saleBelow = document.querySelector("#sale-below");
+
+    const accessoriesHover = document.querySelector("#accessoriesHover");
+    const accessoriesDropdown = document.querySelector("#accessoriesDropdown");
+    const accessoriesBelow = document.querySelector("#accessoriesBelow");
+
+    const saleHover = document.querySelector("#saleHover");
+    const saleDropdown = document.querySelector("#saleDropdown");
+    const saleBelow = document.querySelector("#saleBelow");
 
 
   dropdownMenu(newfeaturedHover,newfeaturedDropdown,newfeaturedBelow,"h-[340px]")
@@ -717,10 +720,11 @@ class Navbar extends HTMLElement{
   dropdownMenu(saleHover, saleDropdown, saleBelow, "h-[330px]")
 
 
-  //function dropdown menu
+  //Function dropdown menu
     function dropdownMenu(btn,dropdown,text,h){
+    // Mouseover the button
       btn.addEventListener("mouseover", () => {
-        // blur background
+        // Blur background
         const bgBlur = document.querySelector("#bgBlur");
 
         dropdown.classList.add(h);
@@ -731,6 +735,7 @@ class Navbar extends HTMLElement{
         bgBlur.classList.add("blur-sm");
         
       });
+    //   Mouse over the dropdown container
       dropdown.addEventListener("mouseover", () => {
         dropdown.classList.add(h);
         text.classList.add("delay-200");
@@ -738,10 +743,9 @@ class Navbar extends HTMLElement{
         navBar.classList.add("sticky");
         text.classList.remove("pointer-events-none");
         bgBlur.classList.add("blur-sm");
-
-
-  
       });
+
+    //   Mouse out of the dropdown container
       dropdown.addEventListener("mouseout", () => {
         text.classList.add("pointer-events-none");
         dropdown.classList.remove(h);
@@ -751,6 +755,7 @@ class Navbar extends HTMLElement{
         bgBlur.classList.remove("blur-sm");
         
       });
+    //   Mouse out of the button
       btn.addEventListener("mouseout", () => {
         text.classList.add("pointer-events-none");
         dropdown.classList.remove(h);
@@ -762,11 +767,11 @@ class Navbar extends HTMLElement{
       });
     }
 
-    // hamburger
+    // Hamburger
     const hamburgerBtn = document.querySelector("#hamburger-btn")
     const hamburgerContent = document.querySelector("#hamburger-content")
     const crossBtn = document.querySelector("#cross-btn")
-
+    // Add event listeners to the hamburger button to toggle hidden
     hamburgerBtn.addEventListener("click", () => {
       hamburgerContent.classList.toggle("hidden");
     
@@ -777,7 +782,7 @@ class Navbar extends HTMLElement{
     })
 
 
-    // help dropdown
+    // Help dropdown
     const helpBtn = document.querySelector("#helpBtn");
     const helpDropdown = document.querySelector("#helpDropdown");
 
@@ -799,5 +804,6 @@ class Navbar extends HTMLElement{
 
 
     }
-}
+};
+// Define the custom element with the specified name
 customElements.define('navbar-component', Navbar);

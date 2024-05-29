@@ -1,3 +1,4 @@
+// Function to generate HTML hero section
 const heroSection = () => {
     return `
     <section>
@@ -22,15 +23,16 @@ const heroSection = () => {
 
     `
 }
-
+// Custom element class definition
 class HeroSection extends HTMLElement{
     constructor(){
-        super()
+        super();
     }
+    // Callback function when the element is connected to the DOM
     connectedCallback(){
         this.innerHTML = heroSection();
     }
 
 }
-
+// Define the custom element with the specified name
 customElements.define("hero-content", HeroSection);
