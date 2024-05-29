@@ -1,47 +1,80 @@
-.divide-x{
-    font-family: "Roboto", sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* hide scrollbar */
+@layer utilities {
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+
+      .no-scrollbar {
+          -ms-overflow-style: none;  
+          scrollbar-width: none; 
+    }
+  }
+
+
+/* font */
+
+.roboto{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.passion-bold {
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-.toggle-switch {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 34px;
-  }
-  
-  .toggle-input {
-    display: none;
-  }
-  
-  .toggle-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 34px;
-    border-radius: 17px;
-    background-color: #ccc;
-    cursor: pointer;
-    transition: background-color 0.4s ease;
-  }
-  
-  .toggle-label:before {
-    content: '';
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.4s ease;
-  }
-  
-  .toggle-input:checked + .toggle-label {
-    background-color: #86d993;
-  }
-  
-  .toggle-input:checked + .toggle-label:before {
-    transform: translateX(26px);
-  }
+.passion-black {
+  font-family: "Passion One", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.jersey-25-regular {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.acme-regular {
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fjalla-one-regular {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald-bold {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.sans-regular {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sans-bold {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+

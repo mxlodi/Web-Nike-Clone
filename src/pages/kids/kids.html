@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Men</title>
-    <link rel="stylesheet" href="../../styles/output.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-<!-- nav-bar -->
-<navbar-layout class="navbar-layout" ></navbar-layout>
-<poster class="poster-kids"></poster>
-<sizes-for-all class="sizes-for-all-kids"></sizes-for-all>
-<popular class="popular-kids"></popular>
-<trending class="trending-kids"></trending>
-<explore class="explore-kids"></explore>
-<classics-spotlight class="classics-spotlight-kids"></classics-spotlight>
-<categories class="categories-kids"></categories>
 
-<!-- footer -->
-<footer-layout class="footer-layout"></footer-layout>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kids</title>
+  <link rel="icon" href="https://www.nike.com/favicon.ico?v=1">
+  <link rel="stylesheet" href="../../style/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Acme&family=Fjalla+One&family=Jersey+25&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!--call navbar from component layout by class-->
+  <navbar-component></navbar-component>
+  <!-- body -->
+  <div class="duration-300" id="bgBlur">
+    <!-- header section -->
+    <header-kids-content></header-kids-content>
+    <!-- hero section -->
+    <hero-content></hero-content>
+    <!-- size for all scetion -->
+    <size-for-all-content></size-for-all-content>
+    <!-- popular right now section -->
+    <popularkids-content></popularkids-content>
+    <!-- trending section -->
+    <trending-content></trending-content>
+    <!-- explore section -->
+    <explore-content></explore-content>
+    <!-- classics spotlight section -->
+    <classics-spotlight-kids-content></classics-spotlight-kids-content>
+    <!-- sub footer section -->
+    <sub-footer-content></sub-footer-content>
+  </div>
+  <!-- footer -->
+  <footer-component></footer-component>
 </body>
 
-<script src="../../script/layout/layout.js"></script>
-<script src="../../script/kids/kids.js" ></script>
 
+<!-- script to link components -->
+<script type="module" src="./kids.js"></script>
+<!-- script to link navbar and footer -->
+<script type="module" src="../../components/layout.js"></script>
 </html>

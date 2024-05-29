@@ -1,0 +1,5 @@
+REVIEWBOARD_URL = "https://review.clp.kr/"
+REPOSITORY = "Hexcode/Nem-Puthiraksa/Nike-Clone"
+REPOSITORY_TYPE = "git"
+BRANCH = "develop"
+LAND_DEST_BRANCH = "develop"

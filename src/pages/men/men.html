@@ -4,28 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Men</title>
-    <link rel="stylesheet" href="../../styles/output.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="icon" href="https://www.nike.com/favicon.ico?v=1">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Fjalla+One&family=Jersey+25&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- nav-bar -->
-<navbar-layout class="navbar-layout" ></navbar-layout>
-<marquee class="marquee-men"></marquee>
-<poster class="poster-men"></poster>
-<shoptheessentials class="shop-the-essentials-men"></shoptheessentials>
-<marathon-speed-ahead class="marathon-speed-ahead-men"></marathon-speed-ahead>
-<text class="text-men"></text>
-<classics-spotlight class="classics-spotlight-men"></classics-spotlight>
-<brooks class="brooks-men"></brooks>
-<popular class="popular-men"></popular>
-<member-benefits class="member-benefits-men"></member-benefits>
-<categories class="categories-men"></categories>
-<!-- footer -->
-
-<footer-layout class="footer-layout"></footer-layout>
+    <!-- nav-bar -->
+    <navbar-component></navbar-component>
+    <!-- body -->
+    <div class="duration-300" id="bgBlur">
+        <!-- header section -->
+        <header-men-content></header-men-content>
+        <!-- hero section -->
+        <hero-section-men></hero-section-men>
+        <!-- shop the essential section -->
+        <shoptheessential-men-content></shoptheessential-men-content>
+        <!-- marathon speed ahead pic -->
+        <marathon-speed-ahead-content></marathon-speed-ahead-content>
+        <!-- marathon speed ahead text -->
+        <marathon-text-content></marathon-text-content>
+        <!-- classics spotlight section -->
+        <classics-spotlight-men-content></classics-spotlight-men-content>
+        <!-- brooks koepka's favs section -->
+        <brooks-koepka-content></brooks-koepka-content>
+        <!-- popular right now section -->
+        <popular-men-content></popular-men-content>
+        <!-- member benefits section -->
+        <membership-benefits-content></membership-benefits-content>
+        <!-- sub footer section -->
+        <sub-footer-content></sub-footer-content>
+    </div>
+    <!-- footer -->
+    <footer-component></footer-component>
 </body>
-
-<script src="../../script/layout/layout.js"></script>
-<script src="../../script/men/men.js" ></script>
-
+<!-- scripts to link components -->
+<script type="module" src="./men.js"></script>
+<!-- script to link navbar and footer -->
+<script type="module" src="../../components/layout.js"></script>
 </html>
