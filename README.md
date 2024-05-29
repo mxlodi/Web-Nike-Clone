@@ -130,7 +130,7 @@ Customize :
 
 # **`Folder Structure`**
 
-![folder images](https://prod-files-secure.s3.us-west-2.amazonaws.com/482e8449-dafe-4ceb-af37-5660df5657d1/7db02d77-2f1c-4e7c-bc6d-c6fd43b36358/Screenshot_2024-05-29_at_1.29.23_PM.png)
+![folder images](./file_structure.png)
 
 
 1. **Src (folder)**:
@@ -262,7 +262,6 @@ Customize :
     
     <aside>
     💡 Note: Give a meaningful commit message.
-    
     </aside>
     
 

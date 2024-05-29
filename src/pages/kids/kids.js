@@ -132,7 +132,7 @@ import { createPopular } from "../../components/popular.js";
 import "./kidsHeroSection.js"
 import "./subFooterKids.js"
 import "./sizeForAll.js"
-import "../../components/explore..js"
+import "./explore.js"
 
 createHeader(headerArr, "Members: Free Shipping on Orders $50+", "header-kids-content")
 createFeaturedContent(trendingArr, "trending", "trending-content")
