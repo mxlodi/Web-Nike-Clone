@@ -130,7 +130,7 @@ Customize :
 
 # **`Folder Structure`**
 
-![Screenshot 2024-05-29 at 1.29.23 PM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/482e8449-dafe-4ceb-af37-5660df5657d1/07e1d83c-11e2-445a-8e04-aa9cc4cf2752/Screenshot_2024-05-29_at_1.29.23_PM.png)
+![folder images.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/482e8449-dafe-4ceb-af37-5660df5657d1/7db02d77-2f1c-4e7c-bc6d-c6fd43b36358/Screenshot_2024-05-29_at_1.29.23_PM.png)
 
 1. **Src (folder)**:
     - Main container directory for organizing all project resources.
@@ -267,4 +267,4 @@ Customize :
 
 ## `*TRACKING:*`
 
-[Nike Cloning Process](https://www.notion.so/9e047f72fa6e46bfaf749324cad03fec?pvs=21)
+[Nike Clone Process](https://www.notion.so/9e047f72fa6e46bfaf749324cad03fec?pvs=21)
