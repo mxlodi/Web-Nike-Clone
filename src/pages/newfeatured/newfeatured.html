@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New & Featured</title>
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="icon" href="https://www.nike.com/favicon.ico?v=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Fjalla+One&family=Jersey+25&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+    <navbar-component></navbar-component>
+    <!-- body -->
+    <div class="duration-300" id="bgBlur">
+        <newfeatured-categories-content></newfeatured-categories-content>
+    </div>
+    <!-- footer -->
+    <footer-component></footer-component>
+</body>
+<!-- script to link components -->
+<script type="module" src="./card.js"></script>
+<script type="module" src="./newFeatured.js"></script>
+<!-- script to link footer and navbar -->
+<script type="module" src="../../components/layout.js"></script>
+</html>

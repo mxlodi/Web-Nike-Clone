@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nike</title>
-    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/style.css" />
+    <link rel="icon" href="https://www.nike.com/favicon.ico?v=1" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Fjalla+One&family=Jersey+25&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Fjalla+One&family=Jersey+25&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
 </head>
+
 <body>
-<!--call navbar from component layout by class-->
-<navbar-layout class="navbar-layout" ></navbar-layout>
-
-<!-- body -->
-<poster-home class="poster-home"></poster-home>
-<trending-home class="trending-home"></trending-home>
-<featured-home class="featured-home"></featured-home>
-<classics-home class="classics-home"></classics-home>
-<shop-by-sport class="shop-by-sport-home"></shop-by-sport>
-<popular class="popular-home"></popular>
-<membership class="membership-home"></membership>
-<categories class="categories-home"></categories>
-<!--  -->
-
-<!-- call footer from component layout by class--> 
-<footer-layout class="footer-layout"></footer-layout>
-
+    <!--call navbar from component layout by class-->
+    <navbar-component></navbar-component>
+    <!-- body -->
+    <div class="duration-300" id="bgBlur">
+        <!-- hero section -->
+        <hero-content></hero-content>
+        <!-- trending section -->
+        <trending-content></trending-content>
+        <!-- featured section-->
+        <feature-content></feature-content>
+        <!-- classics spotlight section -->
+        <classics-spotlight-content ></classics-spotlight-content>
+        <!-- shop by sport section -->
+        <shop-by-sport-content></shop-by-sport-content>
+        <!-- popular right now section -->
+        <popular-content></popular-content>
+        <!-- membership benefits section -->
+        <membership-content></membership-content>
+        <!-- sub footer section -->
+        <sub-footer-content></sub-footer-content>
+    </div>
+    <!-- call footer from component layout by class-->
+    <footer-component></footer-component>
 </body>
 
-<!-- script link component layout-->
-<script src="../../script/layout/layout.js"></script>
-
-<!-- script link component home page -->
-<script src="../../script/home/home.js"></script>
-
+<!-- script link component -->
+<script type="module" src="./home.js"></script>
+<!-- script to link navbar and footer -->
+<script type="module" src="../../components/layout.js"></script>
 
 </html>
