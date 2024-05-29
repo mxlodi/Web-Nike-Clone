@@ -43,36 +43,25 @@ const createNavbar = ()=>{
     </div>
 </div>
 
-
 <!-- NAVBAR -->
 <nav id="navBar" class="bg-white z-[100] top-0">
     <div class="max-w-[1850px] mx-auto text-black h-full flex items-center justify-between relative">
         <a class="pl-2" href="../../pages/home/home.html">
             <img src="../../images/home/nav-bar/nike2.png" alt="" class="w-[70px] hover:opacity-50">
         </a>
-
         <ul class="md:flex h-[70px] items-center  text-center gap-4 hidden ml-[200px] robotobold text-black/85 text-[17px] tracking-wide">
                 <li class="min-[955px]:flex items-center justify-center hidden hover:text-gray-500  h-full" id="newfeatured-hover"><a href="../../pages/newfeatured/newfeatured.html">New & Featured</a></li>
-            
-            
                 <li class="min-[960px]:flex items-center justify-center hidden  hover:text-gray-500 h-full " id="men-hover">
                 <a href="../../pages/men/men.html">Men</a></li>
-            
-            
                 <li class="min-[972px]:flex items-center justify-center hidden hover:text-gray-500  h-full" id="women-hover">
                 <a href="../../pages/women/women.html">Women
                 </a></li>
-         
-            
-           
                 <li class="min-[1032px]:flex items-center justify-center hidden hover:text-gray-500  h-full" id="kids-hover">
                 <a href="../../pages/kids/kids.html">Kids
                 </a></li>
-          
             <li class="cursor-pointer min-[1090px]:flex items-center justify-center hidden hover:text-gray-500  h-full" id="accessories-hover">Accessories</li>
             <li class="cursor-pointer min-[1155px]:flex items-center justify-center hidden hover:text-gray-500  h-full" id="sale-hover">Sale</li>
         </ul>
-
         <div class="relative flex items-center pr-3">
             <input type="text"
                 class="border border-[#f5f5f5] rounded-full p-1.5 pl-10 bg-[#f5f5f5] block max-[960px]:hidden"
@@ -90,7 +79,6 @@ const createNavbar = ()=>{
                 <button  class="size-10 flex items-center justify-center rounded-full hover:bg-gray-200">
                     <img src="../../images/home/nav-bar/market.png" alt="" class="w-[22px]">
                 </button>
-                
                 <button class="size-10 min-[960px]:hidden flex items-center justify-center rounded-full hover:bg-gray-200">
                     <img src="../../images/home/nav-bar/user.png" alt=""
                     class="size-5 hidden  max-[960px]:block">
