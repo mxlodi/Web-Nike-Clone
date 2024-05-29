@@ -155,6 +155,6 @@ const subFooter = () => {
           Content.classList.toggle(`${h}`)
         })
         }
-    }
+    };
     // Define the custom element with the specified name
     customElements.define("sub-footer-content", SubFooter);
