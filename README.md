@@ -8,13 +8,13 @@ This project includes the following pages cloned from Nike website:
 4. Kids page
 5. New & Featured page
 
-# `Project Objective`
+# `Project Goals`
 
-1. Develop a simplified version of the [Nike.com](http://Nike.com) 5 pages, focusing on key elements such as the header, navigation menu, body, and footer.
-2. Create hover, dropdown, accordions lists for featured products , interactions
-3. Ensure basic responsiveness for the demo pages to showcase adaptability across different screen sizes of desktop, tablet, mobile phone , and some customize screen sizes that was used to maintain the old size of the original website.
+1. Develop a simplified version of [Nike.com](http://nike.com/) featuring 5 key pages, focusing on essential elements such as the header, navigation menu, body, and footer.
+2. Implement interactive elements including hover effects, dropdown, and accordion lists for featured products.
+3. Ensure basic responsiveness for the demo pages to showcase adaptability across various screen sizes: desktop, tablet, mobile phone, and customized screen sizes to maintain the original website's layout.
 4. Include dummy content and images to simulate the appearance of a live website.
-5. Implement clickable links to additional pages on navigation bar and hamburger icon(on small screen) for demonstration purposes.
+5. Implement clickable links in the navigation bar and a hamburger menu icon (on smaller screens) for demonstration purposes.
 
 # Timeline
 
@@ -28,16 +28,10 @@ This project includes the following pages cloned from Nike website:
 - HTML - **defines the structure of the content**
 - CSS - **determines the style and layout**
 - Javascript -  **makes the content interactive**
-- Framework - Tailwind CSS
-    - *Include tailwind library :*
-        
-        Use CDN link for Tailwind CSS ( on the official Tailwind Css Website )
-        
-    - *Add the CDN Link to HTML File :*
-        - Inside the <head> tag of HTML file, add the link to the Tailwind CSS CDN
-        - Use Tailwind Configuration to customize
-        - type="text/tailwindcss" to add custom CSS that supports all of Tailwind’s features.
-        - enable first-party plugins (like forms and typography) using the plugins query parameter in the CDN link.
+- Framework - Tailwind CSS :
+    - **Include Tailwind Library**: Use the CDN link available on the official Tailwind CSS website.
+    - **Add the CDN Link to HTML**: Insert the link inside the **`<head>`** tag of the HTML file.
+    - **Tailwind Configuration**: Customize using Tailwind's configuration file and enable first-party plugins (like forms and typography) using the plugins query parameter in the CDN link.
 
 # `Development Process`
 
@@ -99,21 +93,16 @@ e.g.
 
 ***⇒ Using custom elements***
 
-One of the key features of web components is the ability to create *custom elements*: that is, HTML elements whose behavior is defined by the web developer, that extend the set of elements available in the browser.
-
-Custom element lifecycle callbacks include:
-
-- `connectedCallback()`: called each time the element is added to the document. The specification recommends that, as far as possible, developers should implement custom element setup in this callback rather than the constructor.
+- Create custom elements to extend the set of elements available in the browser.
+- **Lifecycle Callbacks**: Use **`connectedCallback()`** for setup instead of the constructor.
 
 ### Registering a custom element
 
 To make a custom element available in a page, call the define() method of Window.customElements.
 
-### Using a custom element
+### Using a Custom Element
 
-Once you've defined and registered a custom element, you can use it in your code.
-
-To use a customized built-in element, use the built-in element but with the custom name as the value of the is attribute.
+• Implement custom elements in your code.
 
 # `Responsive`
 
@@ -121,7 +110,9 @@ To use a customized built-in element, use the built-in element but with the cust
 
 **`max-w-1850px`**
 
-### Screen Responsive Design : using tailwind and add more customize design to fit with the original website’s responsiveness
+### Screen Responsive Design :
+
+using tailwind and add more customize design to fit with the original website’s responsiveness 
 
 **`.sm:bg-white`**
 
@@ -160,6 +151,100 @@ Customize :
     - **`tailwind.config.js`**:
         - Configuration file for Tailwind CSS, allowing customization of the CSS framework to fit specific project requirements and design preferences.
 
-        ## `*TRACKING PROCESS:*`
+# **`Git Workflow`**
 
-[test](https://www.notion.so/9e047f72fa6e46bfaf749324cad03fec?pvs=21)
+1. Git/GitHub:
+    
+    Remote Repository:
+    
+    - Creating Issue and choosing label:
+        
+        ⇒ Feature branch:
+        
+        - Feature-Issue : issue description.
+        - Details : describe about the problem in detail
+        
+        ⇒ Release branch:
+        
+        - Release-version : release description.
+        - Details : describe about the problem in detail
+        
+        ⇒ Bug-fix branch:
+        
+        - Bugfix : issue description
+        - Details : describe about the problem in detail
+        
+        ⇒ Hot-fix branch:
+        
+        - Hotfix : issue description
+        - Details : describe about the problem in detail
+    - Workspace setup:
+        - Assign the one who work on the issue.
+        - Set the situation of the issue.
+        - Match the project.
+        - After finish, assign the reviewer
+        - Make a code review.
+    
+    <aside>
+    💡 Note: Pay attention to all aspects of the issue (title message, detail description, assigner, reviewer, label, project)
+    
+    </aside>
+    
+    Local Repository:
+    
+    - Branching the branch:
+        - Name the branch according to the actual problem and what to do with that branch.
+        
+        ⇒ Feature branch:
+        
+        - command e.g : git flow feature start nav-bar
+            - result of naming : feature/nav-bar
+        
+        ⇒ Release branch:
+        
+        - command e.g : git flow release start 1.0
+            - result of naming : release/1.0
+        
+        ⇒ Bug-fix branch:
+        
+        - command e.g : git flow bugfix start {the actual problem} release/{name of the release branch}
+            - result of naming : bugfix/{bugfix branch name}
+        
+        ⇒ Hot-fix branch:
+        
+        - command e.g : git flow hotfix start {name of the released version (tag)}, e.g : 1.1
+            - result of naming : hotfix/1.1
+    
+    <aside>
+    💡 Note: Everyone should name the branch according to the actual problem and what to do with that branch.
+    
+    </aside>
+    
+    - Commit message :
+        - Commit branch :
+            
+            ⇒ feature : { describe about the problem in detail, which part you’ve worked on }
+            
+            - feature : home-page, add a menu button to navbar of home page.
+            
+            ⇒ release : { describe about the release version in detail }
+            
+            - release : release team website version 1.0
+            
+            ⇒ bugfix : { describe about the bug on the pre-release version }
+            
+            - bugfix : fixed the bug on pre-release version 1.0, error on register user account.
+            
+            ⇒ hotfix : { describe about the problem in detail, which part you’ve worked on and fixed }
+            
+            - hotfix : home-page, quick fix on released version 1.0, error on nav-bar and hero section.
+    
+    <aside>
+    💡 Note: Give a meaningful commit message.
+    
+    </aside>
+    
+
+## `*TRACKING:*`
+
+[Nike Cloning Process](https://www.notion.so/9e047f72fa6e46bfaf749324cad03fec?pvs=21)
