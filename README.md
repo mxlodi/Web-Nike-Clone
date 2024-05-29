@@ -159,3 +159,7 @@ Customize :
         - Provides project documentation, instructions, or details about the project setup, helping developers understand and contribute to the project effectively.
     - **`tailwind.config.js`**:
         - Configuration file for Tailwind CSS, allowing customization of the CSS framework to fit specific project requirements and design preferences.
+
+        ## `*TRACKING PROCESS:*`
+
+[](https://www.notion.so/9e047f72fa6e46bfaf749324cad03fec?pvs=21)
