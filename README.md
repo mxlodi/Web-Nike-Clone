@@ -130,7 +130,7 @@ Customize :
 
 # **`Folder Structure`**
 
-![folder images](./file_structure.png)
+![Screenshot_2024-05-29_at_1.29.23_PM](/uploads/013f50d7c506663fe2487f850475a217/Screenshot_2024-05-29_at_1.29.23_PM.png)
 
 
 1. **Src (folder)**:
