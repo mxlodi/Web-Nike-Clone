@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 node_modules
 .vscode
@@ -26,3 +27,7 @@ node_modules
 .DS_Store
 >>>>>>> 1d57977 (file : add new&featured page)
 >>>>>>> fe948af (file : add new&featured page)
+=======
+node_modules
+.vscode
+>>>>>>> eef2d79205fc625668af35eacd49cf420e34ea3e
