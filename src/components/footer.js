@@ -79,12 +79,12 @@ const footer = () => {
         </div>
         <div>
             <div class="p-5 md:hidden block text-[13px] text-white/80">
-            <div id="help-btn" class=" oswald-bold cursor-pointer flex justify-between tracking-wider pl-3 mb-2 ">
+            <div id="helpBtn" class=" oswald-bold cursor-pointer flex justify-between tracking-wider pl-3 mb-2 ">
                 <h1>HELP</h1>
-                <button class=" "><img id="open-icon-help" src="../../images/home/footer/icons8-plus (1).svg" class="w-4 h-4 block" alt=""></button> 
-                <button id="close-icon-help" class="w-4 h-4 hidden" ><img  src="../../images/home/footer/icons8-minus-24.png"  alt=""></button>
+                <button class=" "><img id="openIconHelp" src="../../images/home/footer/icons8-plus (1).svg" class="w-4 h-4 block" alt=""></button> 
+                <button id="closeIconHelp" class="w-4 h-4 hidden" ><img  src="../../images/home/footer/icons8-minus-24.png"  alt=""></button>
             </div>
-            <div id="help-btn-content" class="hidden cursor-pointer">
+            <div id="helpBtnContent" class="hidden cursor-pointer">
                 <ul class="pl-3 text-[#7e7e7e]">
                     <li class="mb-3 hover:text-white">Get Help</li>
                     <li class="mb-3 hover:text-white">Order Status</li>
@@ -97,12 +97,12 @@ const footer = () => {
                 </ul>
             </div>
             <div class="py-6">
-                <div id="company-btn" class="transition duration-150 ease-in-out oswald-bold cursor-pointer flex justify-between tracking-wider pl-3 mb-2">
+                <div id="companyBtn" class="transition duration-150 ease-in-out oswald-bold cursor-pointer flex justify-between tracking-wider pl-3 mb-2">
                 <h1>COMPANY</h1> 
-                <button class=" "><img id="open-icon-company" src="../../images/home/footer/icons8-plus (1).svg" class="w-4 h-4 block" alt=""></button> 
-                <button id="close-icon-company" class="w-4 h-4 hidden" ><img src="../../images/home/footer/icons8-minus-24.png"alt=""></button>
+                <button class=" "><img id="openIconCompany" src="../../images/home/footer/icons8-plus (1).svg" class="w-4 h-4 block" alt=""></button> 
+                <button id="closeIconCompany" class="w-4 h-4 hidden" ><img src="../../images/home/footer/icons8-minus-24.png"alt=""></button>
                 </div>
-                <div id="company-btn-content" class="hidden cursor-pointer">
+                <div id="companyBtnContent" class="hidden cursor-pointer">
                     <ul class="pl-3 text-[#7e7e7e]">
                         <li class="mb-3 hover:text-white">About Nike</li>
                         <li class="mb-3 hover:text-white">News</li>
@@ -113,12 +113,12 @@ const footer = () => {
                     </ul>
                 </div>
             </div>
-            <div id="promotion-btn" class="oswald-bold cursor-pointer flex justify-between tracking-wider pl-3 mb-2">
+            <div id="promotionBtn" class="oswald-bold cursor-pointer flex justify-between tracking-wider pl-3 mb-2">
                 <h1>PROMOTIONS & DISCOUNTS</h1> 
-                <button class=" "><img id="open-icon-promotion" src="../../images/home/footer/icons8-plus (1).svg" class="w-4 h-4 block" alt=""></button>
-                <button id="close-icon-promotion" class="w-4 h-4 hidden"><img src="../../images/home/footer/icons8-minus-24.png" alt=""></button> 
+                <button class=" "><img id="openIconPromotion" src="../../images/home/footer/icons8-plus (1).svg" class="w-4 h-4 block" alt=""></button>
+                <button id="closeIconPromotion" class="w-4 h-4 hidden"><img src="../../images/home/footer/icons8-minus-24.png" alt=""></button> 
             </div>
-            <div id="promotion-btn-content" class="hidden cursor-pointer">
+            <div id="promotionBtnContent" class="hidden cursor-pointer">
                 <ul class="pl-3 text-[#7e7e7e]">
                     <li class="mb-3 hover:text-white">Student</li>
                     <li class="mb-3 hover:text-white">Military</li>
@@ -196,14 +196,14 @@ class Footer extends HTMLElement{
         // Set the inner HTML of the custom element to the footer HTML
         this.innerHTML = footer ();
         // Get references to the buttons for the accordion sections
-        const helpBtn = document.getElementById("help-btn");
-        const companyBtn = document.getElementById("company-btn");
-        const promotionBtn = document.getElementById("promotion-btn");
+        const helpBtn = document.getElementById("helpBtn");
+        const companyBtn = document.getElementById("companyBtn");
+        const promotionBtn = document.getElementById("promotionBtn");
         // Add event listeners to the accordion buttons to toggle their respective sections
         helpBtn.addEventListener("click", function() {
-            const content = document.getElementById("help-btn-content");
-            const openIcon = document.getElementById("open-icon-help");
-            const closeIcon = document.getElementById("close-icon-help");
+            const content = document.getElementById("helpBtnContent");
+            const openIcon = document.getElementById("openIconHelp");
+            const closeIcon = document.getElementById("closeIconHelp");
 
             content.classList.toggle("hidden");
             content.classList.toggle("accordion-content");
@@ -219,9 +219,9 @@ class Footer extends HTMLElement{
         });
 
         companyBtn.addEventListener("click", function() {
-            const content = document.getElementById("company-btn-content");
-            const openIcon = document.getElementById("open-icon-company");
-            const closeIcon = document.getElementById("close-icon-company");
+            const content = document.getElementById("companyBtnContent");
+            const openIcon = document.getElementById("openIconCompany");
+            const closeIcon = document.getElementById("closeIconCompany");
 
             content.classList.toggle("hidden");
             content.classList.toggle("accordion-content");
@@ -237,9 +237,9 @@ class Footer extends HTMLElement{
         });
 
         promotionBtn.addEventListener("click", function() {
-            const content = document.getElementById("promotion-btn-content");
-            const openIcon = document.getElementById("open-icon-promotion");
-            const closeIcon = document.getElementById("close-icon-promotion");
+            const content = document.getElementById("promotionBtnContent");
+            const openIcon = document.getElementById("openIconPromotion");
+            const closeIcon = document.getElementById("closeIconPromotion");
 
             content.classList.toggle("hidden");
             content.classList.toggle("accordion-content");

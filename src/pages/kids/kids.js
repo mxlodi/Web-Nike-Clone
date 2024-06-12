@@ -134,6 +134,7 @@ import "./subFooterKids.js"
 import "./sizeForAll.js"
 import "./explore.js"
 
+
 createHeader(headerArr, "Members: Free Shipping on Orders $50+", "header-kids-content")
 createFeaturedContent(trendingArr, "Trending", "trending-content")
 createPopular(popularKidsArr, "popularkids-content");

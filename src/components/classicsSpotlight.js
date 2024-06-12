@@ -18,12 +18,12 @@ const classicsSpotlight = (data) => {
             }).join("")}
                 <div class="md:flex hidden absolute justify-between items-center w-full"> 
                     <div class="pl-6"> 
-                        <button id="left-classic" class="bg-[#e5e5e5] w-10 h-10 rounded-full flex justify-center items-center"> 
+                        <button id="leftClassic" class="bg-[#e5e5e5] w-10 h-10 rounded-full flex justify-center items-center"> 
                             <img src="../../images/home/trending/left-chevron.png" alt="" class="w-[20px] "> 
                         </button> 
                     </div> 
                     <div class="pr-12"> 
-                        <button id="right-classic" class="bg-[#e5e5e5] w-10 h-10 rounded-full flex justify-center items-center"> 
+                        <button id="rightClassic" class="bg-[#e5e5e5] w-10 h-10 rounded-full flex justify-center items-center"> 
                             <img src="../../images/home/trending/chevron.png" alt="" class="w-[20px]"> 
                         </button> 
                     </div> 
@@ -62,8 +62,8 @@ export function createClassicSpotlight(data,componentName){
             this.innerHTML = classicsSpotlight(data);
              // Query selectors for the carousel element and navigation buttons
             const classic= this.querySelector("#classic");
-            const left_classic = this.querySelector("#left-classic");
-            const right_classic = this.querySelector("#right-classic");
+            const leftClassic = this.querySelector("#leftClassic");
+            const rightClassic = this.querySelector("#rightClassic");
              // Function to implement carousel functionality
             function carousel(carousel_element, nextBtn, backBtn){
                 // Event listener for the next button
@@ -81,7 +81,7 @@ export function createClassicSpotlight(data,componentName){
                 })
               })
             }
-            carousel(classic,right_classic, left_classic)
+            carousel(classic,rightClassic, leftClassic)
         }
     }
     customElements.define(componentName ? componentName : "classics-spotlight-content", ClassicsSpotlight);

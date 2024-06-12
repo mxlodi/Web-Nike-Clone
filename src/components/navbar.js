@@ -84,7 +84,7 @@ const createNavbar = ()=>{
                     <img src="../../images/home/nav-bar/user.png" alt=""
                     class="size-5 hidden  max-[960px]:block">
                 </button>
-                <button id="hamburger-btn" class="items-center size-10 min-[960px]:hidden flex justify-center rounded-full hover:bg-gray-200">
+                <button id="hamburgerBtn" class="items-center size-10 min-[960px]:hidden flex justify-center rounded-full hover:bg-gray-200">
                     <img src="../../images/home/nav-bar/hamburger (1).png" alt=""
                     class="w-[20px]">
                 </button>
@@ -587,9 +587,9 @@ const createNavbar = ()=>{
 </nav>
 
 <!-- Hamburger -->
-<div id="hamburger-content" class="hidden fixed z-[100] top-0 right-0 w-full bg-black/20 backdrop-blur-sm h-screen">
+<div id="hamburgerContent" class="hidden fixed z-[100] top-0 right-0 w-full bg-black/20 backdrop-blur-sm h-screen">
     <div class=" max-w-[320px] w-full  fixed h-screen bg-white  right-0 z-[300] top-0 p-8">
-            <div class="flex justify-end pr-2 mb-5 " id="cross-btn">
+            <div class="flex justify-end pr-2 mb-5 " id="crossBtn">
                 <button class="size-10 flex items-center justify-center rounded-full hover:bg-gray-200">
                     <img class="w-4" src="../../images/home/nav-bar/close.png" alt="">
                 </button>
@@ -768,9 +768,9 @@ class Navbar extends HTMLElement{
     }
 
     // Hamburger
-    const hamburgerBtn = document.querySelector("#hamburger-btn")
-    const hamburgerContent = document.querySelector("#hamburger-content")
-    const crossBtn = document.querySelector("#cross-btn")
+    const hamburgerBtn = document.querySelector("#hamburgerBtn")
+    const hamburgerContent = document.querySelector("#hamburgerContent")
+    const crossBtn = document.querySelector("#crossBtn")
     // Add event listeners to the hamburger button to toggle hidden
     hamburgerBtn.addEventListener("click", () => {
       hamburgerContent.classList.toggle("hidden");

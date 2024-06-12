@@ -5,10 +5,10 @@ const popularRightNow = (data) => {
           <div class="flex items-center justify-between"> 
               <h2 class="text-2xl">Popular Right Now</h2> 
               <div class="md:flex hidden gap-5"> 
-                  <button id="left-popular" class="bg-[#e5e5e5] w-10 h-10 rounded-full flex justify-center items-center" > 
+                  <button id="leftPopular" class="bg-[#e5e5e5] w-10 h-10 rounded-full flex justify-center items-center" > 
                       <img src="../../images/home/trending/left-chevron.png" alt="Left Chevron" class="w-[20px]"> 
                   </button> 
-                  <button id="right-popular" class="bg-[#e5e5e5] w-10 h-10 rounded-full flex justify-center items-center"> 
+                  <button id="rightPopular" class="bg-[#e5e5e5] w-10 h-10 rounded-full flex justify-center items-center"> 
                       <img src="../../images/home/trending/chevron.png" alt="Right Chevron" class="w-[20px]"> 
                   </button> 
               </div> 
@@ -44,8 +44,8 @@ export function createPopular(arr, componentName){
       this.innerHTML = popularRightNow(arr);
       // Function to implement carousel
         const popular= document.querySelector("#popular");
-        const leftPopular = document.querySelector("#left-popular");
-        const rightPopular = document.querySelector("#right-popular");
+        const leftPopular = document.querySelector("#leftPopular");
+        const rightPopular = document.querySelector("#rightPopular");
         // Add event listener click to make the buttons scroll left/right 
           rightPopular.addEventListener("click", () => {
             popular.scrollBy({

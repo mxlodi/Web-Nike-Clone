@@ -9,8 +9,8 @@ import { createClassicSpotlight } from "../../components/classicsSpotlight.js";
 import "../../components/membership.js"
 import "./heroSectionMen.js";
 import "./marathonSpeedAhead.js"
-
 import "./subFooterMen.js"
+
 
 // header text section and marquee
 const headerArr = [

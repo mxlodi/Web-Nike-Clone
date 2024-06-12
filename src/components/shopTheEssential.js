@@ -7,10 +7,10 @@ const shopTheEssentail = (data, title) => {
             <div class="flex items-center justify-between">
                 <h2 class="text-2xl">${title}</h2>
                 <div class="gap-5 mb-3 md:flex hidden">
-                    <button id="left-button" class="bg-[#e5e5e5] w-10 h-10 rounded-full flex justify-center items-center" >
+                    <button id="leftButton" class="bg-[#e5e5e5] w-10 h-10 rounded-full flex justify-center items-center" >
                         <img src="../../images/home/trending/left-chevron.png" alt="" class="w-[20px]">
                     </button>
-                    <button id="right-button" class="bg-[#e5e5e5] w-10 h-10 rounded-full flex justify-center items-center">
+                    <button id="rightButton" class="bg-[#e5e5e5] w-10 h-10 rounded-full flex justify-center items-center">
                         <img src="../../images/home/trending/chevron.png" alt="" class="w-[20px]">
                     </button>
                 </div>
@@ -20,7 +20,7 @@ const shopTheEssentail = (data, title) => {
 
     <!-- Shop the essentials photos -->
     <div>
-        <div id="shop-the-essential" class="max-w-[1850px] cursor-pointer mx-auto px-3 gap-3 flex overflow-x-auto">
+        <div id="shopTheEssential" class="max-w-[1850px] cursor-pointer mx-auto px-3 gap-3 flex overflow-x-auto">
             ${data.map((card) => {
                 return `
                 <div class="w-full">
@@ -50,9 +50,9 @@ export function createCarouselEssential(data, title, componentName){
         }
         setUpEventListener (){
             // Call id to use for carousel
-            const leftButton = this.querySelector("#left-button");
-            const rightButton = this.querySelector("#right-button");
-            const shopTheEssentailSlider = this.querySelector("#shop-the-essential");
+            const leftButton = this.querySelector("#leftButton");
+            const rightButton = this.querySelector("#rightButton");
+            const shopTheEssentailSlider = this.querySelector("#shopTheEssential");
               // Call the carousel function to use by inputing the name
             this.carousel(shopTheEssentailSlider,rightButton ,leftButton);
     

@@ -218,4 +218,4 @@ createCarouselEssential(trendingArr, "Trending", "trending-content");
 createCarouselEssential(shopBySportArr, "Shop by Sport", "shop-by-sport-content");
 createFeaturedContent(featuredArr,"Featured" ,"feature-content");
 createPopular(popularArr, "popular-content");
-createMembership(membershipHomeArr, "membership-content");
+createMembership(membershipHomeArr, "membership-contents");

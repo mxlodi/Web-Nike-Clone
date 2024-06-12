@@ -10,10 +10,10 @@ const membership = (arr) => {
                     Sign Up
                 </button>
                 <div class="md:flex hidden gap-5"> 
-                    <button id="left-membership" class="bg-[#e5e5e5] size-10 rounded-full flex justify-center items-center" > 
+                    <button id="leftMembership" class="bg-[#e5e5e5] size-10 rounded-full flex justify-center items-center" > 
                         <img src="../../images/home/trending/left-chevron.png" alt="" class="max-w-[20px]"> 
                     </button> 
-                    <button id="right-membership" class="bg-[#e5e5e5] size-10 rounded-full flex justify-center items-center"> 
+                    <button id="rightMembership" class="bg-[#e5e5e5] size-10 rounded-full flex justify-center items-center"> 
                         <img src="../../images/home/trending/chevron.png" alt="" class="max-w-[20px]"> 
                     </button> 
                 </div> 
@@ -97,8 +97,8 @@ export function createMembership (arr, componentName){
         connectedCallback(){
             this.innerHTML = membership(arr);
 
-            const leftMembershipButton = this.querySelector("#left-membership");
-            const rightMembershipButton = this.querySelector("#right-membership");
+            const leftMembershipButton = this.querySelector("#leftMembership");
+            const rightMembershipButton = this.querySelector("#rightMembership");
             const membershipSlider = this.querySelector("#membership");
 
             function  carousel(carousel_element, nextBtn, backBtn){
