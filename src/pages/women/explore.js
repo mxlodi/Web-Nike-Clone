@@ -26,7 +26,7 @@ const explore = (arr,arr2) => {
         </div>
     </div>
     <!-- small screen -->
-    <div class="max-w-[1850px] mx-auto p-3 min-[600px]:hidden block w-full mt-16 ">
+    <div class="max-w-[1850px] mx-auto p-3 min-[600px]:hidden block w-full ">
     <hr class="my-6">
         <div class="w-full flex flex-col gap-4">
             ${arr2.map((item) => {
